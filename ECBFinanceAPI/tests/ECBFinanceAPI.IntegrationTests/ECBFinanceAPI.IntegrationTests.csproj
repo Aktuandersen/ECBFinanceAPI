@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\ECBFinanceAPI\ECBFinanceAPI.csproj" />
+    <ProjectReference Include="..\..\src\ECBFinanceAPI\ECBFinanceAPI.csproj" />
   </ItemGroup>
 
   <ItemGroup>

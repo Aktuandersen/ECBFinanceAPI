@@ -1,3 +1,5 @@
-﻿namespace ECBFinanceAPI.YieldCurves.Models;
+﻿using ECBFinanceAPI.YieldCurves.Enums;
 
-public record YieldCurveQuote(DateTime Date, Maturity Maturity, double Yield);
+namespace ECBFinanceAPI.YieldCurves.Models;
+
+public record YieldCurveQuote(DateTime Date, YieldCurveQuoteType YieldCurveQuoteType, Maturity Maturity, double Yield);

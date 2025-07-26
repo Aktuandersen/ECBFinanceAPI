@@ -6,19 +6,19 @@ namespace ECBFinanceAPI.YieldCurves;
 public class YieldCurveParametersLoader : YieldCurveObservablesLoader
 {
     public async Task<IEnumerable<NelsonSiegelSvenssonParameters>> GetYieldCurveNelsonSiegelSvenssonParametersAsync(GovernemtBondNominalRating governemtBondNominalRating) =>
-        await DownloadYieldCurveNelsonSiegelSvenssonParametersAsync(null, null, governemtBondNominalRating);
+        await DownloadYieldCurveNelsonSiegelSvenssonParametersAsync(governemtBondNominalRating, null, null);
 
-    public async Task<IEnumerable<NelsonSiegelSvenssonParameters>> GetYieldCurveNelsonSiegelSvenssonParametersAsync(DateTime startDate, DateTime endDate, GovernemtBondNominalRating governemtBondNominalRating) =>
-        await DownloadYieldCurveNelsonSiegelSvenssonParametersAsync(startDate, endDate, governemtBondNominalRating);
+    public async Task<IEnumerable<NelsonSiegelSvenssonParameters>> GetYieldCurveNelsonSiegelSvenssonParametersAsync(GovernemtBondNominalRating governemtBondNominalRating, DateTime startDate, DateTime endDate) =>
+        await DownloadYieldCurveNelsonSiegelSvenssonParametersAsync(governemtBondNominalRating, startDate, endDate);
 
-    private async Task<IEnumerable<NelsonSiegelSvenssonParameters>> DownloadYieldCurveNelsonSiegelSvenssonParametersAsync(DateTime? startDate, DateTime? endDate, GovernemtBondNominalRating governemtBondNominalRating)
+    private async Task<IEnumerable<NelsonSiegelSvenssonParameters>> DownloadYieldCurveNelsonSiegelSvenssonParametersAsync(GovernemtBondNominalRating governemtBondNominalRating, DateTime? startDate, DateTime? endDate)
     {
-        Task<IEnumerable<YieldCurveObservable>> beta0Task = DownloadYieldCurveObservablesAsync(GetAPIEndpoint(startDate: startDate, endDate: endDate, governemtBondNominalRating: governemtBondNominalRating, nelsonSiegelSvenssonParameter: NelsonSiegelSvenssonParameter.Beta0));
-        Task<IEnumerable<YieldCurveObservable>> beta1Task = DownloadYieldCurveObservablesAsync(GetAPIEndpoint(startDate: startDate, endDate: endDate, governemtBondNominalRating: governemtBondNominalRating, nelsonSiegelSvenssonParameter: NelsonSiegelSvenssonParameter.Beta1));
-        Task<IEnumerable<YieldCurveObservable>> beta2Task = DownloadYieldCurveObservablesAsync(GetAPIEndpoint(startDate: startDate, endDate: endDate, governemtBondNominalRating: governemtBondNominalRating, nelsonSiegelSvenssonParameter: NelsonSiegelSvenssonParameter.Beta2));
-        Task<IEnumerable<YieldCurveObservable>> beta3Task = DownloadYieldCurveObservablesAsync(GetAPIEndpoint(startDate: startDate, endDate: endDate, governemtBondNominalRating: governemtBondNominalRating, nelsonSiegelSvenssonParameter: NelsonSiegelSvenssonParameter.Beta3));
-        Task<IEnumerable<YieldCurveObservable>> tau1Task = DownloadYieldCurveObservablesAsync(GetAPIEndpoint(startDate: startDate, endDate: endDate, governemtBondNominalRating: governemtBondNominalRating, nelsonSiegelSvenssonParameter: NelsonSiegelSvenssonParameter.Tau1));
-        Task<IEnumerable<YieldCurveObservable>> tau2Task = DownloadYieldCurveObservablesAsync(GetAPIEndpoint(startDate: startDate, endDate: endDate, governemtBondNominalRating: governemtBondNominalRating, nelsonSiegelSvenssonParameter: NelsonSiegelSvenssonParameter.Tau2));
+        Task<IEnumerable<YieldCurveObservable>> beta0Task = DownloadYieldCurveObservablesAsync(GetYieldCurveObservablesEndpoint(governemtBondNominalRating, NelsonSiegelSvenssonParameter.Beta0, startDate, endDate));
+        Task<IEnumerable<YieldCurveObservable>> beta1Task = DownloadYieldCurveObservablesAsync(GetYieldCurveObservablesEndpoint(governemtBondNominalRating, NelsonSiegelSvenssonParameter.Beta1, startDate, endDate));
+        Task<IEnumerable<YieldCurveObservable>> beta2Task = DownloadYieldCurveObservablesAsync(GetYieldCurveObservablesEndpoint(governemtBondNominalRating, NelsonSiegelSvenssonParameter.Beta2, startDate, endDate));
+        Task<IEnumerable<YieldCurveObservable>> beta3Task = DownloadYieldCurveObservablesAsync(GetYieldCurveObservablesEndpoint(governemtBondNominalRating, NelsonSiegelSvenssonParameter.Beta3, startDate, endDate));
+        Task<IEnumerable<YieldCurveObservable>> tau1Task = DownloadYieldCurveObservablesAsync(GetYieldCurveObservablesEndpoint(governemtBondNominalRating, NelsonSiegelSvenssonParameter.Tau1, startDate, endDate));
+        Task<IEnumerable<YieldCurveObservable>> tau2Task = DownloadYieldCurveObservablesAsync(GetYieldCurveObservablesEndpoint(governemtBondNominalRating, NelsonSiegelSvenssonParameter.Tau2, startDate, endDate));
 
         await Task.WhenAll([
             beta0Task,
@@ -45,15 +45,12 @@ public class YieldCurveParametersLoader : YieldCurveObservablesLoader
                );
     }
 
-    private static Uri GetAPIEndpoint(
+    private static YieldCurveObservablesEndpoint GetYieldCurveObservablesEndpoint(
         GovernemtBondNominalRating governemtBondNominalRating,
         NelsonSiegelSvenssonParameter nelsonSiegelSvenssonParameter,
         DateTime? startDate = null,
-        DateTime? endDate = null) =>
-        new YieldCurveQuotesUriBuilder()
-        .WithStartDate(startDate ?? DateTime.MinValue)
-        .WithEndDate(endDate ?? DateTime.MaxValue)
-        .WithNelsonSiegelSvenssonParameter(nelsonSiegelSvenssonParameter)
-        .WithGovernmentBondNominalRating(governemtBondNominalRating)
-        .Build();
+        DateTime? endDate = null
+        ) => startDate is null && endDate is null ?
+            new YieldCurveObservablesEndpoint(governemtBondNominalRating, nelsonSiegelSvenssonParameter) :
+            new YieldCurveObservablesEndpoint(governemtBondNominalRating, nelsonSiegelSvenssonParameter, startDate!.Value, endDate!.Value);
 }

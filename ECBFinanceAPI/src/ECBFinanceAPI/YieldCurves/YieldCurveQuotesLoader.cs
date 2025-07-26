@@ -6,38 +6,37 @@ namespace ECBFinanceAPI.YieldCurves;
 
 public class YieldCurveQuotesLoader : YieldCurveObservablesLoader
 {
-    public async Task<IEnumerable<YieldCurveQuote>> GetYieldCurveqQuotesAsync(GovernemtBondNominalRating governemtBondNominalRating, YieldCurveQuoteType yieldCurveQuoteType, Maturity maturity) =>
-        await DownloadYieldCurveQuotesAsync(null, null, governemtBondNominalRating, yieldCurveQuoteType, maturity);
+    public async Task<IEnumerable<YieldCurveQuote>> GetYieldCurveQuotesAsync(GovernemtBondNominalRating governemtBondNominalRating, YieldCurveQuoteType yieldCurveQuoteType, Maturity maturity) =>
+        await DownloadYieldCurveQuotesAsync(governemtBondNominalRating, yieldCurveQuoteType, maturity, null, null);
 
-    public async Task<IEnumerable<YieldCurveQuote>> GetYieldCurveqQuotesAsync(DateTime startDate, DateTime endDate, GovernemtBondNominalRating governemtBondNominalRating, YieldCurveQuoteType yieldCurveQuoteType, Maturity maturity) =>
-        await DownloadYieldCurveQuotesAsync(startDate: startDate, endDate: endDate, governemtBondNominalRating: governemtBondNominalRating, yieldCurveQuoteType: yieldCurveQuoteType, maturity: maturity);
+    public async Task<IEnumerable<YieldCurveQuote>> GetYieldCurveQuotesAsync(GovernemtBondNominalRating governemtBondNominalRating, YieldCurveQuoteType yieldCurveQuoteType, Maturity maturity, DateTime startDate, DateTime endDate) =>
+        await DownloadYieldCurveQuotesAsync(governemtBondNominalRating, yieldCurveQuoteType, maturity, startDate, endDate);
 
-    private async Task<IEnumerable<YieldCurveQuote>> DownloadYieldCurveQuotesAsync(DateTime? startDate,
-        DateTime? endDate,
+    private async Task<IEnumerable<YieldCurveQuote>> DownloadYieldCurveQuotesAsync(
         GovernemtBondNominalRating governemtBondNominalRating,
         YieldCurveQuoteType yieldCurveQuoteType,
-        Maturity maturity)
+        Maturity maturity,
+        DateTime? startDate,
+        DateTime? endDate
+        )
     {
-        Uri uri = GetAPIEndpoint(
-            governemtBondNominalRating: governemtBondNominalRating,
-            yieldCurveQuoteType: yieldCurveQuoteType,
-            maturity: maturity,
-            startDate: startDate,
-            endDate: endDate);
-        return (await DownloadYieldCurveObservablesAsync(uri))
-            .Select(x => new YieldCurveQuote(x.Date, maturity, x.Value * UnityConversionFactors.PercentToDecimal));
+        YieldCurveObservablesEndpoint yieldCurveObservablesEndpoint = GetYieldCurveQuotesEndpoint(
+            governemtBondNominalRating,
+            yieldCurveQuoteType,
+            maturity,
+            startDate,
+            endDate);
+        return (await DownloadYieldCurveObservablesAsync(yieldCurveObservablesEndpoint))
+            .Select(x => new YieldCurveQuote(x.Date, yieldCurveQuoteType, maturity, x.Value * UnityConversionFactors.PercentToDecimal));
     }
 
-    private static Uri GetAPIEndpoint(
+    private static YieldCurveObservablesEndpoint GetYieldCurveQuotesEndpoint(
         GovernemtBondNominalRating governemtBondNominalRating,
         YieldCurveQuoteType yieldCurveQuoteType,
         Maturity maturity,
         DateTime? startDate = null,
         DateTime? endDate = null
-        ) => new YieldCurveQuotesUriBuilder()
-        .WithStartDate(startDate ?? DateTime.MinValue)
-        .WithEndDate(endDate ?? DateTime.MaxValue)
-        .WithGovernmentBondNominalRating(governemtBondNominalRating)
-        .WithYieldCurveQuote(yieldCurveQuoteType, maturity)
-        .Build();
+        ) => startDate is null && endDate is null ?
+            new YieldCurveObservablesEndpoint(governemtBondNominalRating, yieldCurveQuoteType, maturity) :
+            new YieldCurveObservablesEndpoint(governemtBondNominalRating, yieldCurveQuoteType, maturity, startDate!.Value, endDate!.Value);
 }

@@ -8,9 +8,9 @@ public class YieldCurveObservablesLoader
 {
     private protected readonly HttpClient _httpClient = new();
 
-    private protected async Task<IEnumerable<YieldCurveObservable>> DownloadYieldCurveObservablesAsync(Uri uri)
+    private protected async Task<IEnumerable<YieldCurveObservable>> DownloadYieldCurveObservablesAsync(YieldCurveObservablesEndpoint endPoint)
     {
-        HttpResponseMessage response = await _httpClient.GetAsync(uri);
+        HttpResponseMessage response = await _httpClient.GetAsync(endPoint);
         response.EnsureSuccessStatusCode();
 
         string content = await response.Content.ReadAsStringAsync();
