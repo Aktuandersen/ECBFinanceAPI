@@ -11,7 +11,8 @@ public class YieldCurveObservablesLoader
     private protected async Task<IEnumerable<YieldCurveObservable>> DownloadYieldCurveObservablesAsync(YieldCurveObservablesEndpoint endPoint)
     {
         HttpResponseMessage response = await _httpClient.GetAsync(endPoint);
-        response.EnsureSuccessStatusCode();
+        if (!response.IsSuccessStatusCode)
+            throw new HttpRequestException($"Failed to get yield curve observable from end point {endPoint}.");
 
         string content = await response.Content.ReadAsStringAsync();
 

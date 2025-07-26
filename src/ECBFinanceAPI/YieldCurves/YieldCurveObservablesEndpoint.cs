@@ -37,8 +37,8 @@ internal class YieldCurveObservablesEndpoint : Uri
     private static string GetUriString(GovernemtBondNominalRating governemtBondNominalRating, string financialMarketDataType, DateTime? startDate = null, DateTime? endDate = null)
     {
         string financialMarketInstrumentCode = GovernemtBondNominalRatingMappings.GovernemtBondNominalRatingToCode[governemtBondNominalRating];
-        startDate = startDate ?? DateTime.MinValue;
-        endDate = endDate ?? DateTime.MaxValue;
+        startDate ??= DateTime.MinValue;
+        endDate ??= DateTime.MaxValue;
 
         return $"{_baseUrl}/{_dataset}/{_frequencyCode}.{_referenceAreaCode}.{_currency}.{_financialMarketProviderCode}.{financialMarketInstrumentCode}.{_financialMarketProviderIdentifierCode}.{financialMarketDataType}?startPeriod={startDate:yyyy-MM-dd}&endPeriod={endDate:yyyy-MM-dd}&format=csvdata";
     }

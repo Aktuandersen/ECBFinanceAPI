@@ -9,12 +9,13 @@ public class YieldCurveQuotesLoaderTests
     [Fact]
     public async Task GetYieldCurveQuotesAsync_WithinDays_ReturnsCorrectQuotes()
     {
+        GovernemtBondNominalRating governemtBondNominalRating = GovernemtBondNominalRating.AllRatings;
         YieldCurveQuoteType yieldCurveQuoteType = YieldCurveQuoteType.SpotRate;
         IEnumerable<YieldCurveQuote> target = [
-            new YieldCurveQuote(new DateTime(2025, 07, 21), yieldCurveQuoteType, new Maturity(10), 0.031679857663),
-            new YieldCurveQuote(new DateTime(2025, 07, 22), yieldCurveQuoteType, new Maturity(10), 0.031511832005),
-            new YieldCurveQuote(new DateTime(2025, 07, 23), yieldCurveQuoteType, new Maturity(10), 0.031509712562000004),
-            new YieldCurveQuote(new DateTime(2025, 07, 24), yieldCurveQuoteType, new Maturity(10), 0.03237902676),
+            new YieldCurveQuote(new DateTime(2025, 07, 21), governemtBondNominalRating, yieldCurveQuoteType, new Maturity(10), 0.031679857663),
+            new YieldCurveQuote(new DateTime(2025, 07, 22), governemtBondNominalRating, yieldCurveQuoteType, new Maturity(10), 0.031511832005),
+            new YieldCurveQuote(new DateTime(2025, 07, 23), governemtBondNominalRating, yieldCurveQuoteType, new Maturity(10), 0.031509712562000004),
+            new YieldCurveQuote(new DateTime(2025, 07, 24), governemtBondNominalRating, yieldCurveQuoteType, new Maturity(10), 0.03237902676),
         ];
         YieldCurveQuotesLoader sut = new();
 

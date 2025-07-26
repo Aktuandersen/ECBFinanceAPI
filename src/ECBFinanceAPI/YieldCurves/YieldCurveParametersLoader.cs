@@ -3,7 +3,7 @@ using ECBFinanceAPI.YieldCurves.Models;
 
 namespace ECBFinanceAPI.YieldCurves;
 
-public class YieldCurveParametersLoader : YieldCurveObservablesLoader
+public class YieldCurveParametersLoader : YieldCurveObservablesLoader, IYieldCurveParametersLoader
 {
     public async Task<IEnumerable<NelsonSiegelSvenssonParameters>> GetYieldCurveNelsonSiegelSvenssonParametersAsync(GovernemtBondNominalRating governemtBondNominalRating) =>
         await DownloadYieldCurveNelsonSiegelSvenssonParametersAsync(governemtBondNominalRating, null, null);

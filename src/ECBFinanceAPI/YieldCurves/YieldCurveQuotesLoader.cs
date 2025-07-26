@@ -4,7 +4,7 @@ using ECBFinanceAPI.YieldCurves.Models;
 
 namespace ECBFinanceAPI.YieldCurves;
 
-public class YieldCurveQuotesLoader : YieldCurveObservablesLoader
+public class YieldCurveQuotesLoader : YieldCurveObservablesLoader, IYieldCurveQuotesLoader
 {
     public async Task<IEnumerable<YieldCurveQuote>> GetYieldCurveQuotesAsync(GovernemtBondNominalRating governemtBondNominalRating, YieldCurveQuoteType yieldCurveQuoteType, Maturity maturity) =>
         await DownloadYieldCurveQuotesAsync(governemtBondNominalRating, yieldCurveQuoteType, maturity, null, null);
@@ -27,7 +27,7 @@ public class YieldCurveQuotesLoader : YieldCurveObservablesLoader
             startDate,
             endDate);
         return (await DownloadYieldCurveObservablesAsync(yieldCurveObservablesEndpoint))
-            .Select(x => new YieldCurveQuote(x.Date, yieldCurveQuoteType, maturity, x.Value * UnityConversionFactors.PercentToDecimal));
+            .Select(x => new YieldCurveQuote(x.Date, governemtBondNominalRating, yieldCurveQuoteType, maturity, x.Value * UnityConversionFactors.PercentToDecimal));
     }
 
     private static YieldCurveObservablesEndpoint GetYieldCurveQuotesEndpoint(
