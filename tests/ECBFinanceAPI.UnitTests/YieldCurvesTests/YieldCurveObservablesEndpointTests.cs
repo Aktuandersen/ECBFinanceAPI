@@ -8,7 +8,7 @@ public class YieldCurveObservablesEndpointTests
 {
     [Theory]
     [InlineData(GovernmentBondNominalRating.AAA, QuoteType.SpotRate, 10, "https://data-api.ecb.europa.eu/service/data/YC/B.U2.EUR.4F.G_N_A.SV_C_YM.SR_10Y?detail=dataonly&startPeriod=2025-07-20&endPeriod=2025-07-25&format=csvdata")]
-    [InlineData(GovernmentBondNominalRating.AAAtoAA, QuoteType.ParRate, 5, "https://data-api.ecb.europa.eu/service/data/YC/B.U2.EUR.4F.G_N_W.SV_C_YM.PR_5Y?detail=dataonly&startPeriod=2025-07-20&endPeriod=2025-07-25&format=csvdata")]
+    [InlineData(GovernmentBondNominalRating.AAAtoAA, QuoteType.ParRate, 5, "https://data-api.ecb.europa.eu/service/data/YC/B.U2.EUR.4F.G_N_W.SV_C_YM.PY_5Y?detail=dataonly&startPeriod=2025-07-20&endPeriod=2025-07-25&format=csvdata")]
     [InlineData(GovernmentBondNominalRating.AllRatings, QuoteType.InstantaneousForwardRate, 15, "https://data-api.ecb.europa.eu/service/data/YC/B.U2.EUR.4F.G_N_C.SV_C_YM.IF_15Y?detail=dataonly&startPeriod=2025-07-20&endPeriod=2025-07-25&format=csvdata")]
     public void YieldCurveQuotesEndpoint_Constructor_CreatesCorrectEndpoint(GovernmentBondNominalRating rating, QuoteType quoteType, int maturityYears, string targetUrl)
     {

@@ -9,6 +9,9 @@ namespace ECBFinanceAPI.YieldCurves;
 /// </summary>
 public class YieldCurveQuotesLoader : YieldCurveObservablesLoader, IYieldCurveQuotesLoader
 {
+    public YieldCurveQuotesLoader() : base() { }
+    public YieldCurveQuotesLoader(HttpClient httpClient) : base(httpClient) { }
+
     /// <inheritdoc/>
     public async Task<YieldCurveQuoteTimeSeries> GetYieldCurveQuotesAsync(GovernmentBondNominalRating governmentBondNominalRating, QuoteType yieldCurveQuoteType, Maturity maturity) =>
         await DownloadYieldCurveQuotesAsync(governmentBondNominalRating, yieldCurveQuoteType, maturity, null, null);

@@ -8,6 +8,9 @@ namespace ECBFinanceAPI.YieldCurves;
 /// </summary>
 public class YieldCurveParametersLoader : YieldCurveObservablesLoader, IYieldCurveParametersLoader
 {
+    public YieldCurveParametersLoader() : base() { }
+    public YieldCurveParametersLoader(HttpClient httpClient) : base(httpClient) { }
+
     /// <inheritdoc/>
     public async Task<NelsonSiegelSvenssonParametersTimeSeries> GetYieldCurveNelsonSiegelSvenssonParametersAsync(GovernmentBondNominalRating governmentBondNominalRating) =>
         await DownloadYieldCurveNelsonSiegelSvenssonParametersAsync(governmentBondNominalRating, null, null);
@@ -18,6 +21,9 @@ public class YieldCurveParametersLoader : YieldCurveObservablesLoader, IYieldCur
 
     private async Task<NelsonSiegelSvenssonParametersTimeSeries> DownloadYieldCurveNelsonSiegelSvenssonParametersAsync(GovernmentBondNominalRating governmentBondNominalRating, DateTime? startDate, DateTime? endDate)
     {
+        if (governmentBondNominalRating is GovernmentBondNominalRating.AAAtoAA)
+            throw new NotSupportedException($"Nelson-Siegel-Svensson parameters are not supported for {governmentBondNominalRating} by ECB.");
+
         Task<IEnumerable<YieldCurveObservable>> beta0Task = DownloadYieldCurveObservablesAsync(GetYieldCurveObservablesEndpoint(governmentBondNominalRating, NelsonSiegelSvenssonParameter.Beta0, startDate, endDate));
         Task<IEnumerable<YieldCurveObservable>> beta1Task = DownloadYieldCurveObservablesAsync(GetYieldCurveObservablesEndpoint(governmentBondNominalRating, NelsonSiegelSvenssonParameter.Beta1, startDate, endDate));
         Task<IEnumerable<YieldCurveObservable>> beta2Task = DownloadYieldCurveObservablesAsync(GetYieldCurveObservablesEndpoint(governmentBondNominalRating, NelsonSiegelSvenssonParameter.Beta2, startDate, endDate));

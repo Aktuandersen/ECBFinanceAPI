@@ -13,6 +13,8 @@ public class YieldCurveLoader : IYieldCurveLoader
     private readonly IYieldCurveQuotesLoader _yieldCurveQuotesLoader;
     private readonly IYieldCurveParametersLoader _yieldCurveParametersLoader;
 
+    public YieldCurveLoader(HttpClient httpClient) : this(new YieldCurveQuotesLoader(httpClient), new YieldCurveParametersLoader(httpClient)) { }
+
     /// <summary>
     /// Initializes a new instance of the <see cref="YieldCurveLoader"/> class with the specified quote loader and parameters loader.
     /// </summary>
@@ -38,10 +40,10 @@ public class YieldCurveLoader : IYieldCurveLoader
     /// </remarks>
     public async Task<YieldCurve> GetYieldCurveAsync(
         GovernmentBondNominalRating governmentBondNominalRating,
-        QuoteType yieldCurveQuoteType,
+        QuoteType quoteType,
         DateTime date,
         MaturityFrequency maturityFrequency = MaturityFrequency.Monthly) =>
-        (await GetYieldCurvesAsync(governmentBondNominalRating, yieldCurveQuoteType, date, date, maturityFrequency)).Single();
+        (await GetYieldCurvesAsync(governmentBondNominalRating, quoteType, date, date, maturityFrequency)).Single();
 
     /// <inheritdoc/>
     /// <remarks>
@@ -51,18 +53,21 @@ public class YieldCurveLoader : IYieldCurveLoader
     /// </remarks>
     public async Task<IEnumerable<YieldCurve>> GetYieldCurvesAsync(
         GovernmentBondNominalRating governmentBondNominalRating,
-        QuoteType yieldCurveQuoteType,
+        QuoteType quoteType,
         DateTime startDate,
         DateTime endDate,
         MaturityFrequency maturityFrequency = MaturityFrequency.Monthly)
     {
-        IEnumerable<Maturity> maturities = GetMaturities(maturityFrequency);
+        if (governmentBondNominalRating is GovernmentBondNominalRating.AAAtoAA && (quoteType is not QuoteType.SpotRate || maturityFrequency is not MaturityFrequency.Monthly))
+            throw new NotSupportedException($"The combination of {governmentBondNominalRating}, {quoteType}, and {maturityFrequency} is not supported by ECB. For {governmentBondNominalRating}, only spot rate quotes with monthly maturities are supported.");
+
+        IEnumerable<Maturity> maturities = GetMaturities(maturityFrequency, governmentBondNominalRating);
 
         IEnumerable<Task<YieldCurveQuoteTimeSeries>> allYieldCurveQuotesTasks = maturities.Select(
-            async maturity => await _yieldCurveQuotesLoader.GetYieldCurveQuotesAsync(governmentBondNominalRating, yieldCurveQuoteType, maturity, startDate, endDate));
+            async maturity => await _yieldCurveQuotesLoader.GetYieldCurveQuotesAsync(governmentBondNominalRating, quoteType, maturity, startDate, endDate));
 
-        Task<NelsonSiegelSvenssonParametersTimeSeries> yieldCurveParametersTask =
-            _yieldCurveParametersLoader.GetYieldCurveNelsonSiegelSvenssonParametersAsync(governmentBondNominalRating, startDate, endDate);
+        NelsonSiegelSvenssonParametersTimeSeries? nelsonSiegelSvenssonParametersTimeSeries = governmentBondNominalRating is GovernmentBondNominalRating.AAAtoAA ? null :
+            await _yieldCurveParametersLoader.GetYieldCurveNelsonSiegelSvenssonParametersAsync(governmentBondNominalRating, startDate, endDate);
 
         IEnumerable<(DateTime Date, IEnumerable<YieldCurveQuote> Quotes)> dateYieldCurveQuotesPairs =
             (await Task.WhenAll(allYieldCurveQuotesTasks))
@@ -70,9 +75,18 @@ public class YieldCurveLoader : IYieldCurveLoader
             .GroupBy(x => x.Date)
             .Select(g => (g.Key, g.Select(x => x.Quote)));
 
-        NelsonSiegelSvenssonParametersTimeSeries yieldCurveParameters = await yieldCurveParametersTask;
+        if (nelsonSiegelSvenssonParametersTimeSeries is null)
+        {
+            return dateYieldCurveQuotesPairs.Select(
+                quotes => new YieldCurve(
+                    quotes.Quotes,
+                    null,
+                    governmentBondNominalRating,
+                    quoteType,
+                    quotes.Date));
+        }
 
-        return yieldCurveParameters.TimeSeriesPoints.GroupJoin(
+        return nelsonSiegelSvenssonParametersTimeSeries.TimeSeriesPoints.GroupJoin(
             dateYieldCurveQuotesPairs,
             parameters => parameters.Date,
             quotes => quotes.Date,
@@ -80,17 +94,17 @@ public class YieldCurveLoader : IYieldCurveLoader
                 quotes.Single().Quotes,
                 parameters.Observable,
                 governmentBondNominalRating,
-                yieldCurveQuoteType,
+                quoteType,
                 parameters.Date)
             );
     }
 
-    private static IEnumerable<Maturity> GetMaturities(MaturityFrequency maturityFrequency)
+    private static IEnumerable<Maturity> GetMaturities(MaturityFrequency maturityFrequency, GovernmentBondNominalRating governmentBondNominalRating)
     {
         return maturityFrequency switch
         {
             MaturityFrequency.Yearly => _availableMaturities.Where(m => m.Months == 0),
-            MaturityFrequency.Monthly => _availableMaturities,
+            MaturityFrequency.Monthly => governmentBondNominalRating is GovernmentBondNominalRating.AAAtoAA ? _availableMaturities.Where(m => m == new Maturity(0, 3) || m == new Maturity(0, 6)) : _availableMaturities,
             _ => throw new NotImplementedException($"Can't get maturities for maturity frequency {maturityFrequency}.")
         };
     }

@@ -25,7 +25,7 @@ public class YieldCurve : IEnumerable<YieldCurveQuote>
     /// <summary>
     /// Gets the parameters of the Nelson-Siegel-Svensson model fitted to this yield curve.
     /// </summary>
-    public NelsonSiegelSvenssonParameters NelsonSiegelSvenssonParameters { get; }
+    public NelsonSiegelSvenssonParameters? NelsonSiegelSvenssonParameters { get; }
 
     /// <summary>
     /// Gets the government bond nominal rating associated with this yield curve.
@@ -71,7 +71,7 @@ public class YieldCurve : IEnumerable<YieldCurveQuote>
     /// <param name="date">The date the curve is valid for.</param>
     public YieldCurve(
         IEnumerable<YieldCurveQuote> quotes,
-        NelsonSiegelSvenssonParameters nelsonSiegelSvenssonParameters,
+        NelsonSiegelSvenssonParameters? nelsonSiegelSvenssonParameters,
         GovernmentBondNominalRating governmentBondNominalRating,
         QuoteType quoteType,
         DateTime date)

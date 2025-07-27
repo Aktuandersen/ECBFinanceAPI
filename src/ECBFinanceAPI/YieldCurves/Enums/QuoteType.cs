@@ -14,7 +14,7 @@ internal static class QuoteTypeMappings
     public static readonly ImmutableDictionary<QuoteType, string> QuoteTypeToCode = new Dictionary<QuoteType, string>
     {
         {QuoteType.InstantaneousForwardRate, "IF"},
-        {QuoteType.ParRate, "PR"},
+        {QuoteType.ParRate, "PY"},
         {QuoteType.SpotRate, "SR"},
     }.ToImmutableDictionary();
 }

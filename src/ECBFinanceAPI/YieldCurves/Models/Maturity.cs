@@ -27,23 +27,23 @@ public record Maturity : IComparable<Maturity>
     /// Thrown when both <paramref name="years"/> and <paramref name="months"/> are zero,
     /// as a maturity of zero is not valid in a yield curve context.
     /// </exception>
-    public Maturity(int years, int months)
+    public Maturity(int Years, int Months)
     {
-        ArgumentOutOfRangeException.ThrowIfNegative(years, nameof(years));
-        ArgumentOutOfRangeException.ThrowIfNegative(months, nameof(months));
-        ArgumentOutOfRangeException.ThrowIfGreaterThan(months, 11, nameof(months));
-        if (years == 0 && months == 0)
+        ArgumentOutOfRangeException.ThrowIfNegative(Years, nameof(Years));
+        ArgumentOutOfRangeException.ThrowIfNegative(Months, nameof(Months));
+        ArgumentOutOfRangeException.ThrowIfGreaterThan(Months, 11, nameof(Months));
+        if (Years == 0 && Months == 0)
             throw new ArgumentException("Years and months can't both be 0.");
 
-        Years = years;
-        Months = months;
+        this.Years = Years;
+        this.Months = Months;
     }
 
     /// <summary>
     /// Initializes a new instance of the <see cref="Maturity"/> record with only a year component. The months component is set to zero.
     /// </summary>
     /// <param name="years">The number of years. Must be greater than zero.</param>
-    public Maturity(int years) : this(years, 0) { }
+    public Maturity(int Years) : this(Years, 0) { }
 
     /// <summary>
     /// Returns a string representation of the maturity, using the format "{n}Y{m}M".
