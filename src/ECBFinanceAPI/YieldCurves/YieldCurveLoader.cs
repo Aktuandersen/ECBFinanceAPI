@@ -97,20 +97,13 @@ public class YieldCurveLoader : IYieldCurveLoader
 
     private static IEnumerable<Maturity> GetAvailableMaturities()
     {
-        IEnumerable<Maturity> firstYearMaturities = new[]
-        {
-            new Maturity(0, 3),
-            new Maturity(0, 6),
-        };
+        IEnumerable<Maturity> firstYearMaturities = Enumerable.Range(3, 9).Select(month => new Maturity(0, month));
 
         IEnumerable<int> months = Enumerable.Range(0, 11);
         IEnumerable<int> years = Enumerable.Range(1, 29);
         IEnumerable<Maturity> middleYearMaturities = years.SelectMany(year => months.Select(month => new Maturity(year, month)));
 
-        IEnumerable<Maturity> lastYearMaturities = new[]
-        {
-            new Maturity(30)
-        };
+        IEnumerable<Maturity> lastYearMaturities = [new Maturity(30)];
 
         return firstYearMaturities.Concat(middleYearMaturities).Concat(lastYearMaturities);
     }
