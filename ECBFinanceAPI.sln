@@ -9,7 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02EA681E-C7D
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{3F62ACBE-46C1-4171-A3A0-2302D1E9173F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECBFinanceAPI.UnitTests", "tests\ECBFinanceAPITests\ECBFinanceAPI.UnitTests.csproj", "{86E5DB12-A223-455F-96B0-86BD5202C6A5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECBFinanceAPI.UnitTests", "tests\ECBFinanceAPI.UnitTests\ECBFinanceAPI.UnitTests.csproj", "{86E5DB12-A223-455F-96B0-86BD5202C6A5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECBFinanceAPI.IntegrationTests", "tests\ECBFinanceAPI.IntegrationTests\ECBFinanceAPI.IntegrationTests.csproj", "{65953C77-F102-4DFC-8570-1C0545D0CFF8}"
 EndProject
