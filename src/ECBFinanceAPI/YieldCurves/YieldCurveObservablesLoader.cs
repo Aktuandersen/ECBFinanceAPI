@@ -4,6 +4,9 @@ using System.Globalization;
 
 namespace ECBFinanceAPI.YieldCurves;
 
+/// <summary>
+/// Provides functionality to load yield curve observables from a specified <see cref="YieldCurveObservablesEndpoint"/>.
+/// </summary>
 public class YieldCurveObservablesLoader
 {
     private protected readonly HttpClient _httpClient = new();

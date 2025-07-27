@@ -3,6 +3,9 @@ using ECBFinanceAPI.YieldCurves.Models;
 
 namespace ECBFinanceAPI.YieldCurves;
 
+/// <summary>
+/// Loads yield curves by retrieving yield curve quotes and parameters, and constructing <see cref="YieldCurve"/> instances.
+/// </summary>
 public class YieldCurveLoader : IYieldCurveLoader
 {
     private static readonly IEnumerable<Maturity> _availableMaturities = GetAvailableMaturities();
@@ -10,32 +13,75 @@ public class YieldCurveLoader : IYieldCurveLoader
     private readonly IYieldCurveQuotesLoader _yieldCurveQuotesLoader;
     private readonly IYieldCurveParametersLoader _yieldCurveParametersLoader;
 
+    /// <summary>
+    /// Initializes a new instance of the <see cref="YieldCurveLoader"/> class with the specified quote loader and parameters loader.
+    /// </summary>
+    /// <param name="yieldCurveQuotesLoader">The loader responsible for retrieving yield curve quotes.</param>
+    /// <param name="yieldCurveParametersLoader">The loader responsible for retrieving Nelson-Siegel-Svensson parameters.</param>
     public YieldCurveLoader(IYieldCurveQuotesLoader yieldCurveQuotesLoader, IYieldCurveParametersLoader yieldCurveParametersLoader)
     {
         _yieldCurveQuotesLoader = yieldCurveQuotesLoader;
         _yieldCurveParametersLoader = yieldCurveParametersLoader;
     }
 
+    /// <summary>
+    /// Initializes a new instance of the <see cref="YieldCurveLoader"/> class with default implementations of the quote and parameters loaders, 
+    /// which are <see cref="YieldCurveQuotesLoader"/> and <see cref="YieldCurveParametersLoader"/> respectively.
+    /// </summary>
     public YieldCurveLoader() : this(new YieldCurveQuotesLoader(), new YieldCurveParametersLoader()) { }
 
-    public async Task<YieldCurve> GetYieldCurveAsync(GovernemtBondNominalRating governemtBondNominalRating, YieldCurveQuoteType yieldCurveQuoteType, DateTime date, MaturityFrequency maturityFrequency = MaturityFrequency.Monthly) =>
-        (await GetYieldCurvesAsync(governemtBondNominalRating, yieldCurveQuoteType, date, date, maturityFrequency)).Single();
+    /// <inheritdoc/>
+    /// <remarks>
+    /// If you do not require monthly maturities, consider using <see cref="MaturityFrequency.Yearly"/>
+    /// as the <paramref name="maturityFrequency"/> parameter to improve performance.
+    /// Yearly frequency reduces the number of maturities processed, which will speed up data loading.
+    /// </remarks>
+    public async Task<YieldCurve> GetYieldCurveAsync(
+        GovernmentBondNominalRating governmentBondNominalRating,
+        QuoteType yieldCurveQuoteType,
+        DateTime date,
+        MaturityFrequency maturityFrequency = MaturityFrequency.Monthly) =>
+        (await GetYieldCurvesAsync(governmentBondNominalRating, yieldCurveQuoteType, date, date, maturityFrequency)).Single();
 
-    public async Task<IEnumerable<YieldCurve>> GetYieldCurvesAsync(GovernemtBondNominalRating governemtBondNominalRating, YieldCurveQuoteType yieldCurveQuoteType, DateTime startDate, DateTime endDate, MaturityFrequency maturityFrequency = MaturityFrequency.Monthly)
+    /// <inheritdoc/>
+    /// <remarks>
+    /// If you do not require monthly maturities, consider using <see cref="MaturityFrequency.Yearly"/>
+    /// as the <paramref name="maturityFrequency"/> parameter to improve performance.
+    /// Yearly frequency reduces the number of maturities processed, which will speed up data loading.
+    /// </remarks>
+    public async Task<IEnumerable<YieldCurve>> GetYieldCurvesAsync(
+        GovernmentBondNominalRating governmentBondNominalRating,
+        QuoteType yieldCurveQuoteType,
+        DateTime startDate,
+        DateTime endDate,
+        MaturityFrequency maturityFrequency = MaturityFrequency.Monthly)
     {
         IEnumerable<Maturity> maturities = GetMaturities(maturityFrequency);
 
-        IEnumerable<Task<IEnumerable<YieldCurveQuote>>> allYieldCurveQuotesTasks = maturities.Select(async maturity => await _yieldCurveQuotesLoader.GetYieldCurveQuotesAsync(governemtBondNominalRating, yieldCurveQuoteType, maturity, startDate, endDate));
-        Task<IEnumerable<NelsonSiegelSvenssonParameters>> yieldCurveParametersTask = _yieldCurveParametersLoader.GetYieldCurveNelsonSiegelSvenssonParametersAsync(governemtBondNominalRating, startDate, endDate);
+        IEnumerable<Task<YieldCurveQuoteTimeSeries>> allYieldCurveQuotesTasks = maturities.Select(
+            async maturity => await _yieldCurveQuotesLoader.GetYieldCurveQuotesAsync(governmentBondNominalRating, yieldCurveQuoteType, maturity, startDate, endDate));
 
-        IEnumerable<YieldCurveQuote> allYieldCurveQuotes = (await Task.WhenAll(allYieldCurveQuotesTasks)).SelectMany(q => q);
-        IEnumerable<NelsonSiegelSvenssonParameters> yieldCurveParameters = await yieldCurveParametersTask;
+        Task<NelsonSiegelSvenssonParametersTimeSeries> yieldCurveParametersTask =
+            _yieldCurveParametersLoader.GetYieldCurveNelsonSiegelSvenssonParametersAsync(governmentBondNominalRating, startDate, endDate);
 
-        return yieldCurveParameters.GroupJoin(
-            allYieldCurveQuotes,
+        IEnumerable<(DateTime Date, IEnumerable<YieldCurveQuote> Quotes)> dateYieldCurveQuotesPairs =
+            (await Task.WhenAll(allYieldCurveQuotesTasks))
+            .SelectMany(x => x.TimeSeriesPoints.Select(y => (y.Date, Quote: new YieldCurveQuote(x.Maturity, y.Observable))))
+            .GroupBy(x => x.Date)
+            .Select(g => (g.Key, g.Select(x => x.Quote)));
+
+        NelsonSiegelSvenssonParametersTimeSeries yieldCurveParameters = await yieldCurveParametersTask;
+
+        return yieldCurveParameters.TimeSeriesPoints.GroupJoin(
+            dateYieldCurveQuotesPairs,
             parameters => parameters.Date,
             quotes => quotes.Date,
-            (parameters, quotes) => new YieldCurve(quotes, parameters, parameters.Date)
+            (parameters, quotes) => new YieldCurve(
+                quotes.Single().Quotes,
+                parameters.Observable,
+                governmentBondNominalRating,
+                yieldCurveQuoteType,
+                parameters.Date)
             );
     }
 
@@ -51,17 +97,22 @@ public class YieldCurveLoader : IYieldCurveLoader
 
     private static IEnumerable<Maturity> GetAvailableMaturities()
     {
-        IEnumerable<Maturity> firstYearMaturities = [
+        IEnumerable<Maturity> firstYearMaturities = new[]
+        {
             new Maturity(0, 3),
             new Maturity(0, 6),
-        ];
+        };
 
         IEnumerable<int> months = Enumerable.Range(0, 11);
         IEnumerable<int> years = Enumerable.Range(1, 29);
         IEnumerable<Maturity> middleYearMaturities = years.SelectMany(year => months.Select(month => new Maturity(year, month)));
 
-        IEnumerable<Maturity> lastYearMaturities = [new Maturity(30)];
+        IEnumerable<Maturity> lastYearMaturities = new[]
+        {
+            new Maturity(30)
+        };
 
-        return [.. firstYearMaturities, .. middleYearMaturities, .. lastYearMaturities];
+        return firstYearMaturities.Concat(middleYearMaturities).Concat(lastYearMaturities);
     }
 }
+

@@ -54,9 +54,5 @@ public record Maturity : IComparable<Maturity>
 
     private int ToMonths() => Years * 12 + Months;
 
-    public int CompareTo(Maturity? other)
-    {
-        if (other is null) return 1;
-        return ToMonths().CompareTo(other.ToMonths());
-    }
+    public int CompareTo(Maturity? other) => other is null ? 1 : ToMonths().CompareTo(other.ToMonths());
 }

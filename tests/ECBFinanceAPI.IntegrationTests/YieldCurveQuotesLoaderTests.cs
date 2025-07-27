@@ -9,18 +9,18 @@ public class YieldCurveQuotesLoaderTests
     [Fact]
     public async Task GetYieldCurveQuotesAsync_WithinDays_ReturnsCorrectQuotes()
     {
-        GovernemtBondNominalRating governemtBondNominalRating = GovernemtBondNominalRating.AllRatings;
-        YieldCurveQuoteType yieldCurveQuoteType = YieldCurveQuoteType.SpotRate;
-        IEnumerable<YieldCurveQuote> target = [
-            new YieldCurveQuote(new DateTime(2025, 07, 21), governemtBondNominalRating, yieldCurveQuoteType, new Maturity(10), 0.031679857663),
-            new YieldCurveQuote(new DateTime(2025, 07, 22), governemtBondNominalRating, yieldCurveQuoteType, new Maturity(10), 0.031511832005),
-            new YieldCurveQuote(new DateTime(2025, 07, 23), governemtBondNominalRating, yieldCurveQuoteType, new Maturity(10), 0.031509712562000004),
-            new YieldCurveQuote(new DateTime(2025, 07, 24), governemtBondNominalRating, yieldCurveQuoteType, new Maturity(10), 0.03237902676),
+        GovernmentBondNominalRating governmentBondNominalRating = GovernmentBondNominalRating.AllRatings;
+        QuoteType yieldCurveQuoteType = QuoteType.SpotRate;
+        IEnumerable<TimeSeriesPoint<double>> target = [
+            new TimeSeriesPoint<double>(new DateTime(2025, 7, 21), 0.031679857663),
+            new TimeSeriesPoint<double>(new DateTime(2025, 7, 22), 0.031511832005),
+            new TimeSeriesPoint<double>(new DateTime(2025, 7, 23), 0.031509712562000004),
+            new TimeSeriesPoint<double>(new DateTime(2025, 7, 24), 0.03237902676),
         ];
         YieldCurveQuotesLoader sut = new();
 
-        IEnumerable<YieldCurveQuote> result = await sut.GetYieldCurveQuotesAsync(GovernemtBondNominalRating.AllRatings, yieldCurveQuoteType, new Maturity(10), new DateTime(2025, 07, 20), new DateTime(2025, 07, 25));
+        YieldCurveQuoteTimeSeries result = await sut.GetYieldCurveQuotesAsync(governmentBondNominalRating, yieldCurveQuoteType, new Maturity(10), new DateTime(2025, 07, 20), new DateTime(2025, 07, 25));
 
-        Assert.Equal(target, result);
+        Assert.Equal(target, result.TimeSeriesPoints);
     }
 }
