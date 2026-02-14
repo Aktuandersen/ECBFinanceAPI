@@ -1,4 +1,4 @@
-using Utilities;
+using ECBFinanceAPI.Utilities;
 
 namespace ECBFinanceAPI.UnitTests.UtilitiesTests;
 

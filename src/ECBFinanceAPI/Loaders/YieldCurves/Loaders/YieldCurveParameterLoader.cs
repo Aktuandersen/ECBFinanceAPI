@@ -4,17 +4,29 @@ using ECBFinanceAPI.Loaders.YieldCurves.Models;
 
 namespace ECBFinanceAPI.Loaders.YieldCurves.Loaders;
 
+/// <summary>
+/// Loads Nelson–Siegel–Svensson (NSS) parameters for government bond yield curves.
+/// </summary>
 public class YieldCurveParameterLoader : Loader, IYieldCurveParameterLoader
 {
     private static readonly HashSet<GovernmentBondNominalRating> _ratingsWithParameters = [GovernmentBondNominalRating.AAA, GovernmentBondNominalRating.AllRatings];
 
+    /// <summary>
+    /// Initializes a new instance of <see cref="YieldCurveParameterLoader"/> using the default HTTP client behavior.
+    /// </summary>
     public YieldCurveParameterLoader() : base() { }
 
+    /// <summary>
+    /// Initializes a new instance of <see cref="YieldCurveParameterLoader"/> with the provided <see cref="HttpClient"/>.
+    /// </summary>
+    /// <param name="httpClient">An <see cref="HttpClient"/> used to perform download requests.</param>
     public YieldCurveParameterLoader(HttpClient httpClient) : base(httpClient) { }
 
+    /// <inheritdoc/>
     public async Task<IEnumerable<NelsonSiegelSvenssonParameters>> GetYieldCurveNelsonSiegelSvenssonParametersAsync(GovernmentBondNominalRating governmentBondNominalRating) =>
         await DownloadYieldCurveNelsonSiegelSvenssonParametersAsync(governmentBondNominalRating, null, null);
 
+    /// <inheritdoc/>
     public async Task<IEnumerable<NelsonSiegelSvenssonParameters>> GetYieldCurveNelsonSiegelSvenssonParametersAsync(GovernmentBondNominalRating governmentBondNominalRating, DateTime startDate, DateTime endDate) =>
         await DownloadYieldCurveNelsonSiegelSvenssonParametersAsync(governmentBondNominalRating, startDate, endDate);
 

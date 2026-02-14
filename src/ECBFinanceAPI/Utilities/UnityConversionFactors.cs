@@ -1,6 +1,6 @@
-﻿namespace Utilities;
+﻿namespace ECBFinanceAPI.Utilities;
 
-public static class UnityConversionFactors
+internal static class UnityConversionFactors
 {
     public const double PercentToDecimal = 0.01;
 }

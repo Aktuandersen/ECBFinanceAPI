@@ -17,13 +17,9 @@ public interface IYieldCurveLoader
     /// <param name="governmentBondNominalRating">The government bond nominal rating for which to retrieve the yield curve.</param>
     /// <param name="quoteType">The type of yield curve quote.</param>
     /// <param name="date">The date for which to retrieve the yield curve.</param>
-    /// <param name="maturityFrequency">The frequency of maturities on the yield curve. Defaults to <see cref="MaturityFrequency.Monthly"/>.</param>
+    /// <param name="maturityFrequency">The frequency of maturities on the yield curve.</param>
     /// <returns>A task that represents the asynchronous operation. The task result contains the retrieved <see cref="YieldCurve"/>.</returns>
-    Task<YieldCurve> GetYieldCurveAsync(
-        GovernmentBondNominalRating governmentBondNominalRating,
-        QuoteType quoteType,
-        DateTime date,
-        MaturityFrequency maturityFrequency = MaturityFrequency.Monthly);
+    Task<YieldCurve> GetYieldCurveAsync(GovernmentBondNominalRating governmentBondNominalRating, QuoteType quoteType, DateTime date, MaturityFrequency maturityFrequency);
 
     /// <summary>
     /// Asynchronously gets a collection of yield curves for a specified government bond nominal rating,
@@ -33,13 +29,8 @@ public interface IYieldCurveLoader
     /// <param name="quoteType">The type of yield curve quote.</param>
     /// <param name="startDate">The start date of the date range for which to retrieve yield curves.</param>
     /// <param name="endDate">The end date of the date range for which to retrieve yield curves.</param>
-    /// <param name="maturityFrequency">The frequency of maturities on the yield curves. Defaults to <see cref="MaturityFrequency.Monthly"/>.</param>
+    /// <param name="maturityFrequency">The frequency of maturities on the yield curves.</param>
     /// <returns>A task that represents the asynchronous operation. The task result contains a collection of retrieved <see cref="YieldCurve"/> instances.</returns>
-    Task<IEnumerable<YieldCurve>> GetYieldCurvesAsync(
-        GovernmentBondNominalRating governmentBondNominalRating,
-        QuoteType quoteType,
-        DateTime startDate,
-        DateTime endDate,
-        MaturityFrequency maturityFrequency = MaturityFrequency.Monthly);
+    Task<IEnumerable<YieldCurve>> GetYieldCurvesAsync(GovernmentBondNominalRating governmentBondNominalRating, QuoteType quoteType, DateTime startDate, DateTime endDate, MaturityFrequency maturityFrequency);
 }
 

@@ -2,10 +2,24 @@
 
 namespace ECBFinanceAPI.Loaders.YieldCurves.Enums;
 
+/// <summary>
+/// Represents the nominal credit rating buckets used by the ECB when publishing government bond yield data.
+/// </summary>
 public enum GovernmentBondNominalRating
 {
+    /// <summary>
+    /// AAA-rated government bonds.
+    /// </summary>
     AAA,
+
+    /// <summary>
+    /// All available ratings.
+    /// </summary>
     AllRatings,
+
+    /// <summary>
+    /// AAA to AA rating bucket.
+    /// </summary>
     AAAtoAA
 }
 
