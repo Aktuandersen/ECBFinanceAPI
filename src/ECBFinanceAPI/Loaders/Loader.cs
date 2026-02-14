@@ -20,7 +20,8 @@ public abstract class Loader
 
     private protected async Task<IEnumerable<ECBData>> DownloadAsync(Endpoint endPoint)
     {
-        HttpResponseMessage response = await _httpClient.GetAsync(endPoint.Uri);
+        Uri uri = endPoint.Uri;
+        HttpResponseMessage response = await _httpClient.GetAsync(uri);
 
         if (response.StatusCode is HttpStatusCode.TooManyRequests)
         {
@@ -29,7 +30,7 @@ public abstract class Loader
         }
 
         if (!response.IsSuccessStatusCode)
-            throw new HttpRequestException($"Failed to get yield curve observable from end point {endPoint}.\nHttpStatusCode: {response.StatusCode}.");
+            throw new HttpRequestException($"Failed to get ECB data from endpoint {uri}.\nHttpStatusCode: {response.StatusCode}.");
 
         Stream stream = await response.Content.ReadAsStreamAsync();
 
