@@ -14,7 +14,7 @@ public class YieldCurveEndpointTests
     {
         YieldCurveEndpoint sut = new(rating, quoteType, new Maturity(maturityYears), new DateTime(2025, 07, 20), new DateTime(2025, 07, 25));
 
-        Assert.Equal(targetUrl, sut.ToString());
+        Assert.Equal(targetUrl, sut.Uri.ToString());
     }
 
     [Theory]
@@ -28,6 +28,6 @@ public class YieldCurveEndpointTests
     {
         YieldCurveEndpoint sut = new(rating, parameter, new DateTime(2025, 07, 20), new DateTime(2025, 07, 25));
 
-        Assert.Equal(targetUrl, sut.ToString());
+        Assert.Equal(targetUrl, sut.Uri.ToString());
     }
 }
