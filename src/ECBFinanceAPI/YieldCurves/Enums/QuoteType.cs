@@ -9,12 +9,14 @@ public enum QuoteType
     SpotRate,
 }
 
-internal static class QuoteTypeMappings
+internal static class QuoteTypeExtensions
 {
-    public static readonly ImmutableDictionary<QuoteType, string> QuoteTypeToCode = new Dictionary<QuoteType, string>
+    private static readonly ImmutableDictionary<QuoteType, string> _quoteTypeToCode = new Dictionary<QuoteType, string>
     {
         {QuoteType.InstantaneousForwardRate, "IF"},
         {QuoteType.ParRate, "PY"},
         {QuoteType.SpotRate, "SR"},
     }.ToImmutableDictionary();
+
+    public static string ToECBCode(this QuoteType quoteType) => _quoteTypeToCode[quoteType];
 }

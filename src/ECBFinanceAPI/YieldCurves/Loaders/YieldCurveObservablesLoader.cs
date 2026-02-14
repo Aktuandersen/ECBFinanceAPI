@@ -3,12 +3,9 @@ using ECBFinanceAPI.YieldCurves.Models;
 using System.Globalization;
 using System.Net;
 
-namespace ECBFinanceAPI.YieldCurves;
+namespace ECBFinanceAPI.YieldCurves.Loaders;
 
-/// <summary>
-/// Provides functionality to load yield curve observables from a specified <see cref="YieldCurveObservablesEndpoint"/>.
-/// </summary>
-public class YieldCurveObservablesLoader
+public abstract class YieldCurveObservablesLoader
 {
     private static readonly int _thirtySeconds = 30_000;
 

@@ -6,4 +6,4 @@
 /// </summary>
 /// <param name="Maturity">The <see cref="Models.Maturity"/> associated with this yield quote.</param>
 /// <param name="Yield">The yield value for the specified maturity.</param>
-public record YieldCurveQuote(Maturity Maturity, double Yield);
+public record YieldCurveQuote(DateTime Date, Maturity Maturity, double Yield);

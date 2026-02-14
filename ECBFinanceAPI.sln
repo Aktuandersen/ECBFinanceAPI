@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.13.35919.96 d17.13
+# Visual Studio Version 18
+VisualStudioVersion = 18.3.11312.210
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECBFinanceAPI", "src\ECBFinanceAPI\ECBFinanceAPI.csproj", "{FB0343F4-A7A6-4ED2-8F9D-F9161526C5FE}"
 EndProject
@@ -13,10 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECBFinanceAPI.UnitTests", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECBFinanceAPI.IntegrationTests", "tests\ECBFinanceAPI.IntegrationTests\ECBFinanceAPI.IntegrationTests.csproj", "{65953C77-F102-4DFC-8570-1C0545D0CFF8}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F2ECFB2B-C7B3-47B1-89E9-249327FB2482}"
-	ProjectSection(SolutionItems) = preProject
-		.editorconfig = .editorconfig
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilities", "src\Utilities\Utilities.csproj", "{7B7ECBFC-BE62-4745-94C3-099288DB8FAB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,6 +33,10 @@ Global
 		{65953C77-F102-4DFC-8570-1C0545D0CFF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65953C77-F102-4DFC-8570-1C0545D0CFF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{65953C77-F102-4DFC-8570-1C0545D0CFF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B7ECBFC-BE62-4745-94C3-099288DB8FAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B7ECBFC-BE62-4745-94C3-099288DB8FAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B7ECBFC-BE62-4745-94C3-099288DB8FAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B7ECBFC-BE62-4745-94C3-099288DB8FAB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,6 +45,7 @@ Global
 		{FB0343F4-A7A6-4ED2-8F9D-F9161526C5FE} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{86E5DB12-A223-455F-96B0-86BD5202C6A5} = {3F62ACBE-46C1-4171-A3A0-2302D1E9173F}
 		{65953C77-F102-4DFC-8570-1C0545D0CFF8} = {3F62ACBE-46C1-4171-A3A0-2302D1E9173F}
+		{7B7ECBFC-BE62-4745-94C3-099288DB8FAB} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {13B57907-8C2F-4971-87BD-AF2880655435}

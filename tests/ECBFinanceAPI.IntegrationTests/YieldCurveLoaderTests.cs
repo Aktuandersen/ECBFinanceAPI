@@ -1,6 +1,6 @@
 using CsvHelper;
-using ECBFinanceAPI.YieldCurves;
 using ECBFinanceAPI.YieldCurves.Enums;
+using ECBFinanceAPI.YieldCurves.Loaders;
 using ECBFinanceAPI.YieldCurves.Models;
 using System.Globalization;
 

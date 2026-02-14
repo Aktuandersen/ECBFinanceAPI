@@ -1,8 +1,8 @@
-﻿using ECBFinanceAPI.Utilities;
-using ECBFinanceAPI.YieldCurves.Enums;
+﻿using ECBFinanceAPI.YieldCurves.Enums;
 using ECBFinanceAPI.YieldCurves.Models;
+using Utilities;
 
-namespace ECBFinanceAPI.YieldCurves;
+namespace ECBFinanceAPI.YieldCurves.Loaders;
 
 /// <summary>
 /// Loads yield curve quotes as a <see cref="YieldCurveQuoteTimeSeries"/>.
@@ -12,15 +12,13 @@ public class YieldCurveQuotesLoader : YieldCurveObservablesLoader, IYieldCurveQu
     public YieldCurveQuotesLoader() : base() { }
     public YieldCurveQuotesLoader(HttpClient httpClient) : base(httpClient) { }
 
-    /// <inheritdoc/>
-    public async Task<YieldCurveQuoteTimeSeries> GetYieldCurveQuotesAsync(GovernmentBondNominalRating governmentBondNominalRating, QuoteType yieldCurveQuoteType, Maturity maturity) =>
+    public async Task<IEnumerable<YieldCurveQuote>> GetYieldCurveQuotesAsync(GovernmentBondNominalRating governmentBondNominalRating, QuoteType yieldCurveQuoteType, Maturity maturity) =>
         await DownloadYieldCurveQuotesAsync(governmentBondNominalRating, yieldCurveQuoteType, maturity, null, null);
 
-    /// <inheritdoc/>
-    public async Task<YieldCurveQuoteTimeSeries> GetYieldCurveQuotesAsync(GovernmentBondNominalRating governmentBondNominalRating, QuoteType quoteType, Maturity maturity, DateTime startDate, DateTime endDate) =>
+    public async Task<IEnumerable<YieldCurveQuote>> GetYieldCurveQuotesAsync(GovernmentBondNominalRating governmentBondNominalRating, QuoteType quoteType, Maturity maturity, DateTime startDate, DateTime endDate) =>
         await DownloadYieldCurveQuotesAsync(governmentBondNominalRating, quoteType, maturity, startDate, endDate);
 
-    private async Task<YieldCurveQuoteTimeSeries> DownloadYieldCurveQuotesAsync(
+    private async Task<IEnumerable<YieldCurveQuote>> DownloadYieldCurveQuotesAsync(
         GovernmentBondNominalRating governmentBondNominalRating,
         QuoteType quoteType,
         Maturity maturity,
@@ -35,9 +33,8 @@ public class YieldCurveQuotesLoader : YieldCurveObservablesLoader, IYieldCurveQu
             startDate,
             endDate);
 
-        IEnumerable<TimeSeriesPoint<double>> timeSeriesPoints = (await DownloadYieldCurveObservablesAsync(yieldCurveObservablesEndpoint)).Select(x => new TimeSeriesPoint<double>(x.Date, x.Value * UnityConversionFactors.PercentToDecimal));
-
-        return new YieldCurveQuoteTimeSeries(timeSeriesPoints, governmentBondNominalRating, maturity, quoteType);
+        return (await DownloadYieldCurveObservablesAsync(yieldCurveObservablesEndpoint))
+            .Select(x => new YieldCurveQuote(x.Date, maturity, x.Value * UnityConversionFactors.PercentToDecimal));
     }
 
     private static YieldCurveObservablesEndpoint GetYieldCurveQuotesEndpoint(

@@ -2,7 +2,7 @@
 
 namespace ECBFinanceAPI.YieldCurves.Enums;
 
-public enum NelsonSiegelSvenssonParameter
+internal enum NelsonSiegelSvenssonParameter
 {
     Beta0,
     Beta1,
@@ -12,9 +12,9 @@ public enum NelsonSiegelSvenssonParameter
     Tau2,
 }
 
-internal static class NelsonSiegelSvenssonParameterMappings
+internal static class NelsonSiegelSvenssonParameterExtensions
 {
-    public static readonly ImmutableDictionary<NelsonSiegelSvenssonParameter, string> NelsonSiegelSvenssonParameterToCode = new Dictionary<NelsonSiegelSvenssonParameter, string>
+    private static readonly ImmutableDictionary<NelsonSiegelSvenssonParameter, string> _nelsonSiegelSvenssonParameterToCode = new Dictionary<NelsonSiegelSvenssonParameter, string>
     {
         {NelsonSiegelSvenssonParameter.Beta0, "BETA0"},
         {NelsonSiegelSvenssonParameter.Beta1, "BETA1"},
@@ -23,4 +23,6 @@ internal static class NelsonSiegelSvenssonParameterMappings
         {NelsonSiegelSvenssonParameter.Tau1, "TAU1"},
         {NelsonSiegelSvenssonParameter.Tau2, "TAU2"},
     }.ToImmutableDictionary();
+
+    public static string ToECBCode(this NelsonSiegelSvenssonParameter nelsonSiegelSvenssonParameter) => _nelsonSiegelSvenssonParameterToCode[nelsonSiegelSvenssonParameter];
 }

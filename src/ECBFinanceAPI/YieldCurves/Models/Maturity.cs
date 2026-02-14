@@ -52,7 +52,7 @@ public record Maturity : IComparable<Maturity>
     /// <returns>A string describing the maturity in years and months.</returns>
     public override string ToString() => $"{(Years == 0 ? string.Empty : $"{Years}Y")}{(Months == 0 ? string.Empty : $"{Months}M")}";
 
-    private int ToMonths() => Years * 12 + Months;
-
     public int CompareTo(Maturity? other) => other is null ? 1 : ToMonths().CompareTo(other.ToMonths());
+
+    private int ToMonths() => Years * 12 + Months;
 }

@@ -1,7 +1,7 @@
 ﻿using ECBFinanceAPI.YieldCurves.Enums;
 using ECBFinanceAPI.YieldCurves.Models;
 
-namespace ECBFinanceAPI.YieldCurves;
+namespace ECBFinanceAPI.YieldCurves.Loaders;
 
 /// <summary>
 /// Defines methods to asynchronously load Nelson-Siegel-Svensson (NSS) yield curve parameters over time for a specified <see cref="GovernmentBondNominalRating"/>.
@@ -16,7 +16,7 @@ public interface IYieldCurveParametersLoader
     /// <returns>
     /// A <see cref="NelsonSiegelSvenssonParametersTimeSeries"/> containing the historical Nelson-Siegel-Svensson parameters.
     /// </returns>
-    public Task<NelsonSiegelSvenssonParametersTimeSeries> GetYieldCurveNelsonSiegelSvenssonParametersAsync(
+    public Task<IEnumerable<NelsonSiegelSvenssonParameters>> GetYieldCurveNelsonSiegelSvenssonParametersAsync(
         GovernmentBondNominalRating governmentBondNominalRating);
 
     /// <summary>
@@ -29,7 +29,7 @@ public interface IYieldCurveParametersLoader
     /// <returns>
     /// A <see cref="NelsonSiegelSvenssonParametersTimeSeries"/> containing the Nelson-Siegel-Svensson parameters within the specified date range.
     /// </returns>
-    public Task<NelsonSiegelSvenssonParametersTimeSeries> GetYieldCurveNelsonSiegelSvenssonParametersAsync(
+    public Task<IEnumerable<NelsonSiegelSvenssonParameters>> GetYieldCurveNelsonSiegelSvenssonParametersAsync(
         GovernmentBondNominalRating governmentBondNominalRating,
         DateTime startDate,
         DateTime endDate);

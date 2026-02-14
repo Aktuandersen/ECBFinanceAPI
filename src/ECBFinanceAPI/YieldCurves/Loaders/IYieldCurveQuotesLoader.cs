@@ -1,7 +1,7 @@
 ﻿using ECBFinanceAPI.YieldCurves.Enums;
 using ECBFinanceAPI.YieldCurves.Models;
 
-namespace ECBFinanceAPI.YieldCurves;
+namespace ECBFinanceAPI.YieldCurves.Loaders;
 
 /// <summary>
 /// Defines methods to asynchronously load yield curve quotes over time for a specified <see cref="GovernmentBondNominalRating"/>, <see cref="QuoteType"/>, and <see cref="Maturity"/>.
@@ -17,7 +17,8 @@ public interface IYieldCurveQuotesLoader
     /// <returns>
     /// A <see cref="YieldCurveQuoteTimeSeries"/> containing all available yield curve quotes for the specified parameters.
     /// </returns>
-    public Task<YieldCurveQuoteTimeSeries> GetYieldCurveQuotesAsync(GovernmentBondNominalRating governmentBondNominalRating, QuoteType quoteType, Maturity maturity);
+    public Task<IEnumerable<YieldCurveQuote>> GetYieldCurveQuotesAsync(GovernmentBondNominalRating governmentBondNominalRating, QuoteType quoteType, Maturity maturity);
+
     /// <summary>
     /// Retrieves a time series of yield curve quotes for the specified government bond rating, quote type, and maturity within a given date range.
     /// </summary>
@@ -29,5 +30,5 @@ public interface IYieldCurveQuotesLoader
     /// <returns>
     /// A <see cref="YieldCurveQuoteTimeSeries"/> containing yield curve quotes observed within the specified date range.
     /// </returns>
-    public Task<YieldCurveQuoteTimeSeries> GetYieldCurveQuotesAsync(GovernmentBondNominalRating governmentBondNominalRating, QuoteType quoteType, Maturity maturity, DateTime startDate, DateTime endDate);
+    public Task<IEnumerable<YieldCurveQuote>> GetYieldCurveQuotesAsync(GovernmentBondNominalRating governmentBondNominalRating, QuoteType quoteType, Maturity maturity, DateTime startDate, DateTime endDate);
 }

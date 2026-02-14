@@ -1,4 +1,6 @@
-﻿namespace ECBFinanceAPI.YieldCurves.Models;
+﻿using ECBFinanceAPI.YieldCurves.Enums;
+
+namespace ECBFinanceAPI.YieldCurves.Models;
 
 /// <summary>
 /// Represents the parameters of the Nelson-Siegel-Svensson (NSS) model, a widely used model for fitting and describing the yield curve.
@@ -10,4 +12,4 @@
 /// <para>• <b>Tau1</b> — Decay factor for Beta1 and Beta2, determines how quickly their effects diminish with maturity.</para>
 /// <para>• <b>Tau2</b> — Decay factor for Beta3, controls the influence of the second curvature term over time.</para>
 /// </summary>
-public record NelsonSiegelSvenssonParameters(double Beta0, double Beta1, double Beta2, double Beta3, double Tau1, double Tau2);
+public record NelsonSiegelSvenssonParameters(DateTime Date, GovernmentBondNominalRating GovernmentBondNominalRating, double Beta0, double Beta1, double Beta2, double Beta3, double Tau1, double Tau2);

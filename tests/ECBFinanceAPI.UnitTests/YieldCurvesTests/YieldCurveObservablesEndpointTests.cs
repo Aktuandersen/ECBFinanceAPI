@@ -1,5 +1,4 @@
-﻿using ECBFinanceAPI.YieldCurves;
-using ECBFinanceAPI.YieldCurves.Enums;
+﻿using ECBFinanceAPI.YieldCurves.Enums;
 using ECBFinanceAPI.YieldCurves.Models;
 
 namespace ECBFinanceAPI.UnitTests.YieldCurvesTests;
