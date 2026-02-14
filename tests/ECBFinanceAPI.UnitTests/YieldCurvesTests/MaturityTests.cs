@@ -1,4 +1,4 @@
-﻿using ECBFinanceAPI.YieldCurves.Models;
+﻿using ECBFinanceAPI.Loaders.YieldCurves.Models;
 
 namespace ECBFinanceAPI.UnitTests.YieldCurvesTests;
 

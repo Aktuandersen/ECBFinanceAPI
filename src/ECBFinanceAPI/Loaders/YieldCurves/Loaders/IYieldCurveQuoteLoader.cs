@@ -1,12 +1,12 @@
-﻿using ECBFinanceAPI.YieldCurves.Enums;
-using ECBFinanceAPI.YieldCurves.Models;
+﻿using ECBFinanceAPI.Loaders.YieldCurves.Enums;
+using ECBFinanceAPI.Loaders.YieldCurves.Models;
 
-namespace ECBFinanceAPI.YieldCurves.Loaders;
+namespace ECBFinanceAPI.Loaders.YieldCurves.Loaders;
 
 /// <summary>
 /// Defines methods to asynchronously load yield curve quotes over time for a specified <see cref="GovernmentBondNominalRating"/>, <see cref="QuoteType"/>, and <see cref="Maturity"/>.
 /// </summary>
-public interface IYieldCurveQuotesLoader
+public interface IYieldCurveQuoteLoader
 {
     /// <summary>
     /// Retrieves the full time series of yield curve quotes for the specified government bond rating, quote type, and maturity.

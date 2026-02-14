@@ -1,12 +1,12 @@
-﻿using ECBFinanceAPI.YieldCurves.Enums;
-using ECBFinanceAPI.YieldCurves.Models;
+﻿using ECBFinanceAPI.Loaders.YieldCurves.Enums;
+using ECBFinanceAPI.Loaders.YieldCurves.Models;
 
-namespace ECBFinanceAPI.YieldCurves.Loaders;
+namespace ECBFinanceAPI.Loaders.YieldCurves.Loaders;
 
 /// <summary>
 /// Defines methods to asynchronously load Nelson-Siegel-Svensson (NSS) yield curve parameters over time for a specified <see cref="GovernmentBondNominalRating"/>.
 /// </summary>
-public interface IYieldCurveParametersLoader
+public interface IYieldCurveParameterLoader
 {
     /// <summary>
     /// Loads the entire available time series of Nelson-Siegel-Svensson parameters

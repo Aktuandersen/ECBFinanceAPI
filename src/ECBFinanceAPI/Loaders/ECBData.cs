@@ -1,8 +1,8 @@
 ﻿using CsvHelper.Configuration.Attributes;
 
-namespace ECBFinanceAPI.YieldCurves.Models;
+namespace ECBFinanceAPI.Loaders;
 
-internal record YieldCurveObservable
+internal class ECBData
 {
     [Name("TIME_PERIOD")] public DateTime Date { get; init; }
     [Name("OBS_VALUE")] public double Value { get; init; }

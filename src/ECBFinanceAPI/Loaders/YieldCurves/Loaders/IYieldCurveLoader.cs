@@ -1,7 +1,7 @@
-﻿using ECBFinanceAPI.YieldCurves.Enums;
-using ECBFinanceAPI.YieldCurves.Models;
+﻿using ECBFinanceAPI.Loaders.YieldCurves.Enums;
+using ECBFinanceAPI.Loaders.YieldCurves.Models;
 
-namespace ECBFinanceAPI.YieldCurves.Loaders;
+namespace ECBFinanceAPI.Loaders.YieldCurves.Loaders;
 
 /// <summary>
 /// Defines methods to asynchronously load yield curve data.

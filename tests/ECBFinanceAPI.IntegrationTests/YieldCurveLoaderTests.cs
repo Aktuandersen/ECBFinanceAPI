@@ -1,15 +1,13 @@
 using CsvHelper;
-using ECBFinanceAPI.YieldCurves.Enums;
-using ECBFinanceAPI.YieldCurves.Loaders;
-using ECBFinanceAPI.YieldCurves.Models;
+using ECBFinanceAPI.Loaders.YieldCurves.Enums;
+using ECBFinanceAPI.Loaders.YieldCurves.Loaders;
+using ECBFinanceAPI.Loaders.YieldCurves.Models;
 using System.Globalization;
 
 namespace ECBFinanceAPI.IntegrationTests;
 
 public class YieldCurveLoaderTests
 {
-    private static readonly HttpClient _httpClient = new();
-
     [Theory]
     [InlineData(GovernmentBondNominalRating.AAA, QuoteType.ParRate, MaturityFrequency.Monthly)]
     [InlineData(GovernmentBondNominalRating.AAA, QuoteType.ParRate, MaturityFrequency.Yearly)]
@@ -27,16 +25,15 @@ public class YieldCurveLoaderTests
 
     public async Task GetYieldCurveAsync_ReturnsCorrectCurve(GovernmentBondNominalRating rating, QuoteType quoteType, MaturityFrequency maturityFrequency)
     {
+        // Arrange
         IEnumerable<YieldCurveQuote> targetQuotes = LoadTargetYieldCurveQuotes(rating, quoteType, maturityFrequency);
-        YieldCurveLoader sut = new(_httpClient);
 
-        YieldCurve result = await sut.GetYieldCurveAsync(
-            rating,
-            quoteType,
-            new DateTime(2025, 7, 24),
-            maturityFrequency
-        );
+        YieldCurveLoader sut = new();
 
+        // Act
+        YieldCurve result = await sut.GetYieldCurveAsync(rating, quoteType, new DateTime(2025, 7, 24), maturityFrequency);
+
+        // Assert
         Assert.Equal(targetQuotes, result.Quotes);
     }
 

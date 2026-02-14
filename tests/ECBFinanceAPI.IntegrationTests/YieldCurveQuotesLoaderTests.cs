@@ -1,6 +1,6 @@
-using ECBFinanceAPI.YieldCurves.Enums;
-using ECBFinanceAPI.YieldCurves.Loaders;
-using ECBFinanceAPI.YieldCurves.Models;
+using ECBFinanceAPI.Loaders.YieldCurves.Enums;
+using ECBFinanceAPI.Loaders.YieldCurves.Loaders;
+using ECBFinanceAPI.Loaders.YieldCurves.Models;
 
 namespace ECBFinanceAPI.IntegrationTests;
 
@@ -24,7 +24,7 @@ public class YieldCurveQuotesLoaderTests
             new YieldCurveQuote(new DateTime(2025, 07, 25), maturity, 0.032731336557),
         ];
 
-        YieldCurveQuotesLoader sut = new();
+        YieldCurveQuoteLoader sut = new();
 
         // Act
         IEnumerable<YieldCurveQuote> result = await sut.GetYieldCurveQuotesAsync(governmentBondNominalRating, yieldCurveQuoteType, maturity, startDate, endDate);

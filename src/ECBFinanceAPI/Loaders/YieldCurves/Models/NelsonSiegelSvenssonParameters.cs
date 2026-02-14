@@ -1,6 +1,6 @@
-﻿using ECBFinanceAPI.YieldCurves.Enums;
+﻿using ECBFinanceAPI.Loaders.YieldCurves.Enums;
 
-namespace ECBFinanceAPI.YieldCurves.Models;
+namespace ECBFinanceAPI.Loaders.YieldCurves.Models;
 
 /// <summary>
 /// Represents the parameters of the Nelson-Siegel-Svensson (NSS) model, a widely used model for fitting and describing the yield curve.

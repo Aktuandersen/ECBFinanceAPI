@@ -1,6 +1,6 @@
-using ECBFinanceAPI.YieldCurves.Enums;
-using ECBFinanceAPI.YieldCurves.Loaders;
-using ECBFinanceAPI.YieldCurves.Models;
+using ECBFinanceAPI.Loaders.YieldCurves.Enums;
+using ECBFinanceAPI.Loaders.YieldCurves.Loaders;
+using ECBFinanceAPI.Loaders.YieldCurves.Models;
 using Moq;
 
 namespace ECBFinanceAPI.IntegrationTests;
@@ -23,7 +23,7 @@ public class YieldCurveParametersLoaderTests
             new NelsonSiegelSvenssonParameters(new DateTime(2025, 7, 25), governmentBondNominalRating, 1.1441523197, 0.7563860093, -1.187131076, 7.1627403875, 2.6487263413, 12.1914444074),
         ];
 
-        YieldCurveParametersLoader sut = new();
+        YieldCurveParameterLoader sut = new();
 
         // Act
         IEnumerable<NelsonSiegelSvenssonParameters> result = await sut.GetYieldCurveNelsonSiegelSvenssonParametersAsync(governmentBondNominalRating, startDate, endDate);
@@ -35,16 +35,16 @@ public class YieldCurveParametersLoaderTests
     [Fact]
     public async Task GetYieldCurveParametersAsync_AAAtoAA_ThrowsNotSupportedException()
     {
-        YieldCurveParametersLoader sut = new();
+        YieldCurveParameterLoader sut = new();
 
-        await Assert.ThrowsAsync<NotSupportedException>(() => sut.GetYieldCurveNelsonSiegelSvenssonParametersAsync(GovernmentBondNominalRating.AAAtoAA));
+        await Assert.ThrowsAsync<ArgumentException>(() => sut.GetYieldCurveNelsonSiegelSvenssonParametersAsync(GovernmentBondNominalRating.AAAtoAA));
     }
 
     [Fact]
     public async Task GetYieldCurveParametersAsync_AAAtoAAWithinDates_ThrowsNotSupportedException()
     {
-        YieldCurveParametersLoader sut = new();
+        YieldCurveParameterLoader sut = new();
 
-        await Assert.ThrowsAsync<NotSupportedException>(() => sut.GetYieldCurveNelsonSiegelSvenssonParametersAsync(GovernmentBondNominalRating.AAAtoAA, It.IsAny<DateTime>(), It.IsAny<DateTime>()));
+        await Assert.ThrowsAsync<ArgumentException>(() => sut.GetYieldCurveNelsonSiegelSvenssonParametersAsync(GovernmentBondNominalRating.AAAtoAA, It.IsAny<DateTime>(), It.IsAny<DateTime>()));
     }
 }

@@ -1,13 +1,13 @@
-﻿using ECBFinanceAPI.YieldCurves.Enums;
+﻿using ECBFinanceAPI.Loaders.YieldCurves.Enums;
 using System.Collections;
 using System.Collections.Immutable;
 
-namespace ECBFinanceAPI.YieldCurves.Models;
+namespace ECBFinanceAPI.Loaders.YieldCurves.Models;
 
 /// <summary>
 /// Represents a yield curve composed of an <see cref="IEnumerable{T}"/> of type <see cref="YieldCurveQuote"/>,
-/// along with associated metadata such as the fitted <see cref="Models.NelsonSiegelSvenssonParameters"/>,
-/// the <see cref="Enums.GovernmentBondNominalRating"/>, the <see cref="Enums.QuoteType"/>, and date of the curve.
+/// along with associated metadata such as the fitted <see cref="Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters"/>,
+/// the <see cref="Loaders.YieldCurves.Enums.GovernmentBondNominalRating"/>, the <see cref="Loaders.YieldCurves.Enums.QuoteType"/>, and date of the curve.
 /// </summary>
 /// <remarks>
 /// The yield curve maps maturities to yields and provides access to the underlying quotes.

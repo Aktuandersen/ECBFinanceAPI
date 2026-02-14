@@ -1,7 +1,7 @@
-﻿using ECBFinanceAPI.YieldCurves.Enums;
-using ECBFinanceAPI.YieldCurves.Models;
+﻿using ECBFinanceAPI.Loaders.YieldCurves.Enums;
+using ECBFinanceAPI.Loaders.YieldCurves.Models;
 
-namespace ECBFinanceAPI.YieldCurves.Loaders;
+namespace ECBFinanceAPI.Loaders.YieldCurves.Loaders;
 
 /// <summary>
 /// Loads yield curves by retrieving yield curve quotes and parameters, and constructing <see cref="YieldCurve"/> instances.
@@ -10,23 +10,23 @@ public class YieldCurveLoader : IYieldCurveLoader
 {
     private static readonly IEnumerable<Maturity> _availableMaturities = GetAvailableMaturities();
 
-    private readonly IYieldCurveQuotesLoader _yieldCurveQuotesLoader;
-    private readonly IYieldCurveParametersLoader _yieldCurveParametersLoader;
+    private readonly IYieldCurveQuoteLoader _yieldCurveQuotesLoader;
+    private readonly IYieldCurveParameterLoader _yieldCurveParametersLoader;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="YieldCurveLoader"/> class with default implementations of the quote and parameters loaders, 
-    /// which are <see cref="YieldCurveQuotesLoader"/> and <see cref="YieldCurveParametersLoader"/> respectively.
+    /// which are <see cref="YieldCurveQuoteLoader"/> and <see cref="YieldCurveParameterLoader"/> respectively.
     /// </summary>
-    public YieldCurveLoader() : this(new YieldCurveQuotesLoader(), new YieldCurveParametersLoader()) { }
+    public YieldCurveLoader() : this(new YieldCurveQuoteLoader(), new YieldCurveParameterLoader()) { }
 
-    public YieldCurveLoader(HttpClient httpClient) : this(new YieldCurveQuotesLoader(httpClient), new YieldCurveParametersLoader(httpClient)) { }
+    public YieldCurveLoader(HttpClient httpClient) : this(new YieldCurveQuoteLoader(httpClient), new YieldCurveParameterLoader(httpClient)) { }
 
     /// <summary>
     /// Initializes a new instance of the <see cref="YieldCurveLoader"/> class with the specified quote loader and parameters loader.
     /// </summary>
     /// <param name="yieldCurveQuotesLoader">The loader responsible for retrieving yield curve quotes.</param>
     /// <param name="yieldCurveParametersLoader">The loader responsible for retrieving Nelson-Siegel-Svensson parameters.</param>
-    public YieldCurveLoader(IYieldCurveQuotesLoader yieldCurveQuotesLoader, IYieldCurveParametersLoader yieldCurveParametersLoader)
+    public YieldCurveLoader(IYieldCurveQuoteLoader yieldCurveQuotesLoader, IYieldCurveParameterLoader yieldCurveParametersLoader)
     {
         _yieldCurveQuotesLoader = yieldCurveQuotesLoader;
         _yieldCurveParametersLoader = yieldCurveParametersLoader;

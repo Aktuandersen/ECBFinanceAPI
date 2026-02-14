@@ -1,4 +1,4 @@
-﻿namespace ECBFinanceAPI.YieldCurves.Models;
+﻿namespace ECBFinanceAPI.Loaders.YieldCurves.Models;
 
 /// <summary>
 /// Represents the maturity of a bond expressed in years and months.

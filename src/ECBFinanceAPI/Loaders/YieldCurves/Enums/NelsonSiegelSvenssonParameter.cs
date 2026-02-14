@@ -1,8 +1,8 @@
 ﻿using System.Collections.Immutable;
 
-namespace ECBFinanceAPI.YieldCurves.Enums;
+namespace ECBFinanceAPI.Loaders.YieldCurves.Enums;
 
-internal enum NelsonSiegelSvenssonParameter
+public enum NelsonSiegelSvenssonParameter
 {
     Beta0,
     Beta1,
