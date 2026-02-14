@@ -28,7 +28,7 @@ public class YieldCurveLoaderTests
         // Arrange
         IEnumerable<YieldCurveQuote> targetQuotes = LoadTargetYieldCurveQuotes(rating, quoteType, maturityFrequency);
 
-        YieldCurveLoader sut = new();
+        YieldCurveLoader sut = new(new HttpClient());
 
         // Act
         YieldCurve result = await sut.GetYieldCurveAsync(rating, quoteType, new DateTime(2025, 7, 24), maturityFrequency);
