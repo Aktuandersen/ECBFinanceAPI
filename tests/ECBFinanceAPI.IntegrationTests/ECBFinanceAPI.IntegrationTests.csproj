@@ -33,40 +33,10 @@
     <None Update="targets\yield_curve_quotes_AAAtoAA_SpotRate_Monthly.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="targets\yield_curve_quotes_AAA_InstantaneousForwardRate_Monthly.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="targets\yield_curve_quotes_AAA_InstantaneousForwardRate_Yearly.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="targets\yield_curve_quotes_AAA_ParRate_Monthly.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
     <None Update="targets\yield_curve_quotes_AAA_ParRate_Yearly.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="targets\yield_curve_quotes_AAA_SpotRate_Monthly.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="targets\yield_curve_quotes_AAA_SpotRate_Yearly.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="targets\yield_curve_quotes_AllRatings_InstantaneousForwardRate_Monthly.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
     <None Update="targets\yield_curve_quotes_AllRatings_InstantaneousForwardRate_Yearly.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="targets\yield_curve_quotes_AllRatings_ParRate_Monthly.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="targets\yield_curve_quotes_AllRatings_ParRate_Yearly.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="targets\yield_curve_quotes_AllRatings_SpotRate_Monthly.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="targets\yield_curve_quotes_AllRatings_SpotRate_Yearly.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>

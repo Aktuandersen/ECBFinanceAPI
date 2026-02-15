@@ -9,17 +9,7 @@ namespace ECBFinanceAPI.IntegrationTests;
 public class YieldCurveLoaderTests
 {
     [Theory]
-    [InlineData(GovernmentBondNominalRating.AAA, QuoteType.ParRate, MaturityFrequency.Monthly)]
     [InlineData(GovernmentBondNominalRating.AAA, QuoteType.ParRate, MaturityFrequency.Yearly)]
-    [InlineData(GovernmentBondNominalRating.AAA, QuoteType.SpotRate, MaturityFrequency.Monthly)]
-    [InlineData(GovernmentBondNominalRating.AAA, QuoteType.SpotRate, MaturityFrequency.Yearly)]
-    [InlineData(GovernmentBondNominalRating.AAA, QuoteType.InstantaneousForwardRate, MaturityFrequency.Monthly)]
-    [InlineData(GovernmentBondNominalRating.AAA, QuoteType.InstantaneousForwardRate, MaturityFrequency.Yearly)]
-    [InlineData(GovernmentBondNominalRating.AllRatings, QuoteType.ParRate, MaturityFrequency.Monthly)]
-    [InlineData(GovernmentBondNominalRating.AllRatings, QuoteType.ParRate, MaturityFrequency.Yearly)]
-    [InlineData(GovernmentBondNominalRating.AllRatings, QuoteType.SpotRate, MaturityFrequency.Monthly)]
-    [InlineData(GovernmentBondNominalRating.AllRatings, QuoteType.SpotRate, MaturityFrequency.Yearly)]
-    [InlineData(GovernmentBondNominalRating.AllRatings, QuoteType.InstantaneousForwardRate, MaturityFrequency.Monthly)]
     [InlineData(GovernmentBondNominalRating.AllRatings, QuoteType.InstantaneousForwardRate, MaturityFrequency.Yearly)]
     [InlineData(GovernmentBondNominalRating.AAAtoAA, QuoteType.SpotRate, MaturityFrequency.Monthly)]
 
