@@ -101,8 +101,8 @@
   },
   "index.html": {
     "href": "index.html",
-    "title": "ECBFinanceAPI. | ECBFinanceAPI",
-    "summary": "ECBFinanceAPI. A library for accessing data published by the European Central Bank, available at the ECB Data Portal."
+    "title": "ECBFinanceAPI | ECBFinanceAPI",
+    "summary": "ECBFinanceAPI A library for accessing data published by the European Central Bank, available at the ECB Data Portal."
   },
   "release_notes/release-notes.html": {
     "href": "release_notes/release-notes.html",
