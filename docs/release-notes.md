@@ -4,6 +4,6 @@
 
 ### Features
 
-* Added a feature to load yield curve quotes through `YieldCurveQuoteLoader`
-* Added a feature to load Nelson-Siegel-Svensson parameters through `YieldCurveParameterLoader`
-* Added a feature to load yield curves through `YieldCurveLoader`
+* Added a feature to load yield curve quotes through `YieldCurveQuoteLoader`.
+* Added a feature to load Nelson-Siegel-Svensson parameters through `YieldCurveParameterLoader`.
+* Added a feature to load yield curves through `YieldCurveLoader`.
