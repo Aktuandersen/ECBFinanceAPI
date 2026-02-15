@@ -1,3 +1,7 @@
+---
+_disableToc: true
+---
+
 # Release Notes
 
 ## Version 1.0.0

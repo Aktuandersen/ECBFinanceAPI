@@ -1,3 +1,7 @@
+---
+_disableToc: true
+---
+
 # Getting started
 
 The library is based around _loaders_, that loads collections of _models_ given the _data specifications_.

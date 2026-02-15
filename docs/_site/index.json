@@ -101,8 +101,8 @@
   },
   "index.html": {
     "href": "index.html",
-    "title": "This is the HOMEPAGE. | ECBFinanceAPI",
-    "summary": "This is the HOMEPAGE. Refer to Markdown for how to write markdown files. Quick Start Notes: Add images to the images folder if the file is referencing an image."
+    "title": "ECBFinanceAPI. | ECBFinanceAPI",
+    "summary": "ECBFinanceAPI. A library for accessing data published by the European Central Bank, available at the ECB Data Portal."
   },
   "release_notes/release-notes.html": {
     "href": "release_notes/release-notes.html",
