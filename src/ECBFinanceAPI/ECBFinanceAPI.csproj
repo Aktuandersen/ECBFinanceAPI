@@ -4,6 +4,18 @@
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+
+	<!-- NuGet -->
+	<PackageId>ECBFinanceAPI</PackageId>
+	<PackageVersion>1.0.0</PackageVersion>
+	<Authors>Emil Andersen</Authors>
+	<Description>A library for accessing data published by the European Central Bank, available at the ECB Data Portal.</Description>
+	<Copyright>Copyright (c) Emil Andersen 2026</Copyright>
+	<PackageProjectUrl>https://github.com/Aktuandersen/ECBFinanceAPI/</PackageProjectUrl>
+	<PackageTags>ecb;finance;api;data;european;central;bank</PackageTags>
+	<PackageIcon>Icon.png</PackageIcon>
+	<RepositoryUrl>https://github.com/Aktuandersen/ECBFinanceAPI/</RepositoryUrl>
+	<RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
   <ItemGroup>

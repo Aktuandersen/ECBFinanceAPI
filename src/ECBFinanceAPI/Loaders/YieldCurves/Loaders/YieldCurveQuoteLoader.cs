@@ -32,7 +32,7 @@ public class YieldCurveQuoteLoader : Loader, IYieldCurveQuoteLoader
     private async Task<IEnumerable<YieldCurveQuote>> DownloadYieldCurveQuotesAsync(GovernmentBondNominalRating governmentBondNominalRating, QuoteType quoteType, Maturity maturity, DateTime? startDate, DateTime? endDate)
     {
         YieldCurveEndpoint yieldCurveEndpoint = new(governmentBondNominalRating, quoteType, maturity, startDate, endDate);
-
+        GetYieldCurveQuotesAsync(GovernmentBondNominalRating.AAA, QuoteType.SpotRate, new Maturity(Years: 10))
         return (await DownloadAsync(yieldCurveEndpoint)).Select(q => new YieldCurveQuote(q.Date, maturity, q.Value * UnityConversionFactors.PercentToDecimal));
     }
 }
