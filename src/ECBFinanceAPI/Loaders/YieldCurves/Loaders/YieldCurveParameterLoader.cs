@@ -9,7 +9,7 @@ namespace ECBFinanceAPI.Loaders.YieldCurves.Loaders;
 /// </summary>
 public class YieldCurveParameterLoader : Loader, IYieldCurveParameterLoader
 {
-    private static readonly HashSet<GovernmentBondNominalRating> _ratingsWithParameters = [GovernmentBondNominalRating.AAA, GovernmentBondNominalRating.AllRatings];
+    private static readonly HashSet<GovernmentBondNominalRating> _supportedRatings = [GovernmentBondNominalRating.AAA, GovernmentBondNominalRating.AllRatings];
 
     /// <summary>
     /// Initializes a new instance of <see cref="YieldCurveParameterLoader"/> using the default HTTP client behavior.
@@ -32,8 +32,8 @@ public class YieldCurveParameterLoader : Loader, IYieldCurveParameterLoader
 
     private async Task<IEnumerable<NelsonSiegelSvenssonParameters>> DownloadYieldCurveNelsonSiegelSvenssonParametersAsync(GovernmentBondNominalRating governmentBondNominalRating, DateTime? startDate, DateTime? endDate)
     {
-        if (!_ratingsWithParameters.Contains(governmentBondNominalRating))
-            throw new ArgumentException($"Nelson-Siegel-Svensson parameters are only supported by ECB for government bond nominal ratings [{string.Join(", ", _ratingsWithParameters)}]", nameof(governmentBondNominalRating));
+        if (!_supportedRatings.Contains(governmentBondNominalRating))
+            throw new ArgumentException($"Nelson-Siegel-Svensson parameters are only supported by ECB for government bond nominal ratings [{string.Join(", ", _supportedRatings)}]", nameof(governmentBondNominalRating));
 
         Task<IEnumerable<ECBData>> beta0Task = DownloadAsync(new YieldCurveEndpoint(governmentBondNominalRating, NelsonSiegelSvenssonParameter.Beta0, startDate, endDate));
         Task<IEnumerable<ECBData>> beta1Task = DownloadAsync(new YieldCurveEndpoint(governmentBondNominalRating, NelsonSiegelSvenssonParameter.Beta1, startDate, endDate));

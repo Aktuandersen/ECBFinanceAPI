@@ -4,7 +4,7 @@ using ECBFinanceAPI.Loaders.YieldCurves.Models;
 
 namespace ECBFinanceAPI.IntegrationTests;
 
-public class YieldCurveQuotesLoaderTests
+public class YieldCurveQuoteLoaderTests
 {
     [Fact]
     public async Task GetYieldCurveQuotesAsync_WithinDays_ReturnsCorrectQuotes()

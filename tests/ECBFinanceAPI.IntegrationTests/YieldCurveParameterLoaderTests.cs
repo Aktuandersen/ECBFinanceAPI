@@ -5,7 +5,7 @@ using Moq;
 
 namespace ECBFinanceAPI.IntegrationTests;
 
-public class YieldCurveParametersLoaderTests
+public class YieldCurveParameterLoaderTests
 {
     [Fact]
     public async Task GetYieldCurveParametersAsync_WithinDays_ReturnsCorrectParameters()
