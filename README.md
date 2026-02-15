@@ -19,3 +19,7 @@ PM> Install-Package ECBFinanceAPI
 ## Documentation
 
 https://aktuandersen.github.io/ECBFinanceAPI/
+
+## Contact
+
+For inquiries, contact me at emil.andersen77@gmail.com.
