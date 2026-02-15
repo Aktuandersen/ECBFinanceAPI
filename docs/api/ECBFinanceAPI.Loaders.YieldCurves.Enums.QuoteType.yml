@@ -1,0 +1,163 @@
+### YamlMime:ManagedReference
+items:
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType
+  commentId: T:ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType
+  id: QuoteType
+  parent: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  children:
+  - ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType.InstantaneousForwardRate
+  - ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType.ParRate
+  - ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType.SpotRate
+  langs:
+  - csharp
+  - vb
+  name: QuoteType
+  nameWithType: QuoteType
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType
+  type: Enum
+  source:
+    remote:
+      path: src/ECBFinanceAPI/Loaders/YieldCurves/Enums/QuoteType.cs
+      branch: main
+      repo: https://github.com/Aktuandersen/ECBFinanceAPI.git
+    id: QuoteType
+    path: ../src/ECBFinanceAPI/Loaders/YieldCurves/Enums/QuoteType.cs
+    startLine: 7
+  assemblies:
+  - ECBFinanceAPI
+  namespace: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  summary: Specifies the type of quote used when observing or constructing a yield curve.
+  example: []
+  syntax:
+    content: public enum QuoteType
+    content.vb: Public Enum QuoteType
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType.InstantaneousForwardRate
+  commentId: F:ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType.InstantaneousForwardRate
+  id: InstantaneousForwardRate
+  parent: ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType
+  langs:
+  - csharp
+  - vb
+  name: InstantaneousForwardRate
+  nameWithType: QuoteType.InstantaneousForwardRate
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType.InstantaneousForwardRate
+  type: Field
+  source:
+    remote:
+      path: src/ECBFinanceAPI/Loaders/YieldCurves/Enums/QuoteType.cs
+      branch: main
+      repo: https://github.com/Aktuandersen/ECBFinanceAPI.git
+    id: InstantaneousForwardRate
+    path: ../src/ECBFinanceAPI/Loaders/YieldCurves/Enums/QuoteType.cs
+    startLine: 12
+  assemblies:
+  - ECBFinanceAPI
+  namespace: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  summary: Instantaneous forward rate (short-term forward rate derived from the yield curve).
+  example: []
+  syntax:
+    content: InstantaneousForwardRate = 0
+    return:
+      type: ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType.ParRate
+  commentId: F:ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType.ParRate
+  id: ParRate
+  parent: ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType
+  langs:
+  - csharp
+  - vb
+  name: ParRate
+  nameWithType: QuoteType.ParRate
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType.ParRate
+  type: Field
+  source:
+    remote:
+      path: src/ECBFinanceAPI/Loaders/YieldCurves/Enums/QuoteType.cs
+      branch: main
+      repo: https://github.com/Aktuandersen/ECBFinanceAPI.git
+    id: ParRate
+    path: ../src/ECBFinanceAPI/Loaders/YieldCurves/Enums/QuoteType.cs
+    startLine: 17
+  assemblies:
+  - ECBFinanceAPI
+  namespace: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  summary: Par rate (coupon rate for which the bond trades at par given the yield curve).
+  example: []
+  syntax:
+    content: ParRate = 1
+    return:
+      type: ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType.SpotRate
+  commentId: F:ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType.SpotRate
+  id: SpotRate
+  parent: ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType
+  langs:
+  - csharp
+  - vb
+  name: SpotRate
+  nameWithType: QuoteType.SpotRate
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType.SpotRate
+  type: Field
+  source:
+    remote:
+      path: src/ECBFinanceAPI/Loaders/YieldCurves/Enums/QuoteType.cs
+      branch: main
+      repo: https://github.com/Aktuandersen/ECBFinanceAPI.git
+    id: SpotRate
+    path: ../src/ECBFinanceAPI/Loaders/YieldCurves/Enums/QuoteType.cs
+    startLine: 22
+  assemblies:
+  - ECBFinanceAPI
+  namespace: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  summary: Spot rate (zero-coupon yield for the given maturity).
+  example: []
+  syntax:
+    content: SpotRate = 2
+    return:
+      type: ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType
+references:
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  commentId: N:ECBFinanceAPI.Loaders.YieldCurves.Enums
+  href: ECBFinanceAPI.html
+  name: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  nameWithType: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  spec.csharp:
+  - uid: ECBFinanceAPI
+    name: ECBFinanceAPI
+    href: ECBFinanceAPI.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders
+    name: Loaders
+    href: ECBFinanceAPI.Loaders.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders.YieldCurves
+    name: YieldCurves
+    href: ECBFinanceAPI.Loaders.YieldCurves.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders.YieldCurves.Enums
+    name: Enums
+    href: ECBFinanceAPI.Loaders.YieldCurves.Enums.html
+  spec.vb:
+  - uid: ECBFinanceAPI
+    name: ECBFinanceAPI
+    href: ECBFinanceAPI.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders
+    name: Loaders
+    href: ECBFinanceAPI.Loaders.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders.YieldCurves
+    name: YieldCurves
+    href: ECBFinanceAPI.Loaders.YieldCurves.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders.YieldCurves.Enums
+    name: Enums
+    href: ECBFinanceAPI.Loaders.YieldCurves.Enums.html
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType
+  commentId: T:ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType
+  parent: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  href: ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType.html
+  name: QuoteType
+  nameWithType: QuoteType
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType

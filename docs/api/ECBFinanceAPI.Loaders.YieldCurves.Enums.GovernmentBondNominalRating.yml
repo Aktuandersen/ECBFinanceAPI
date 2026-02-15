@@ -1,0 +1,163 @@
+### YamlMime:ManagedReference
+items:
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating
+  commentId: T:ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating
+  id: GovernmentBondNominalRating
+  parent: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  children:
+  - ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating.AAA
+  - ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating.AAAtoAA
+  - ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating.AllRatings
+  langs:
+  - csharp
+  - vb
+  name: GovernmentBondNominalRating
+  nameWithType: GovernmentBondNominalRating
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating
+  type: Enum
+  source:
+    remote:
+      path: src/ECBFinanceAPI/Loaders/YieldCurves/Enums/GovernmentBondNominalRating.cs
+      branch: main
+      repo: https://github.com/Aktuandersen/ECBFinanceAPI.git
+    id: GovernmentBondNominalRating
+    path: ../src/ECBFinanceAPI/Loaders/YieldCurves/Enums/GovernmentBondNominalRating.cs
+    startLine: 7
+  assemblies:
+  - ECBFinanceAPI
+  namespace: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  summary: Represents the nominal credit rating buckets used by the ECB when publishing government bond yield data.
+  example: []
+  syntax:
+    content: public enum GovernmentBondNominalRating
+    content.vb: Public Enum GovernmentBondNominalRating
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating.AAA
+  commentId: F:ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating.AAA
+  id: AAA
+  parent: ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating
+  langs:
+  - csharp
+  - vb
+  name: AAA
+  nameWithType: GovernmentBondNominalRating.AAA
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating.AAA
+  type: Field
+  source:
+    remote:
+      path: src/ECBFinanceAPI/Loaders/YieldCurves/Enums/GovernmentBondNominalRating.cs
+      branch: main
+      repo: https://github.com/Aktuandersen/ECBFinanceAPI.git
+    id: AAA
+    path: ../src/ECBFinanceAPI/Loaders/YieldCurves/Enums/GovernmentBondNominalRating.cs
+    startLine: 12
+  assemblies:
+  - ECBFinanceAPI
+  namespace: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  summary: AAA-rated government bonds.
+  example: []
+  syntax:
+    content: AAA = 0
+    return:
+      type: ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating.AllRatings
+  commentId: F:ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating.AllRatings
+  id: AllRatings
+  parent: ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating
+  langs:
+  - csharp
+  - vb
+  name: AllRatings
+  nameWithType: GovernmentBondNominalRating.AllRatings
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating.AllRatings
+  type: Field
+  source:
+    remote:
+      path: src/ECBFinanceAPI/Loaders/YieldCurves/Enums/GovernmentBondNominalRating.cs
+      branch: main
+      repo: https://github.com/Aktuandersen/ECBFinanceAPI.git
+    id: AllRatings
+    path: ../src/ECBFinanceAPI/Loaders/YieldCurves/Enums/GovernmentBondNominalRating.cs
+    startLine: 17
+  assemblies:
+  - ECBFinanceAPI
+  namespace: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  summary: All available ratings.
+  example: []
+  syntax:
+    content: AllRatings = 1
+    return:
+      type: ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating.AAAtoAA
+  commentId: F:ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating.AAAtoAA
+  id: AAAtoAA
+  parent: ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating
+  langs:
+  - csharp
+  - vb
+  name: AAAtoAA
+  nameWithType: GovernmentBondNominalRating.AAAtoAA
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating.AAAtoAA
+  type: Field
+  source:
+    remote:
+      path: src/ECBFinanceAPI/Loaders/YieldCurves/Enums/GovernmentBondNominalRating.cs
+      branch: main
+      repo: https://github.com/Aktuandersen/ECBFinanceAPI.git
+    id: AAAtoAA
+    path: ../src/ECBFinanceAPI/Loaders/YieldCurves/Enums/GovernmentBondNominalRating.cs
+    startLine: 22
+  assemblies:
+  - ECBFinanceAPI
+  namespace: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  summary: AAA to AA rating bucket.
+  example: []
+  syntax:
+    content: AAAtoAA = 2
+    return:
+      type: ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating
+references:
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  commentId: N:ECBFinanceAPI.Loaders.YieldCurves.Enums
+  href: ECBFinanceAPI.html
+  name: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  nameWithType: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  spec.csharp:
+  - uid: ECBFinanceAPI
+    name: ECBFinanceAPI
+    href: ECBFinanceAPI.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders
+    name: Loaders
+    href: ECBFinanceAPI.Loaders.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders.YieldCurves
+    name: YieldCurves
+    href: ECBFinanceAPI.Loaders.YieldCurves.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders.YieldCurves.Enums
+    name: Enums
+    href: ECBFinanceAPI.Loaders.YieldCurves.Enums.html
+  spec.vb:
+  - uid: ECBFinanceAPI
+    name: ECBFinanceAPI
+    href: ECBFinanceAPI.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders
+    name: Loaders
+    href: ECBFinanceAPI.Loaders.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders.YieldCurves
+    name: YieldCurves
+    href: ECBFinanceAPI.Loaders.YieldCurves.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders.YieldCurves.Enums
+    name: Enums
+    href: ECBFinanceAPI.Loaders.YieldCurves.Enums.html
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating
+  commentId: T:ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating
+  parent: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  href: ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating.html
+  name: GovernmentBondNominalRating
+  nameWithType: GovernmentBondNominalRating
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating

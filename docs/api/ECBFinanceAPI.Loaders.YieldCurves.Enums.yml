@@ -1,0 +1,86 @@
+### YamlMime:ManagedReference
+items:
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  commentId: N:ECBFinanceAPI.Loaders.YieldCurves.Enums
+  id: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  children:
+  - ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating
+  - ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency
+  - ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter
+  - ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType
+  langs:
+  - csharp
+  - vb
+  name: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  nameWithType: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  type: Namespace
+  assemblies:
+  - ECBFinanceAPI
+references:
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating
+  commentId: T:ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating
+  parent: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  href: ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating.html
+  name: GovernmentBondNominalRating
+  nameWithType: GovernmentBondNominalRating
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency
+  commentId: T:ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency
+  parent: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  href: ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency.html
+  name: MaturityFrequency
+  nameWithType: MaturityFrequency
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter
+  commentId: T:ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter
+  parent: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  href: ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter.html
+  name: NelsonSiegelSvenssonParameter
+  nameWithType: NelsonSiegelSvenssonParameter
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType
+  commentId: T:ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType
+  parent: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  href: ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType.html
+  name: QuoteType
+  nameWithType: QuoteType
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  commentId: N:ECBFinanceAPI.Loaders.YieldCurves.Enums
+  href: ECBFinanceAPI.html
+  name: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  nameWithType: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  spec.csharp:
+  - uid: ECBFinanceAPI
+    name: ECBFinanceAPI
+    href: ECBFinanceAPI.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders
+    name: Loaders
+    href: ECBFinanceAPI.Loaders.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders.YieldCurves
+    name: YieldCurves
+    href: ECBFinanceAPI.Loaders.YieldCurves.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders.YieldCurves.Enums
+    name: Enums
+    href: ECBFinanceAPI.Loaders.YieldCurves.Enums.html
+  spec.vb:
+  - uid: ECBFinanceAPI
+    name: ECBFinanceAPI
+    href: ECBFinanceAPI.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders
+    name: Loaders
+    href: ECBFinanceAPI.Loaders.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders.YieldCurves
+    name: YieldCurves
+    href: ECBFinanceAPI.Loaders.YieldCurves.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders.YieldCurves.Enums
+    name: Enums
+    href: ECBFinanceAPI.Loaders.YieldCurves.Enums.html

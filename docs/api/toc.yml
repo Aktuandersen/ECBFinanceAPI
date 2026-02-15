@@ -1,0 +1,64 @@
+### YamlMime:TableOfContent
+items:
+- uid: ECBFinanceAPI.Loaders
+  name: ECBFinanceAPI.Loaders
+  type: Namespace
+  items:
+  - uid: ECBFinanceAPI.Loaders.Loader
+    name: Loader
+    type: Class
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  name: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  type: Namespace
+  items:
+  - uid: ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating
+    name: GovernmentBondNominalRating
+    type: Enum
+  - uid: ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency
+    name: MaturityFrequency
+    type: Enum
+  - uid: ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter
+    name: NelsonSiegelSvenssonParameter
+    type: Enum
+  - uid: ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType
+    name: QuoteType
+    type: Enum
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders
+  name: ECBFinanceAPI.Loaders.YieldCurves.Loaders
+  type: Namespace
+  items:
+  - uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveLoader
+    name: IYieldCurveLoader
+    type: Interface
+  - uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveParameterLoader
+    name: IYieldCurveParameterLoader
+    type: Interface
+  - uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveQuoteLoader
+    name: IYieldCurveQuoteLoader
+    type: Interface
+  - uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveLoader
+    name: YieldCurveLoader
+    type: Class
+  - uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveParameterLoader
+    name: YieldCurveParameterLoader
+    type: Class
+  - uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveQuoteLoader
+    name: YieldCurveQuoteLoader
+    type: Class
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models
+  name: ECBFinanceAPI.Loaders.YieldCurves.Models
+  type: Namespace
+  items:
+  - uid: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity
+    name: Maturity
+    type: Class
+  - uid: ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters
+    name: NelsonSiegelSvenssonParameters
+    type: Class
+  - uid: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve
+    name: YieldCurve
+    type: Class
+  - uid: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurveQuote
+    name: YieldCurveQuote
+    type: Class
+memberLayout: SamePage

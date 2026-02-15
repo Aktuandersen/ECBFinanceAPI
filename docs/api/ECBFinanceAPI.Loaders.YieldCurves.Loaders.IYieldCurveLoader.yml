@@ -1,0 +1,419 @@
+### YamlMime:ManagedReference
+items:
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveLoader
+  commentId: T:ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveLoader
+  id: IYieldCurveLoader
+  parent: ECBFinanceAPI.Loaders.YieldCurves.Loaders
+  children:
+  - ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveLoader.GetYieldCurveAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating,ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType,System.DateTime,ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency)
+  - ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveLoader.GetYieldCurvesAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating,ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType,System.DateTime,System.DateTime,ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency)
+  langs:
+  - csharp
+  - vb
+  name: IYieldCurveLoader
+  nameWithType: IYieldCurveLoader
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveLoader
+  type: Interface
+  source:
+    remote:
+      path: src/ECBFinanceAPI/Loaders/YieldCurves/Loaders/IYieldCurveLoader.cs
+      branch: main
+      repo: https://github.com/Aktuandersen/ECBFinanceAPI.git
+    id: IYieldCurveLoader
+    path: ../src/ECBFinanceAPI/Loaders/YieldCurves/Loaders/IYieldCurveLoader.cs
+    startLine: 10
+  assemblies:
+  - ECBFinanceAPI
+  namespace: ECBFinanceAPI.Loaders.YieldCurves.Loaders
+  summary: >-
+    Defines methods to asynchronously load yield curve data.
+
+    Implementations retrieve yield curves based on government bond ratings,
+
+    quote types, dates, and maturity frequencies.
+  example: []
+  syntax:
+    content: public interface IYieldCurveLoader
+    content.vb: Public Interface IYieldCurveLoader
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveLoader.GetYieldCurveAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating,ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType,System.DateTime,ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency)
+  commentId: M:ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveLoader.GetYieldCurveAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating,ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType,System.DateTime,ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency)
+  id: GetYieldCurveAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating,ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType,System.DateTime,ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency)
+  parent: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveLoader
+  langs:
+  - csharp
+  - vb
+  name: GetYieldCurveAsync(GovernmentBondNominalRating, QuoteType, DateTime, MaturityFrequency)
+  nameWithType: IYieldCurveLoader.GetYieldCurveAsync(GovernmentBondNominalRating, QuoteType, DateTime, MaturityFrequency)
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveLoader.GetYieldCurveAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating, ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType, System.DateTime, ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency)
+  type: Method
+  source:
+    remote:
+      path: src/ECBFinanceAPI/Loaders/YieldCurves/Loaders/IYieldCurveLoader.cs
+      branch: main
+      repo: https://github.com/Aktuandersen/ECBFinanceAPI.git
+    id: GetYieldCurveAsync
+    path: ../src/ECBFinanceAPI/Loaders/YieldCurves/Loaders/IYieldCurveLoader.cs
+    startLine: 21
+  assemblies:
+  - ECBFinanceAPI
+  namespace: ECBFinanceAPI.Loaders.YieldCurves.Loaders
+  summary: >-
+    Asynchronously gets a single yield curve for a specified government bond nominal rating,
+
+    quote type, date, and maturity frequency.
+  example: []
+  syntax:
+    content: Task<YieldCurve> GetYieldCurveAsync(GovernmentBondNominalRating governmentBondNominalRating, QuoteType quoteType, DateTime date, MaturityFrequency maturityFrequency)
+    parameters:
+    - id: governmentBondNominalRating
+      type: ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating
+      description: The government bond nominal rating for which to retrieve the yield curve.
+    - id: quoteType
+      type: ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType
+      description: The type of yield curve quote.
+    - id: date
+      type: System.DateTime
+      description: The date for which to retrieve the yield curve.
+    - id: maturityFrequency
+      type: ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency
+      description: The frequency of maturities on the yield curve.
+    return:
+      type: System.Threading.Tasks.Task{ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve}
+      description: A task that represents the asynchronous operation. The task result contains the retrieved <xref href="ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Function GetYieldCurveAsync(governmentBondNominalRating As GovernmentBondNominalRating, quoteType As QuoteType, [date] As Date, maturityFrequency As MaturityFrequency) As Task(Of YieldCurve)
+  overload: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveLoader.GetYieldCurveAsync*
+  nameWithType.vb: IYieldCurveLoader.GetYieldCurveAsync(GovernmentBondNominalRating, QuoteType, Date, MaturityFrequency)
+  fullName.vb: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveLoader.GetYieldCurveAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating, ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType, Date, ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency)
+  name.vb: GetYieldCurveAsync(GovernmentBondNominalRating, QuoteType, Date, MaturityFrequency)
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveLoader.GetYieldCurvesAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating,ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType,System.DateTime,System.DateTime,ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency)
+  commentId: M:ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveLoader.GetYieldCurvesAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating,ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType,System.DateTime,System.DateTime,ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency)
+  id: GetYieldCurvesAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating,ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType,System.DateTime,System.DateTime,ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency)
+  parent: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveLoader
+  langs:
+  - csharp
+  - vb
+  name: GetYieldCurvesAsync(GovernmentBondNominalRating, QuoteType, DateTime, DateTime, MaturityFrequency)
+  nameWithType: IYieldCurveLoader.GetYieldCurvesAsync(GovernmentBondNominalRating, QuoteType, DateTime, DateTime, MaturityFrequency)
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveLoader.GetYieldCurvesAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating, ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType, System.DateTime, System.DateTime, ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency)
+  type: Method
+  source:
+    remote:
+      path: src/ECBFinanceAPI/Loaders/YieldCurves/Loaders/IYieldCurveLoader.cs
+      branch: main
+      repo: https://github.com/Aktuandersen/ECBFinanceAPI.git
+    id: GetYieldCurvesAsync
+    path: ../src/ECBFinanceAPI/Loaders/YieldCurves/Loaders/IYieldCurveLoader.cs
+    startLine: 33
+  assemblies:
+  - ECBFinanceAPI
+  namespace: ECBFinanceAPI.Loaders.YieldCurves.Loaders
+  summary: >-
+    Asynchronously gets a collection of yield curves for a specified government bond nominal rating,
+
+    quote type, date range, and maturity frequency.
+  example: []
+  syntax:
+    content: Task<IEnumerable<YieldCurve>> GetYieldCurvesAsync(GovernmentBondNominalRating governmentBondNominalRating, QuoteType quoteType, DateTime startDate, DateTime endDate, MaturityFrequency maturityFrequency)
+    parameters:
+    - id: governmentBondNominalRating
+      type: ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating
+      description: The government bond nominal rating for which to retrieve the yield curves.
+    - id: quoteType
+      type: ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType
+      description: The type of yield curve quote.
+    - id: startDate
+      type: System.DateTime
+      description: The start date of the date range for which to retrieve yield curves.
+    - id: endDate
+      type: System.DateTime
+      description: The end date of the date range for which to retrieve yield curves.
+    - id: maturityFrequency
+      type: ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency
+      description: The frequency of maturities on the yield curves.
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve}}
+      description: A task that represents the asynchronous operation. The task result contains a collection of retrieved <xref href="ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve" data-throw-if-not-resolved="false"></xref> instances.
+    content.vb: Function GetYieldCurvesAsync(governmentBondNominalRating As GovernmentBondNominalRating, quoteType As QuoteType, startDate As Date, endDate As Date, maturityFrequency As MaturityFrequency) As Task(Of IEnumerable(Of YieldCurve))
+  overload: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveLoader.GetYieldCurvesAsync*
+  nameWithType.vb: IYieldCurveLoader.GetYieldCurvesAsync(GovernmentBondNominalRating, QuoteType, Date, Date, MaturityFrequency)
+  fullName.vb: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveLoader.GetYieldCurvesAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating, ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType, Date, Date, ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency)
+  name.vb: GetYieldCurvesAsync(GovernmentBondNominalRating, QuoteType, Date, Date, MaturityFrequency)
+references:
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders
+  commentId: N:ECBFinanceAPI.Loaders.YieldCurves.Loaders
+  href: ECBFinanceAPI.html
+  name: ECBFinanceAPI.Loaders.YieldCurves.Loaders
+  nameWithType: ECBFinanceAPI.Loaders.YieldCurves.Loaders
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Loaders
+  spec.csharp:
+  - uid: ECBFinanceAPI
+    name: ECBFinanceAPI
+    href: ECBFinanceAPI.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders
+    name: Loaders
+    href: ECBFinanceAPI.Loaders.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders.YieldCurves
+    name: YieldCurves
+    href: ECBFinanceAPI.Loaders.YieldCurves.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders
+    name: Loaders
+    href: ECBFinanceAPI.Loaders.YieldCurves.Loaders.html
+  spec.vb:
+  - uid: ECBFinanceAPI
+    name: ECBFinanceAPI
+    href: ECBFinanceAPI.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders
+    name: Loaders
+    href: ECBFinanceAPI.Loaders.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders.YieldCurves
+    name: YieldCurves
+    href: ECBFinanceAPI.Loaders.YieldCurves.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders
+    name: Loaders
+    href: ECBFinanceAPI.Loaders.YieldCurves.Loaders.html
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve
+  commentId: T:ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve
+  href: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.html
+  name: YieldCurve
+  nameWithType: YieldCurve
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveLoader.GetYieldCurveAsync*
+  commentId: Overload:ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveLoader.GetYieldCurveAsync
+  href: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveLoader.html#ECBFinanceAPI_Loaders_YieldCurves_Loaders_IYieldCurveLoader_GetYieldCurveAsync_ECBFinanceAPI_Loaders_YieldCurves_Enums_GovernmentBondNominalRating_ECBFinanceAPI_Loaders_YieldCurves_Enums_QuoteType_System_DateTime_ECBFinanceAPI_Loaders_YieldCurves_Enums_MaturityFrequency_
+  name: GetYieldCurveAsync
+  nameWithType: IYieldCurveLoader.GetYieldCurveAsync
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveLoader.GetYieldCurveAsync
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating
+  commentId: T:ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating
+  parent: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  href: ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating.html
+  name: GovernmentBondNominalRating
+  nameWithType: GovernmentBondNominalRating
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType
+  commentId: T:ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType
+  parent: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  href: ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType.html
+  name: QuoteType
+  nameWithType: QuoteType
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency
+  commentId: T:ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency
+  parent: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  href: ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency.html
+  name: MaturityFrequency
+  nameWithType: MaturityFrequency
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency
+- uid: System.Threading.Tasks.Task{ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve}
+  commentId: T:System.Threading.Tasks.Task{ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<YieldCurve>
+  nameWithType: Task<YieldCurve>
+  fullName: System.Threading.Tasks.Task<ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve>
+  nameWithType.vb: Task(Of YieldCurve)
+  fullName.vb: System.Threading.Tasks.Task(Of ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve)
+  name.vb: Task(Of YieldCurve)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve
+    name: YieldCurve
+    href: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve
+    name: YieldCurve
+    href: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.html
+  - name: )
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  commentId: N:ECBFinanceAPI.Loaders.YieldCurves.Enums
+  href: ECBFinanceAPI.html
+  name: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  nameWithType: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  spec.csharp:
+  - uid: ECBFinanceAPI
+    name: ECBFinanceAPI
+    href: ECBFinanceAPI.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders
+    name: Loaders
+    href: ECBFinanceAPI.Loaders.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders.YieldCurves
+    name: YieldCurves
+    href: ECBFinanceAPI.Loaders.YieldCurves.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders.YieldCurves.Enums
+    name: Enums
+    href: ECBFinanceAPI.Loaders.YieldCurves.Enums.html
+  spec.vb:
+  - uid: ECBFinanceAPI
+    name: ECBFinanceAPI
+    href: ECBFinanceAPI.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders
+    name: Loaders
+    href: ECBFinanceAPI.Loaders.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders.YieldCurves
+    name: YieldCurves
+    href: ECBFinanceAPI.Loaders.YieldCurves.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders.YieldCurves.Enums
+    name: Enums
+    href: ECBFinanceAPI.Loaders.YieldCurves.Enums.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveLoader.GetYieldCurvesAsync*
+  commentId: Overload:ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveLoader.GetYieldCurvesAsync
+  href: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveLoader.html#ECBFinanceAPI_Loaders_YieldCurves_Loaders_IYieldCurveLoader_GetYieldCurvesAsync_ECBFinanceAPI_Loaders_YieldCurves_Enums_GovernmentBondNominalRating_ECBFinanceAPI_Loaders_YieldCurves_Enums_QuoteType_System_DateTime_System_DateTime_ECBFinanceAPI_Loaders_YieldCurves_Enums_MaturityFrequency_
+  name: GetYieldCurvesAsync
+  nameWithType: IYieldCurveLoader.GetYieldCurvesAsync
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveLoader.GetYieldCurvesAsync
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IEnumerable<YieldCurve>>
+  nameWithType: Task<IEnumerable<YieldCurve>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve>>
+  nameWithType.vb: Task(Of IEnumerable(Of YieldCurve))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.IEnumerable(Of ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve))
+  name.vb: Task(Of IEnumerable(Of YieldCurve))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve
+    name: YieldCurve
+    href: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve
+    name: YieldCurve
+    href: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.html
+  - name: )
+  - name: )

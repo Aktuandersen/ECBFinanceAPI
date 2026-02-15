@@ -1,0 +1,797 @@
+### YamlMime:ManagedReference
+items:
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity
+  commentId: T:ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity
+  id: Maturity
+  parent: ECBFinanceAPI.Loaders.YieldCurves.Models
+  children:
+  - ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.#ctor(System.Int32)
+  - ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.#ctor(System.Int32,System.Int32)
+  - ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.CompareTo(ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity)
+  - ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.Months
+  - ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.ToString
+  - ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.Years
+  langs:
+  - csharp
+  - vb
+  name: Maturity
+  nameWithType: Maturity
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity
+  type: Class
+  source:
+    remote:
+      path: src/ECBFinanceAPI/Loaders/YieldCurves/Models/Maturity.cs
+      branch: main
+      repo: https://github.com/Aktuandersen/ECBFinanceAPI.git
+    id: Maturity
+    path: ../src/ECBFinanceAPI/Loaders/YieldCurves/Models/Maturity.cs
+    startLine: 5
+  assemblies:
+  - ECBFinanceAPI
+  namespace: ECBFinanceAPI.Loaders.YieldCurves.Models
+  summary: Represents the maturity of a bond expressed in years and months.
+  example: []
+  syntax:
+    content: 'public record Maturity : IComparable<Maturity>, IEquatable<Maturity>'
+    content.vb: Public Class Maturity Implements IComparable(Of Maturity), IEquatable(Of Maturity)
+  inheritance:
+  - System.Object
+  implements:
+  - System.IComparable{ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity}
+  - System.IEquatable{ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.Years
+  commentId: P:ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.Years
+  id: Years
+  parent: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity
+  langs:
+  - csharp
+  - vb
+  name: Years
+  nameWithType: Maturity.Years
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.Years
+  type: Property
+  source:
+    remote:
+      path: src/ECBFinanceAPI/Loaders/YieldCurves/Models/Maturity.cs
+      branch: main
+      repo: https://github.com/Aktuandersen/ECBFinanceAPI.git
+    id: Years
+    path: ../src/ECBFinanceAPI/Loaders/YieldCurves/Models/Maturity.cs
+    startLine: 10
+  assemblies:
+  - ECBFinanceAPI
+  namespace: ECBFinanceAPI.Loaders.YieldCurves.Models
+  summary: Gets the number of whole years in the maturity period.
+  example: []
+  syntax:
+    content: public int Years { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Years As Integer
+  overload: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.Years*
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.Months
+  commentId: P:ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.Months
+  id: Months
+  parent: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity
+  langs:
+  - csharp
+  - vb
+  name: Months
+  nameWithType: Maturity.Months
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.Months
+  type: Property
+  source:
+    remote:
+      path: src/ECBFinanceAPI/Loaders/YieldCurves/Models/Maturity.cs
+      branch: main
+      repo: https://github.com/Aktuandersen/ECBFinanceAPI.git
+    id: Months
+    path: ../src/ECBFinanceAPI/Loaders/YieldCurves/Models/Maturity.cs
+    startLine: 15
+  assemblies:
+  - ECBFinanceAPI
+  namespace: ECBFinanceAPI.Loaders.YieldCurves.Models
+  summary: Gets the number of additional months (0–11) in the maturity period.
+  example: []
+  syntax:
+    content: public int Months { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Months As Integer
+  overload: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.Months*
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.#ctor(System.Int32,System.Int32)
+  commentId: M:ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.#ctor(System.Int32,System.Int32)
+  id: '#ctor(System.Int32,System.Int32)'
+  parent: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity
+  langs:
+  - csharp
+  - vb
+  name: Maturity(int, int)
+  nameWithType: Maturity.Maturity(int, int)
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.Maturity(int, int)
+  type: Constructor
+  source:
+    remote:
+      path: src/ECBFinanceAPI/Loaders/YieldCurves/Models/Maturity.cs
+      branch: main
+      repo: https://github.com/Aktuandersen/ECBFinanceAPI.git
+    id: .ctor
+    path: ../src/ECBFinanceAPI/Loaders/YieldCurves/Models/Maturity.cs
+    startLine: 29
+  assemblies:
+  - ECBFinanceAPI
+  namespace: ECBFinanceAPI.Loaders.YieldCurves.Models
+  summary: Initializes a new instance of the <xref href="ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity" data-throw-if-not-resolved="false"></xref> record with the specified number of years and months.
+  example: []
+  syntax:
+    content: public Maturity(int Years, int Months)
+    parameters:
+    - id: Years
+      type: System.Int32
+    - id: Months
+      type: System.Int32
+    content.vb: Public Sub New(Years As Integer, Months As Integer)
+  overload: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.#ctor*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: Thrown when <code class="paramref">years</code> is negative, or <code class="paramref">months</code> is not between 0 and 11.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: >-
+      Thrown when both <code class="paramref">years</code> and <code class="paramref">months</code> are zero,
+
+      as a maturity of zero is not valid in a yield curve context.
+  nameWithType.vb: Maturity.New(Integer, Integer)
+  fullName.vb: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.New(Integer, Integer)
+  name.vb: New(Integer, Integer)
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.#ctor(System.Int32)
+  commentId: M:ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity
+  langs:
+  - csharp
+  - vb
+  name: Maturity(int)
+  nameWithType: Maturity.Maturity(int)
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.Maturity(int)
+  type: Constructor
+  source:
+    remote:
+      path: src/ECBFinanceAPI/Loaders/YieldCurves/Models/Maturity.cs
+      branch: main
+      repo: https://github.com/Aktuandersen/ECBFinanceAPI.git
+    id: .ctor
+    path: ../src/ECBFinanceAPI/Loaders/YieldCurves/Models/Maturity.cs
+    startLine: 45
+  assemblies:
+  - ECBFinanceAPI
+  namespace: ECBFinanceAPI.Loaders.YieldCurves.Models
+  summary: Initializes a new instance of the <xref href="ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity" data-throw-if-not-resolved="false"></xref> record with only a year component. The months component is set to zero.
+  example: []
+  syntax:
+    content: public Maturity(int Years)
+    parameters:
+    - id: Years
+      type: System.Int32
+    content.vb: Public Sub New(Years As Integer)
+  overload: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.#ctor*
+  nameWithType.vb: Maturity.New(Integer)
+  fullName.vb: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.New(Integer)
+  name.vb: New(Integer)
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.ToString
+  commentId: M:ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.ToString
+  id: ToString
+  parent: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Maturity.ToString()
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/ECBFinanceAPI/Loaders/YieldCurves/Models/Maturity.cs
+      branch: main
+      repo: https://github.com/Aktuandersen/ECBFinanceAPI.git
+    id: ToString
+    path: ../src/ECBFinanceAPI/Loaders/YieldCurves/Models/Maturity.cs
+    startLine: 52
+  assemblies:
+  - ECBFinanceAPI
+  namespace: ECBFinanceAPI.Loaders.YieldCurves.Models
+  summary: >-
+    Returns a string representation of the maturity, using the format "{n}Y{m}M".
+
+    For example: "5Y6M", "2Y", or "3M".
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: A string describing the maturity in years and months.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.ToString*
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.CompareTo(ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity)
+  commentId: M:ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.CompareTo(ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity)
+  id: CompareTo(ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity)
+  parent: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity
+  langs:
+  - csharp
+  - vb
+  name: CompareTo(Maturity?)
+  nameWithType: Maturity.CompareTo(Maturity?)
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.CompareTo(ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity?)
+  type: Method
+  source:
+    remote:
+      path: src/ECBFinanceAPI/Loaders/YieldCurves/Models/Maturity.cs
+      branch: main
+      repo: https://github.com/Aktuandersen/ECBFinanceAPI.git
+    id: CompareTo
+    path: ../src/ECBFinanceAPI/Loaders/YieldCurves/Models/Maturity.cs
+    startLine: 54
+  assemblies:
+  - ECBFinanceAPI
+  namespace: ECBFinanceAPI.Loaders.YieldCurves.Models
+  summary: Compares the current instance with another object of the same type and returns an integer that indicates whether the current instance precedes, follows, or occurs in the same position in the sort order as the other object.
+  example: []
+  syntax:
+    content: public int CompareTo(Maturity? other)
+    parameters:
+    - id: other
+      type: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity
+      description: An object to compare with this instance.
+    return:
+      type: System.Int32
+      description: >-
+        A value that indicates the relative order of the objects being compared. The return value has these meanings:
+
+         <table><thead><tr><th class="term"> Value</th><th class="description"> Meaning</th></tr></thead><tbody><tr><td class="term"> Less than zero</td><td class="description"> This instance precedes <code class="paramref">other</code> in the sort order.</td></tr><tr><td class="term"> Zero</td><td class="description"> This instance occurs in the same position in the sort order as <code class="paramref">other</code>.</td></tr><tr><td class="term"> Greater than zero</td><td class="description"> This instance follows <code class="paramref">other</code> in the sort order.</td></tr></tbody></table>
+    content.vb: Public Function CompareTo(other As Maturity) As Integer
+  overload: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.CompareTo*
+  implements:
+  - System.IComparable{ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity}.CompareTo(ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity)
+  nameWithType.vb: Maturity.CompareTo(Maturity)
+  fullName.vb: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.CompareTo(ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity)
+  name.vb: CompareTo(Maturity)
+references:
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models
+  commentId: N:ECBFinanceAPI.Loaders.YieldCurves.Models
+  href: ECBFinanceAPI.html
+  name: ECBFinanceAPI.Loaders.YieldCurves.Models
+  nameWithType: ECBFinanceAPI.Loaders.YieldCurves.Models
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models
+  spec.csharp:
+  - uid: ECBFinanceAPI
+    name: ECBFinanceAPI
+    href: ECBFinanceAPI.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders
+    name: Loaders
+    href: ECBFinanceAPI.Loaders.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders.YieldCurves
+    name: YieldCurves
+    href: ECBFinanceAPI.Loaders.YieldCurves.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders.YieldCurves.Models
+    name: Models
+    href: ECBFinanceAPI.Loaders.YieldCurves.Models.html
+  spec.vb:
+  - uid: ECBFinanceAPI
+    name: ECBFinanceAPI
+    href: ECBFinanceAPI.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders
+    name: Loaders
+    href: ECBFinanceAPI.Loaders.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders.YieldCurves
+    name: YieldCurves
+    href: ECBFinanceAPI.Loaders.YieldCurves.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders.YieldCurves.Models
+    name: Models
+    href: ECBFinanceAPI.Loaders.YieldCurves.Models.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IComparable{ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity}
+  commentId: T:System.IComparable{ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity}
+  parent: System
+  definition: System.IComparable`1
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  name: IComparable<Maturity>
+  nameWithType: IComparable<Maturity>
+  fullName: System.IComparable<ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity>
+  nameWithType.vb: IComparable(Of Maturity)
+  fullName.vb: System.IComparable(Of ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity)
+  name.vb: IComparable(Of Maturity)
+  spec.csharp:
+  - uid: System.IComparable`1
+    name: IComparable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  - name: <
+  - uid: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity
+    name: Maturity
+    href: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IComparable`1
+    name: IComparable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity
+    name: Maturity
+    href: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.html
+  - name: )
+- uid: System.IEquatable{ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity}
+  commentId: T:System.IEquatable{ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<Maturity>
+  nameWithType: IEquatable<Maturity>
+  fullName: System.IEquatable<ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity>
+  nameWithType.vb: IEquatable(Of Maturity)
+  fullName.vb: System.IEquatable(Of ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity)
+  name.vb: IEquatable(Of Maturity)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity
+    name: Maturity
+    href: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity
+    name: Maturity
+    href: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IComparable`1
+  commentId: T:System.IComparable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  name: IComparable<T>
+  nameWithType: IComparable<T>
+  fullName: System.IComparable<T>
+  nameWithType.vb: IComparable(Of T)
+  fullName.vb: System.IComparable(Of T)
+  name.vb: IComparable(Of T)
+  spec.csharp:
+  - uid: System.IComparable`1
+    name: IComparable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IComparable`1
+    name: IComparable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.Years*
+  commentId: Overload:ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.Years
+  href: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.html#ECBFinanceAPI_Loaders_YieldCurves_Models_Maturity_Years
+  name: Years
+  nameWithType: Maturity.Years
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.Years
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.Months*
+  commentId: Overload:ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.Months
+  href: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.html#ECBFinanceAPI_Loaders_YieldCurves_Models_Maturity_Months
+  name: Months
+  nameWithType: Maturity.Months
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.Months
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity
+  commentId: T:ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity
+  parent: ECBFinanceAPI.Loaders.YieldCurves.Models
+  href: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.html
+  name: Maturity
+  nameWithType: Maturity
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity
+- uid: System.ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+  name: ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.#ctor*
+  commentId: Overload:ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.#ctor
+  href: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.html#ECBFinanceAPI_Loaders_YieldCurves_Models_Maturity__ctor_System_Int32_System_Int32_
+  name: Maturity
+  nameWithType: Maturity.Maturity
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.Maturity
+  nameWithType.vb: Maturity.New
+  fullName.vb: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.New
+  name.vb: New
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.ToString*
+  commentId: Overload:ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.ToString
+  href: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.html#ECBFinanceAPI_Loaders_YieldCurves_Models_Maturity_ToString
+  name: ToString
+  nameWithType: Maturity.ToString
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.CompareTo*
+  commentId: Overload:ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.CompareTo
+  href: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.html#ECBFinanceAPI_Loaders_YieldCurves_Models_Maturity_CompareTo_ECBFinanceAPI_Loaders_YieldCurves_Models_Maturity_
+  name: CompareTo
+  nameWithType: Maturity.CompareTo
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.CompareTo
+- uid: System.IComparable{ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity}.CompareTo(ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity)
+  commentId: M:System.IComparable{ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity}.CompareTo(ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity)
+  parent: System.IComparable{ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity}
+  definition: System.IComparable`1.CompareTo(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  name: CompareTo(Maturity)
+  nameWithType: IComparable<Maturity>.CompareTo(Maturity)
+  fullName: System.IComparable<ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity>.CompareTo(ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity)
+  nameWithType.vb: IComparable(Of Maturity).CompareTo(Maturity)
+  fullName.vb: System.IComparable(Of ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity).CompareTo(ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity)
+  spec.csharp:
+  - uid: System.IComparable{ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity}.CompareTo(ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity)
+    name: CompareTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  - name: (
+  - uid: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity
+    name: Maturity
+    href: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.html
+  - name: )
+  spec.vb:
+  - uid: System.IComparable{ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity}.CompareTo(ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity)
+    name: CompareTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  - name: (
+  - uid: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity
+    name: Maturity
+    href: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.html
+  - name: )
+- uid: System.IComparable`1.CompareTo(`0)
+  commentId: M:System.IComparable`1.CompareTo(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  name: CompareTo(T)
+  nameWithType: IComparable<T>.CompareTo(T)
+  fullName: System.IComparable<T>.CompareTo(T)
+  nameWithType.vb: IComparable(Of T).CompareTo(T)
+  fullName.vb: System.IComparable(Of T).CompareTo(T)
+  spec.csharp:
+  - uid: System.IComparable`1.CompareTo(`0)
+    name: CompareTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IComparable`1.CompareTo(`0)
+    name: CompareTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  - name: (
+  - name: T
+  - name: )

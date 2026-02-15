@@ -1,0 +1,382 @@
+### YamlMime:ManagedReference
+items:
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveParameterLoader
+  commentId: T:ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveParameterLoader
+  id: IYieldCurveParameterLoader
+  parent: ECBFinanceAPI.Loaders.YieldCurves.Loaders
+  children:
+  - ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveParameterLoader.GetYieldCurveNelsonSiegelSvenssonParametersAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating)
+  - ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveParameterLoader.GetYieldCurveNelsonSiegelSvenssonParametersAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating,System.DateTime,System.DateTime)
+  langs:
+  - csharp
+  - vb
+  name: IYieldCurveParameterLoader
+  nameWithType: IYieldCurveParameterLoader
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveParameterLoader
+  type: Interface
+  source:
+    remote:
+      path: src/ECBFinanceAPI/Loaders/YieldCurves/Loaders/IYieldCurveParameterLoader.cs
+      branch: main
+      repo: https://github.com/Aktuandersen/ECBFinanceAPI.git
+    id: IYieldCurveParameterLoader
+    path: ../src/ECBFinanceAPI/Loaders/YieldCurves/Loaders/IYieldCurveParameterLoader.cs
+    startLine: 10
+  assemblies:
+  - ECBFinanceAPI
+  namespace: ECBFinanceAPI.Loaders.YieldCurves.Loaders
+  summary: >-
+    Defines methods for loading Nelson–Siegel–Svensson (NSS) model parameters for government bond yield curves.
+
+    Implementations are responsible for retrieving parameter sets for specified ratings and optional date ranges.
+  example: []
+  syntax:
+    content: public interface IYieldCurveParameterLoader
+    content.vb: Public Interface IYieldCurveParameterLoader
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveParameterLoader.GetYieldCurveNelsonSiegelSvenssonParametersAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating)
+  commentId: M:ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveParameterLoader.GetYieldCurveNelsonSiegelSvenssonParametersAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating)
+  id: GetYieldCurveNelsonSiegelSvenssonParametersAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating)
+  parent: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveParameterLoader
+  langs:
+  - csharp
+  - vb
+  name: GetYieldCurveNelsonSiegelSvenssonParametersAsync(GovernmentBondNominalRating)
+  nameWithType: IYieldCurveParameterLoader.GetYieldCurveNelsonSiegelSvenssonParametersAsync(GovernmentBondNominalRating)
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveParameterLoader.GetYieldCurveNelsonSiegelSvenssonParametersAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating)
+  type: Method
+  source:
+    remote:
+      path: src/ECBFinanceAPI/Loaders/YieldCurves/Loaders/IYieldCurveParameterLoader.cs
+      branch: main
+      repo: https://github.com/Aktuandersen/ECBFinanceAPI.git
+    id: GetYieldCurveNelsonSiegelSvenssonParametersAsync
+    path: ../src/ECBFinanceAPI/Loaders/YieldCurves/Loaders/IYieldCurveParameterLoader.cs
+    startLine: 18
+  assemblies:
+  - ECBFinanceAPI
+  namespace: ECBFinanceAPI.Loaders.YieldCurves.Loaders
+  summary: Asynchronously retrieves NSS parameters for the specified government bond nominal rating across all available dates.
+  example: []
+  syntax:
+    content: Task<IEnumerable<NelsonSiegelSvenssonParameters>> GetYieldCurveNelsonSiegelSvenssonParametersAsync(GovernmentBondNominalRating governmentBondNominalRating)
+    parameters:
+    - id: governmentBondNominalRating
+      type: ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating
+      description: The nominal rating of government bonds to retrieve parameters for.
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters}}
+      description: A task that resolves to a collection of <xref href="ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters" data-throw-if-not-resolved="false"></xref> instances.
+    content.vb: Function GetYieldCurveNelsonSiegelSvenssonParametersAsync(governmentBondNominalRating As GovernmentBondNominalRating) As Task(Of IEnumerable(Of NelsonSiegelSvenssonParameters))
+  overload: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveParameterLoader.GetYieldCurveNelsonSiegelSvenssonParametersAsync*
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveParameterLoader.GetYieldCurveNelsonSiegelSvenssonParametersAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating,System.DateTime,System.DateTime)
+  commentId: M:ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveParameterLoader.GetYieldCurveNelsonSiegelSvenssonParametersAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating,System.DateTime,System.DateTime)
+  id: GetYieldCurveNelsonSiegelSvenssonParametersAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating,System.DateTime,System.DateTime)
+  parent: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveParameterLoader
+  langs:
+  - csharp
+  - vb
+  name: GetYieldCurveNelsonSiegelSvenssonParametersAsync(GovernmentBondNominalRating, DateTime, DateTime)
+  nameWithType: IYieldCurveParameterLoader.GetYieldCurveNelsonSiegelSvenssonParametersAsync(GovernmentBondNominalRating, DateTime, DateTime)
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveParameterLoader.GetYieldCurveNelsonSiegelSvenssonParametersAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating, System.DateTime, System.DateTime)
+  type: Method
+  source:
+    remote:
+      path: src/ECBFinanceAPI/Loaders/YieldCurves/Loaders/IYieldCurveParameterLoader.cs
+      branch: main
+      repo: https://github.com/Aktuandersen/ECBFinanceAPI.git
+    id: GetYieldCurveNelsonSiegelSvenssonParametersAsync
+    path: ../src/ECBFinanceAPI/Loaders/YieldCurves/Loaders/IYieldCurveParameterLoader.cs
+    startLine: 29
+  assemblies:
+  - ECBFinanceAPI
+  namespace: ECBFinanceAPI.Loaders.YieldCurves.Loaders
+  summary: >-
+    Asynchronously retrieves NSS parameters for the specified government bond nominal rating within the inclusive date range
+
+    defined by <code class="paramref">startDate</code> and <code class="paramref">endDate</code>.
+  example: []
+  syntax:
+    content: Task<IEnumerable<NelsonSiegelSvenssonParameters>> GetYieldCurveNelsonSiegelSvenssonParametersAsync(GovernmentBondNominalRating governmentBondNominalRating, DateTime startDate, DateTime endDate)
+    parameters:
+    - id: governmentBondNominalRating
+      type: ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating
+      description: The nominal rating of government bonds to retrieve parameters for.
+    - id: startDate
+      type: System.DateTime
+      description: Inclusive start date of the range to retrieve parameters for.
+    - id: endDate
+      type: System.DateTime
+      description: Inclusive end date of the range to retrieve parameters for.
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters}}
+      description: A task that resolves to a collection of <xref href="ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters" data-throw-if-not-resolved="false"></xref> instances within the requested date range.
+    content.vb: Function GetYieldCurveNelsonSiegelSvenssonParametersAsync(governmentBondNominalRating As GovernmentBondNominalRating, startDate As Date, endDate As Date) As Task(Of IEnumerable(Of NelsonSiegelSvenssonParameters))
+  overload: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveParameterLoader.GetYieldCurveNelsonSiegelSvenssonParametersAsync*
+  nameWithType.vb: IYieldCurveParameterLoader.GetYieldCurveNelsonSiegelSvenssonParametersAsync(GovernmentBondNominalRating, Date, Date)
+  fullName.vb: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveParameterLoader.GetYieldCurveNelsonSiegelSvenssonParametersAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating, Date, Date)
+  name.vb: GetYieldCurveNelsonSiegelSvenssonParametersAsync(GovernmentBondNominalRating, Date, Date)
+references:
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders
+  commentId: N:ECBFinanceAPI.Loaders.YieldCurves.Loaders
+  href: ECBFinanceAPI.html
+  name: ECBFinanceAPI.Loaders.YieldCurves.Loaders
+  nameWithType: ECBFinanceAPI.Loaders.YieldCurves.Loaders
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Loaders
+  spec.csharp:
+  - uid: ECBFinanceAPI
+    name: ECBFinanceAPI
+    href: ECBFinanceAPI.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders
+    name: Loaders
+    href: ECBFinanceAPI.Loaders.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders.YieldCurves
+    name: YieldCurves
+    href: ECBFinanceAPI.Loaders.YieldCurves.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders
+    name: Loaders
+    href: ECBFinanceAPI.Loaders.YieldCurves.Loaders.html
+  spec.vb:
+  - uid: ECBFinanceAPI
+    name: ECBFinanceAPI
+    href: ECBFinanceAPI.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders
+    name: Loaders
+    href: ECBFinanceAPI.Loaders.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders.YieldCurves
+    name: YieldCurves
+    href: ECBFinanceAPI.Loaders.YieldCurves.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders
+    name: Loaders
+    href: ECBFinanceAPI.Loaders.YieldCurves.Loaders.html
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters
+  commentId: T:ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters
+  parent: ECBFinanceAPI.Loaders.YieldCurves.Models
+  href: ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.html
+  name: NelsonSiegelSvenssonParameters
+  nameWithType: NelsonSiegelSvenssonParameters
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveParameterLoader.GetYieldCurveNelsonSiegelSvenssonParametersAsync*
+  commentId: Overload:ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveParameterLoader.GetYieldCurveNelsonSiegelSvenssonParametersAsync
+  href: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveParameterLoader.html#ECBFinanceAPI_Loaders_YieldCurves_Loaders_IYieldCurveParameterLoader_GetYieldCurveNelsonSiegelSvenssonParametersAsync_ECBFinanceAPI_Loaders_YieldCurves_Enums_GovernmentBondNominalRating_
+  name: GetYieldCurveNelsonSiegelSvenssonParametersAsync
+  nameWithType: IYieldCurveParameterLoader.GetYieldCurveNelsonSiegelSvenssonParametersAsync
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveParameterLoader.GetYieldCurveNelsonSiegelSvenssonParametersAsync
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating
+  commentId: T:ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating
+  parent: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  href: ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating.html
+  name: GovernmentBondNominalRating
+  nameWithType: GovernmentBondNominalRating
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IEnumerable<NelsonSiegelSvenssonParameters>>
+  nameWithType: Task<IEnumerable<NelsonSiegelSvenssonParameters>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters>>
+  nameWithType.vb: Task(Of IEnumerable(Of NelsonSiegelSvenssonParameters))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.IEnumerable(Of ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters))
+  name.vb: Task(Of IEnumerable(Of NelsonSiegelSvenssonParameters))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters
+    name: NelsonSiegelSvenssonParameters
+    href: ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters
+    name: NelsonSiegelSvenssonParameters
+    href: ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.html
+  - name: )
+  - name: )
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models
+  commentId: N:ECBFinanceAPI.Loaders.YieldCurves.Models
+  href: ECBFinanceAPI.html
+  name: ECBFinanceAPI.Loaders.YieldCurves.Models
+  nameWithType: ECBFinanceAPI.Loaders.YieldCurves.Models
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models
+  spec.csharp:
+  - uid: ECBFinanceAPI
+    name: ECBFinanceAPI
+    href: ECBFinanceAPI.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders
+    name: Loaders
+    href: ECBFinanceAPI.Loaders.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders.YieldCurves
+    name: YieldCurves
+    href: ECBFinanceAPI.Loaders.YieldCurves.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders.YieldCurves.Models
+    name: Models
+    href: ECBFinanceAPI.Loaders.YieldCurves.Models.html
+  spec.vb:
+  - uid: ECBFinanceAPI
+    name: ECBFinanceAPI
+    href: ECBFinanceAPI.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders
+    name: Loaders
+    href: ECBFinanceAPI.Loaders.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders.YieldCurves
+    name: YieldCurves
+    href: ECBFinanceAPI.Loaders.YieldCurves.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders.YieldCurves.Models
+    name: Models
+    href: ECBFinanceAPI.Loaders.YieldCurves.Models.html
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  commentId: N:ECBFinanceAPI.Loaders.YieldCurves.Enums
+  href: ECBFinanceAPI.html
+  name: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  nameWithType: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  spec.csharp:
+  - uid: ECBFinanceAPI
+    name: ECBFinanceAPI
+    href: ECBFinanceAPI.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders
+    name: Loaders
+    href: ECBFinanceAPI.Loaders.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders.YieldCurves
+    name: YieldCurves
+    href: ECBFinanceAPI.Loaders.YieldCurves.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders.YieldCurves.Enums
+    name: Enums
+    href: ECBFinanceAPI.Loaders.YieldCurves.Enums.html
+  spec.vb:
+  - uid: ECBFinanceAPI
+    name: ECBFinanceAPI
+    href: ECBFinanceAPI.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders
+    name: Loaders
+    href: ECBFinanceAPI.Loaders.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders.YieldCurves
+    name: YieldCurves
+    href: ECBFinanceAPI.Loaders.YieldCurves.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders.YieldCurves.Enums
+    name: Enums
+    href: ECBFinanceAPI.Loaders.YieldCurves.Enums.html
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

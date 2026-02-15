@@ -4,7 +4,7 @@
     {
       "src": [
         {
-          "src": "..\\ECBFinanceAPI\\src",
+          "src": "../src",
           "files": [
             "**/*.csproj"
           ]
@@ -40,7 +40,7 @@
       "_appName": "ECBFinanceAPI",
       "_appTitle": "ECBFinanceAPI",
       "_enableSearch": true,
-      "pdf": true
+      "pdf": false
     }
   }
 }

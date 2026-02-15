@@ -1,0 +1,364 @@
+{
+  "source_base_path": "C:/Users/Emil/source/repos/ECBFinanceAPI/docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ECBFinanceAPI.Loaders.Loader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ECBFinanceAPI.Loaders.Loader.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ECBFinanceAPI.Loaders.Loader",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating",
+      "Summary": "<p sourcefile=\"api/ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating.yml\" sourcestartlinenumber=\"1\">Represents the nominal credit rating buckets used by the ECB when publishing government bond yield data.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency",
+      "Summary": "<p sourcefile=\"api/ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency.yml\" sourcestartlinenumber=\"1\">Specifies how maturities are selected when constructing or retrieving yield curves.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType",
+      "Summary": "<p sourcefile=\"api/ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType.yml\" sourcestartlinenumber=\"1\">Specifies the type of quote used when observing or constructing a yield curve.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ECBFinanceAPI.Loaders.YieldCurves.Enums.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ECBFinanceAPI.Loaders.YieldCurves.Enums.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ECBFinanceAPI.Loaders.YieldCurves.Enums",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveLoader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveLoader.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveLoader",
+      "Summary": "<p sourcefile=\"api/ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveLoader.yml\" sourcestartlinenumber=\"1\">Defines methods to asynchronously load yield curve data.\nImplementations retrieve yield curves based on government bond ratings,\nquote types, dates, and maturity frequencies.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveParameterLoader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveParameterLoader.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveParameterLoader",
+      "Summary": "<p sourcefile=\"api/ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveParameterLoader.yml\" sourcestartlinenumber=\"1\">Defines methods for loading Nelson–Siegel–Svensson (NSS) model parameters for government bond yield curves.\nImplementations are responsible for retrieving parameter sets for specified ratings and optional date ranges.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveQuoteLoader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveQuoteLoader.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveQuoteLoader",
+      "Summary": "<p sourcefile=\"api/ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveQuoteLoader.yml\" sourcestartlinenumber=\"1\">Defines methods to asynchronously load yield curve quotes over time for a specified\n<xref href=\"ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating\" data-throw-if-not-resolved=\"false\"></xref>, <xref href=\"ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType\" data-throw-if-not-resolved=\"false\"></xref>, and <xref href=\"ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveLoader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveLoader.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveLoader",
+      "Summary": "<p sourcefile=\"api/ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveLoader.yml\" sourcestartlinenumber=\"1\">Loads yield curves by retrieving yield curve quotes and parameters, and constructing <xref href=\"ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve\" data-throw-if-not-resolved=\"false\"></xref> instances.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveParameterLoader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveParameterLoader.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveParameterLoader",
+      "Summary": "<p sourcefile=\"api/ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveParameterLoader.yml\" sourcestartlinenumber=\"1\">Loads Nelson–Siegel–Svensson (NSS) parameters for government bond yield curves.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveQuoteLoader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveQuoteLoader.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveQuoteLoader",
+      "Summary": "<p sourcefile=\"api/ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveQuoteLoader.yml\" sourcestartlinenumber=\"1\">Loads yield curve quotes for a specific <xref href=\"ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating\" data-throw-if-not-resolved=\"false\"></xref>, <xref href=\"ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ECBFinanceAPI.Loaders.YieldCurves.Loaders.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ECBFinanceAPI.Loaders.YieldCurves.Loaders.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ECBFinanceAPI.Loaders.YieldCurves.Loaders",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity",
+      "Summary": "<p sourcefile=\"api/ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.yml\" sourcestartlinenumber=\"1\">Represents the maturity of a bond expressed in years and months.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters",
+      "Summary": "<p sourcefile=\"api/ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.yml\" sourcestartlinenumber=\"1\">Parameters for the Nelson–Siegel–Svensson (NSS) yield curve model.\nThe NSS model uses a combination of level, slope and two curvature components to fit observed yields across maturities.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve",
+      "Summary": "<p sourcefile=\"api/ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.yml\" sourcestartlinenumber=\"1\">Represents a yield curve composed of a collection of <xref href=\"ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurveQuote\" data-throw-if-not-resolved=\"false\"></xref> items.\nThe curve provides access to the underlying quotes, an indexer for retrieving yields by <xref href=\"ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity\" data-throw-if-not-resolved=\"false\"></xref>,\nand optional fitted <xref href=\"ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters\" data-throw-if-not-resolved=\"false\"></xref> describing the curve shape.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurveQuote.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurveQuote.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurveQuote",
+      "Summary": "<p sourcefile=\"api/ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurveQuote.yml\" sourcestartlinenumber=\"1\">Immutable record representing a single quote on a yield curve.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ECBFinanceAPI.Loaders.YieldCurves.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ECBFinanceAPI.Loaders.YieldCurves.Models.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ECBFinanceAPI.Loaders.YieldCurves.Models",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ECBFinanceAPI.Loaders.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ECBFinanceAPI.Loaders.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ECBFinanceAPI.Loaders",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "release-notes.md",
+      "output": {
+        ".html": {
+          "relative_path": "release-notes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

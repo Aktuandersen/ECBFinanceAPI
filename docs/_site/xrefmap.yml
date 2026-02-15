@@ -1,0 +1,880 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: ECBFinanceAPI.Loaders
+  name: ECBFinanceAPI.Loaders
+  href: api/ECBFinanceAPI.Loaders.html
+  commentId: N:ECBFinanceAPI.Loaders
+  fullName: ECBFinanceAPI.Loaders
+  nameWithType: ECBFinanceAPI.Loaders
+- uid: ECBFinanceAPI.Loaders.Loader
+  name: Loader
+  href: api/ECBFinanceAPI.Loaders.Loader.html
+  commentId: T:ECBFinanceAPI.Loaders.Loader
+  fullName: ECBFinanceAPI.Loaders.Loader
+  nameWithType: Loader
+- uid: ECBFinanceAPI.Loaders.Loader.#ctor
+  name: Loader()
+  href: api/ECBFinanceAPI.Loaders.Loader.html#ECBFinanceAPI_Loaders_Loader__ctor
+  commentId: M:ECBFinanceAPI.Loaders.Loader.#ctor
+  name.vb: New()
+  fullName: ECBFinanceAPI.Loaders.Loader.Loader()
+  fullName.vb: ECBFinanceAPI.Loaders.Loader.New()
+  nameWithType: Loader.Loader()
+  nameWithType.vb: Loader.New()
+- uid: ECBFinanceAPI.Loaders.Loader.#ctor(System.Net.Http.HttpClient)
+  name: Loader(HttpClient)
+  href: api/ECBFinanceAPI.Loaders.Loader.html#ECBFinanceAPI_Loaders_Loader__ctor_System_Net_Http_HttpClient_
+  commentId: M:ECBFinanceAPI.Loaders.Loader.#ctor(System.Net.Http.HttpClient)
+  name.vb: New(HttpClient)
+  fullName: ECBFinanceAPI.Loaders.Loader.Loader(System.Net.Http.HttpClient)
+  fullName.vb: ECBFinanceAPI.Loaders.Loader.New(System.Net.Http.HttpClient)
+  nameWithType: Loader.Loader(HttpClient)
+  nameWithType.vb: Loader.New(HttpClient)
+- uid: ECBFinanceAPI.Loaders.Loader.#ctor*
+  name: Loader
+  href: api/ECBFinanceAPI.Loaders.Loader.html#ECBFinanceAPI_Loaders_Loader__ctor_
+  commentId: Overload:ECBFinanceAPI.Loaders.Loader.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: ECBFinanceAPI.Loaders.Loader.Loader
+  fullName.vb: ECBFinanceAPI.Loaders.Loader.New
+  nameWithType: Loader.Loader
+  nameWithType.vb: Loader.New
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  name: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Enums.html
+  commentId: N:ECBFinanceAPI.Loaders.YieldCurves.Enums
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  nameWithType: ECBFinanceAPI.Loaders.YieldCurves.Enums
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating
+  name: GovernmentBondNominalRating
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating.html
+  commentId: T:ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating
+  nameWithType: GovernmentBondNominalRating
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating.AAA
+  name: AAA
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating.html#ECBFinanceAPI_Loaders_YieldCurves_Enums_GovernmentBondNominalRating_AAA
+  commentId: F:ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating.AAA
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating.AAA
+  nameWithType: GovernmentBondNominalRating.AAA
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating.AAAtoAA
+  name: AAAtoAA
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating.html#ECBFinanceAPI_Loaders_YieldCurves_Enums_GovernmentBondNominalRating_AAAtoAA
+  commentId: F:ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating.AAAtoAA
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating.AAAtoAA
+  nameWithType: GovernmentBondNominalRating.AAAtoAA
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating.AllRatings
+  name: AllRatings
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating.html#ECBFinanceAPI_Loaders_YieldCurves_Enums_GovernmentBondNominalRating_AllRatings
+  commentId: F:ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating.AllRatings
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating.AllRatings
+  nameWithType: GovernmentBondNominalRating.AllRatings
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency
+  name: MaturityFrequency
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency.html
+  commentId: T:ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency
+  nameWithType: MaturityFrequency
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency.Monthly
+  name: Monthly
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency.html#ECBFinanceAPI_Loaders_YieldCurves_Enums_MaturityFrequency_Monthly
+  commentId: F:ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency.Monthly
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency.Monthly
+  nameWithType: MaturityFrequency.Monthly
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency.Yearly
+  name: Yearly
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency.html#ECBFinanceAPI_Loaders_YieldCurves_Enums_MaturityFrequency_Yearly
+  commentId: F:ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency.Yearly
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency.Yearly
+  nameWithType: MaturityFrequency.Yearly
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter
+  name: NelsonSiegelSvenssonParameter
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter.html
+  commentId: T:ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter
+  nameWithType: NelsonSiegelSvenssonParameter
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter.Beta0
+  name: Beta0
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter.html#ECBFinanceAPI_Loaders_YieldCurves_Enums_NelsonSiegelSvenssonParameter_Beta0
+  commentId: F:ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter.Beta0
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter.Beta0
+  nameWithType: NelsonSiegelSvenssonParameter.Beta0
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter.Beta1
+  name: Beta1
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter.html#ECBFinanceAPI_Loaders_YieldCurves_Enums_NelsonSiegelSvenssonParameter_Beta1
+  commentId: F:ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter.Beta1
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter.Beta1
+  nameWithType: NelsonSiegelSvenssonParameter.Beta1
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter.Beta2
+  name: Beta2
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter.html#ECBFinanceAPI_Loaders_YieldCurves_Enums_NelsonSiegelSvenssonParameter_Beta2
+  commentId: F:ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter.Beta2
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter.Beta2
+  nameWithType: NelsonSiegelSvenssonParameter.Beta2
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter.Beta3
+  name: Beta3
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter.html#ECBFinanceAPI_Loaders_YieldCurves_Enums_NelsonSiegelSvenssonParameter_Beta3
+  commentId: F:ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter.Beta3
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter.Beta3
+  nameWithType: NelsonSiegelSvenssonParameter.Beta3
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter.Tau1
+  name: Tau1
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter.html#ECBFinanceAPI_Loaders_YieldCurves_Enums_NelsonSiegelSvenssonParameter_Tau1
+  commentId: F:ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter.Tau1
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter.Tau1
+  nameWithType: NelsonSiegelSvenssonParameter.Tau1
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter.Tau2
+  name: Tau2
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter.html#ECBFinanceAPI_Loaders_YieldCurves_Enums_NelsonSiegelSvenssonParameter_Tau2
+  commentId: F:ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter.Tau2
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter.Tau2
+  nameWithType: NelsonSiegelSvenssonParameter.Tau2
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType
+  name: QuoteType
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType.html
+  commentId: T:ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType
+  nameWithType: QuoteType
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType.InstantaneousForwardRate
+  name: InstantaneousForwardRate
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType.html#ECBFinanceAPI_Loaders_YieldCurves_Enums_QuoteType_InstantaneousForwardRate
+  commentId: F:ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType.InstantaneousForwardRate
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType.InstantaneousForwardRate
+  nameWithType: QuoteType.InstantaneousForwardRate
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType.ParRate
+  name: ParRate
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType.html#ECBFinanceAPI_Loaders_YieldCurves_Enums_QuoteType_ParRate
+  commentId: F:ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType.ParRate
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType.ParRate
+  nameWithType: QuoteType.ParRate
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType.SpotRate
+  name: SpotRate
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType.html#ECBFinanceAPI_Loaders_YieldCurves_Enums_QuoteType_SpotRate
+  commentId: F:ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType.SpotRate
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType.SpotRate
+  nameWithType: QuoteType.SpotRate
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders
+  name: ECBFinanceAPI.Loaders.YieldCurves.Loaders
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Loaders.html
+  commentId: N:ECBFinanceAPI.Loaders.YieldCurves.Loaders
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Loaders
+  nameWithType: ECBFinanceAPI.Loaders.YieldCurves.Loaders
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveLoader
+  name: IYieldCurveLoader
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveLoader.html
+  commentId: T:ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveLoader
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveLoader
+  nameWithType: IYieldCurveLoader
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveLoader.GetYieldCurveAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating,ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType,System.DateTime,ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency)
+  name: GetYieldCurveAsync(GovernmentBondNominalRating, QuoteType, DateTime, MaturityFrequency)
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveLoader.html#ECBFinanceAPI_Loaders_YieldCurves_Loaders_IYieldCurveLoader_GetYieldCurveAsync_ECBFinanceAPI_Loaders_YieldCurves_Enums_GovernmentBondNominalRating_ECBFinanceAPI_Loaders_YieldCurves_Enums_QuoteType_System_DateTime_ECBFinanceAPI_Loaders_YieldCurves_Enums_MaturityFrequency_
+  commentId: M:ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveLoader.GetYieldCurveAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating,ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType,System.DateTime,ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency)
+  name.vb: GetYieldCurveAsync(GovernmentBondNominalRating, QuoteType, Date, MaturityFrequency)
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveLoader.GetYieldCurveAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating, ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType, System.DateTime, ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency)
+  fullName.vb: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveLoader.GetYieldCurveAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating, ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType, Date, ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency)
+  nameWithType: IYieldCurveLoader.GetYieldCurveAsync(GovernmentBondNominalRating, QuoteType, DateTime, MaturityFrequency)
+  nameWithType.vb: IYieldCurveLoader.GetYieldCurveAsync(GovernmentBondNominalRating, QuoteType, Date, MaturityFrequency)
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveLoader.GetYieldCurveAsync*
+  name: GetYieldCurveAsync
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveLoader.html#ECBFinanceAPI_Loaders_YieldCurves_Loaders_IYieldCurveLoader_GetYieldCurveAsync_
+  commentId: Overload:ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveLoader.GetYieldCurveAsync
+  isSpec: "True"
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveLoader.GetYieldCurveAsync
+  nameWithType: IYieldCurveLoader.GetYieldCurveAsync
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveLoader.GetYieldCurvesAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating,ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType,System.DateTime,System.DateTime,ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency)
+  name: GetYieldCurvesAsync(GovernmentBondNominalRating, QuoteType, DateTime, DateTime, MaturityFrequency)
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveLoader.html#ECBFinanceAPI_Loaders_YieldCurves_Loaders_IYieldCurveLoader_GetYieldCurvesAsync_ECBFinanceAPI_Loaders_YieldCurves_Enums_GovernmentBondNominalRating_ECBFinanceAPI_Loaders_YieldCurves_Enums_QuoteType_System_DateTime_System_DateTime_ECBFinanceAPI_Loaders_YieldCurves_Enums_MaturityFrequency_
+  commentId: M:ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveLoader.GetYieldCurvesAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating,ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType,System.DateTime,System.DateTime,ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency)
+  name.vb: GetYieldCurvesAsync(GovernmentBondNominalRating, QuoteType, Date, Date, MaturityFrequency)
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveLoader.GetYieldCurvesAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating, ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType, System.DateTime, System.DateTime, ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency)
+  fullName.vb: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveLoader.GetYieldCurvesAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating, ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType, Date, Date, ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency)
+  nameWithType: IYieldCurveLoader.GetYieldCurvesAsync(GovernmentBondNominalRating, QuoteType, DateTime, DateTime, MaturityFrequency)
+  nameWithType.vb: IYieldCurveLoader.GetYieldCurvesAsync(GovernmentBondNominalRating, QuoteType, Date, Date, MaturityFrequency)
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveLoader.GetYieldCurvesAsync*
+  name: GetYieldCurvesAsync
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveLoader.html#ECBFinanceAPI_Loaders_YieldCurves_Loaders_IYieldCurveLoader_GetYieldCurvesAsync_
+  commentId: Overload:ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveLoader.GetYieldCurvesAsync
+  isSpec: "True"
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveLoader.GetYieldCurvesAsync
+  nameWithType: IYieldCurveLoader.GetYieldCurvesAsync
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveParameterLoader
+  name: IYieldCurveParameterLoader
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveParameterLoader.html
+  commentId: T:ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveParameterLoader
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveParameterLoader
+  nameWithType: IYieldCurveParameterLoader
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveParameterLoader.GetYieldCurveNelsonSiegelSvenssonParametersAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating)
+  name: GetYieldCurveNelsonSiegelSvenssonParametersAsync(GovernmentBondNominalRating)
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveParameterLoader.html#ECBFinanceAPI_Loaders_YieldCurves_Loaders_IYieldCurveParameterLoader_GetYieldCurveNelsonSiegelSvenssonParametersAsync_ECBFinanceAPI_Loaders_YieldCurves_Enums_GovernmentBondNominalRating_
+  commentId: M:ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveParameterLoader.GetYieldCurveNelsonSiegelSvenssonParametersAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating)
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveParameterLoader.GetYieldCurveNelsonSiegelSvenssonParametersAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating)
+  nameWithType: IYieldCurveParameterLoader.GetYieldCurveNelsonSiegelSvenssonParametersAsync(GovernmentBondNominalRating)
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveParameterLoader.GetYieldCurveNelsonSiegelSvenssonParametersAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating,System.DateTime,System.DateTime)
+  name: GetYieldCurveNelsonSiegelSvenssonParametersAsync(GovernmentBondNominalRating, DateTime, DateTime)
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveParameterLoader.html#ECBFinanceAPI_Loaders_YieldCurves_Loaders_IYieldCurveParameterLoader_GetYieldCurveNelsonSiegelSvenssonParametersAsync_ECBFinanceAPI_Loaders_YieldCurves_Enums_GovernmentBondNominalRating_System_DateTime_System_DateTime_
+  commentId: M:ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveParameterLoader.GetYieldCurveNelsonSiegelSvenssonParametersAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating,System.DateTime,System.DateTime)
+  name.vb: GetYieldCurveNelsonSiegelSvenssonParametersAsync(GovernmentBondNominalRating, Date, Date)
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveParameterLoader.GetYieldCurveNelsonSiegelSvenssonParametersAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating, System.DateTime, System.DateTime)
+  fullName.vb: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveParameterLoader.GetYieldCurveNelsonSiegelSvenssonParametersAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating, Date, Date)
+  nameWithType: IYieldCurveParameterLoader.GetYieldCurveNelsonSiegelSvenssonParametersAsync(GovernmentBondNominalRating, DateTime, DateTime)
+  nameWithType.vb: IYieldCurveParameterLoader.GetYieldCurveNelsonSiegelSvenssonParametersAsync(GovernmentBondNominalRating, Date, Date)
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveParameterLoader.GetYieldCurveNelsonSiegelSvenssonParametersAsync*
+  name: GetYieldCurveNelsonSiegelSvenssonParametersAsync
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveParameterLoader.html#ECBFinanceAPI_Loaders_YieldCurves_Loaders_IYieldCurveParameterLoader_GetYieldCurveNelsonSiegelSvenssonParametersAsync_
+  commentId: Overload:ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveParameterLoader.GetYieldCurveNelsonSiegelSvenssonParametersAsync
+  isSpec: "True"
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveParameterLoader.GetYieldCurveNelsonSiegelSvenssonParametersAsync
+  nameWithType: IYieldCurveParameterLoader.GetYieldCurveNelsonSiegelSvenssonParametersAsync
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveQuoteLoader
+  name: IYieldCurveQuoteLoader
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveQuoteLoader.html
+  commentId: T:ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveQuoteLoader
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveQuoteLoader
+  nameWithType: IYieldCurveQuoteLoader
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveQuoteLoader.GetYieldCurveQuotesAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating,ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType,ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity)
+  name: GetYieldCurveQuotesAsync(GovernmentBondNominalRating, QuoteType, Maturity)
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveQuoteLoader.html#ECBFinanceAPI_Loaders_YieldCurves_Loaders_IYieldCurveQuoteLoader_GetYieldCurveQuotesAsync_ECBFinanceAPI_Loaders_YieldCurves_Enums_GovernmentBondNominalRating_ECBFinanceAPI_Loaders_YieldCurves_Enums_QuoteType_ECBFinanceAPI_Loaders_YieldCurves_Models_Maturity_
+  commentId: M:ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveQuoteLoader.GetYieldCurveQuotesAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating,ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType,ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity)
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveQuoteLoader.GetYieldCurveQuotesAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating, ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType, ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity)
+  nameWithType: IYieldCurveQuoteLoader.GetYieldCurveQuotesAsync(GovernmentBondNominalRating, QuoteType, Maturity)
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveQuoteLoader.GetYieldCurveQuotesAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating,ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType,ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity,System.DateTime,System.DateTime)
+  name: GetYieldCurveQuotesAsync(GovernmentBondNominalRating, QuoteType, Maturity, DateTime, DateTime)
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveQuoteLoader.html#ECBFinanceAPI_Loaders_YieldCurves_Loaders_IYieldCurveQuoteLoader_GetYieldCurveQuotesAsync_ECBFinanceAPI_Loaders_YieldCurves_Enums_GovernmentBondNominalRating_ECBFinanceAPI_Loaders_YieldCurves_Enums_QuoteType_ECBFinanceAPI_Loaders_YieldCurves_Models_Maturity_System_DateTime_System_DateTime_
+  commentId: M:ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveQuoteLoader.GetYieldCurveQuotesAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating,ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType,ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity,System.DateTime,System.DateTime)
+  name.vb: GetYieldCurveQuotesAsync(GovernmentBondNominalRating, QuoteType, Maturity, Date, Date)
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveQuoteLoader.GetYieldCurveQuotesAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating, ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType, ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity, System.DateTime, System.DateTime)
+  fullName.vb: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveQuoteLoader.GetYieldCurveQuotesAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating, ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType, ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity, Date, Date)
+  nameWithType: IYieldCurveQuoteLoader.GetYieldCurveQuotesAsync(GovernmentBondNominalRating, QuoteType, Maturity, DateTime, DateTime)
+  nameWithType.vb: IYieldCurveQuoteLoader.GetYieldCurveQuotesAsync(GovernmentBondNominalRating, QuoteType, Maturity, Date, Date)
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveQuoteLoader.GetYieldCurveQuotesAsync*
+  name: GetYieldCurveQuotesAsync
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveQuoteLoader.html#ECBFinanceAPI_Loaders_YieldCurves_Loaders_IYieldCurveQuoteLoader_GetYieldCurveQuotesAsync_
+  commentId: Overload:ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveQuoteLoader.GetYieldCurveQuotesAsync
+  isSpec: "True"
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveQuoteLoader.GetYieldCurveQuotesAsync
+  nameWithType: IYieldCurveQuoteLoader.GetYieldCurveQuotesAsync
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveLoader
+  name: YieldCurveLoader
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveLoader.html
+  commentId: T:ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveLoader
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveLoader
+  nameWithType: YieldCurveLoader
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveLoader.#ctor
+  name: YieldCurveLoader()
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveLoader.html#ECBFinanceAPI_Loaders_YieldCurves_Loaders_YieldCurveLoader__ctor
+  commentId: M:ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveLoader.#ctor
+  name.vb: New()
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveLoader.YieldCurveLoader()
+  fullName.vb: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveLoader.New()
+  nameWithType: YieldCurveLoader.YieldCurveLoader()
+  nameWithType.vb: YieldCurveLoader.New()
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveLoader.#ctor(ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveQuoteLoader,ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveParameterLoader)
+  name: YieldCurveLoader(IYieldCurveQuoteLoader, IYieldCurveParameterLoader)
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveLoader.html#ECBFinanceAPI_Loaders_YieldCurves_Loaders_YieldCurveLoader__ctor_ECBFinanceAPI_Loaders_YieldCurves_Loaders_IYieldCurveQuoteLoader_ECBFinanceAPI_Loaders_YieldCurves_Loaders_IYieldCurveParameterLoader_
+  commentId: M:ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveLoader.#ctor(ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveQuoteLoader,ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveParameterLoader)
+  name.vb: New(IYieldCurveQuoteLoader, IYieldCurveParameterLoader)
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveLoader.YieldCurveLoader(ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveQuoteLoader, ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveParameterLoader)
+  fullName.vb: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveLoader.New(ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveQuoteLoader, ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveParameterLoader)
+  nameWithType: YieldCurveLoader.YieldCurveLoader(IYieldCurveQuoteLoader, IYieldCurveParameterLoader)
+  nameWithType.vb: YieldCurveLoader.New(IYieldCurveQuoteLoader, IYieldCurveParameterLoader)
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveLoader.#ctor(System.Net.Http.HttpClient)
+  name: YieldCurveLoader(HttpClient)
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveLoader.html#ECBFinanceAPI_Loaders_YieldCurves_Loaders_YieldCurveLoader__ctor_System_Net_Http_HttpClient_
+  commentId: M:ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveLoader.#ctor(System.Net.Http.HttpClient)
+  name.vb: New(HttpClient)
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveLoader.YieldCurveLoader(System.Net.Http.HttpClient)
+  fullName.vb: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveLoader.New(System.Net.Http.HttpClient)
+  nameWithType: YieldCurveLoader.YieldCurveLoader(HttpClient)
+  nameWithType.vb: YieldCurveLoader.New(HttpClient)
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveLoader.#ctor*
+  name: YieldCurveLoader
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveLoader.html#ECBFinanceAPI_Loaders_YieldCurves_Loaders_YieldCurveLoader__ctor_
+  commentId: Overload:ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveLoader.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveLoader.YieldCurveLoader
+  fullName.vb: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveLoader.New
+  nameWithType: YieldCurveLoader.YieldCurveLoader
+  nameWithType.vb: YieldCurveLoader.New
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveLoader.GetYieldCurveAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating,ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType,System.DateTime,ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency)
+  name: GetYieldCurveAsync(GovernmentBondNominalRating, QuoteType, DateTime, MaturityFrequency)
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveLoader.html#ECBFinanceAPI_Loaders_YieldCurves_Loaders_YieldCurveLoader_GetYieldCurveAsync_ECBFinanceAPI_Loaders_YieldCurves_Enums_GovernmentBondNominalRating_ECBFinanceAPI_Loaders_YieldCurves_Enums_QuoteType_System_DateTime_ECBFinanceAPI_Loaders_YieldCurves_Enums_MaturityFrequency_
+  commentId: M:ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveLoader.GetYieldCurveAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating,ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType,System.DateTime,ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency)
+  name.vb: GetYieldCurveAsync(GovernmentBondNominalRating, QuoteType, Date, MaturityFrequency)
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveLoader.GetYieldCurveAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating, ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType, System.DateTime, ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency)
+  fullName.vb: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveLoader.GetYieldCurveAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating, ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType, Date, ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency)
+  nameWithType: YieldCurveLoader.GetYieldCurveAsync(GovernmentBondNominalRating, QuoteType, DateTime, MaturityFrequency)
+  nameWithType.vb: YieldCurveLoader.GetYieldCurveAsync(GovernmentBondNominalRating, QuoteType, Date, MaturityFrequency)
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveLoader.GetYieldCurveAsync*
+  name: GetYieldCurveAsync
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveLoader.html#ECBFinanceAPI_Loaders_YieldCurves_Loaders_YieldCurveLoader_GetYieldCurveAsync_
+  commentId: Overload:ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveLoader.GetYieldCurveAsync
+  isSpec: "True"
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveLoader.GetYieldCurveAsync
+  nameWithType: YieldCurveLoader.GetYieldCurveAsync
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveLoader.GetYieldCurvesAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating,ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType,System.DateTime,System.DateTime,ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency)
+  name: GetYieldCurvesAsync(GovernmentBondNominalRating, QuoteType, DateTime, DateTime, MaturityFrequency)
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveLoader.html#ECBFinanceAPI_Loaders_YieldCurves_Loaders_YieldCurveLoader_GetYieldCurvesAsync_ECBFinanceAPI_Loaders_YieldCurves_Enums_GovernmentBondNominalRating_ECBFinanceAPI_Loaders_YieldCurves_Enums_QuoteType_System_DateTime_System_DateTime_ECBFinanceAPI_Loaders_YieldCurves_Enums_MaturityFrequency_
+  commentId: M:ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveLoader.GetYieldCurvesAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating,ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType,System.DateTime,System.DateTime,ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency)
+  name.vb: GetYieldCurvesAsync(GovernmentBondNominalRating, QuoteType, Date, Date, MaturityFrequency)
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveLoader.GetYieldCurvesAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating, ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType, System.DateTime, System.DateTime, ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency)
+  fullName.vb: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveLoader.GetYieldCurvesAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating, ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType, Date, Date, ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency)
+  nameWithType: YieldCurveLoader.GetYieldCurvesAsync(GovernmentBondNominalRating, QuoteType, DateTime, DateTime, MaturityFrequency)
+  nameWithType.vb: YieldCurveLoader.GetYieldCurvesAsync(GovernmentBondNominalRating, QuoteType, Date, Date, MaturityFrequency)
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveLoader.GetYieldCurvesAsync*
+  name: GetYieldCurvesAsync
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveLoader.html#ECBFinanceAPI_Loaders_YieldCurves_Loaders_YieldCurveLoader_GetYieldCurvesAsync_
+  commentId: Overload:ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveLoader.GetYieldCurvesAsync
+  isSpec: "True"
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveLoader.GetYieldCurvesAsync
+  nameWithType: YieldCurveLoader.GetYieldCurvesAsync
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveParameterLoader
+  name: YieldCurveParameterLoader
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveParameterLoader.html
+  commentId: T:ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveParameterLoader
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveParameterLoader
+  nameWithType: YieldCurveParameterLoader
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveParameterLoader.#ctor
+  name: YieldCurveParameterLoader()
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveParameterLoader.html#ECBFinanceAPI_Loaders_YieldCurves_Loaders_YieldCurveParameterLoader__ctor
+  commentId: M:ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveParameterLoader.#ctor
+  name.vb: New()
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveParameterLoader.YieldCurveParameterLoader()
+  fullName.vb: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveParameterLoader.New()
+  nameWithType: YieldCurveParameterLoader.YieldCurveParameterLoader()
+  nameWithType.vb: YieldCurveParameterLoader.New()
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveParameterLoader.#ctor(System.Net.Http.HttpClient)
+  name: YieldCurveParameterLoader(HttpClient)
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveParameterLoader.html#ECBFinanceAPI_Loaders_YieldCurves_Loaders_YieldCurveParameterLoader__ctor_System_Net_Http_HttpClient_
+  commentId: M:ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveParameterLoader.#ctor(System.Net.Http.HttpClient)
+  name.vb: New(HttpClient)
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveParameterLoader.YieldCurveParameterLoader(System.Net.Http.HttpClient)
+  fullName.vb: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveParameterLoader.New(System.Net.Http.HttpClient)
+  nameWithType: YieldCurveParameterLoader.YieldCurveParameterLoader(HttpClient)
+  nameWithType.vb: YieldCurveParameterLoader.New(HttpClient)
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveParameterLoader.#ctor*
+  name: YieldCurveParameterLoader
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveParameterLoader.html#ECBFinanceAPI_Loaders_YieldCurves_Loaders_YieldCurveParameterLoader__ctor_
+  commentId: Overload:ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveParameterLoader.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveParameterLoader.YieldCurveParameterLoader
+  fullName.vb: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveParameterLoader.New
+  nameWithType: YieldCurveParameterLoader.YieldCurveParameterLoader
+  nameWithType.vb: YieldCurveParameterLoader.New
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveParameterLoader.GetYieldCurveNelsonSiegelSvenssonParametersAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating)
+  name: GetYieldCurveNelsonSiegelSvenssonParametersAsync(GovernmentBondNominalRating)
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveParameterLoader.html#ECBFinanceAPI_Loaders_YieldCurves_Loaders_YieldCurveParameterLoader_GetYieldCurveNelsonSiegelSvenssonParametersAsync_ECBFinanceAPI_Loaders_YieldCurves_Enums_GovernmentBondNominalRating_
+  commentId: M:ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveParameterLoader.GetYieldCurveNelsonSiegelSvenssonParametersAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating)
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveParameterLoader.GetYieldCurveNelsonSiegelSvenssonParametersAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating)
+  nameWithType: YieldCurveParameterLoader.GetYieldCurveNelsonSiegelSvenssonParametersAsync(GovernmentBondNominalRating)
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveParameterLoader.GetYieldCurveNelsonSiegelSvenssonParametersAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating,System.DateTime,System.DateTime)
+  name: GetYieldCurveNelsonSiegelSvenssonParametersAsync(GovernmentBondNominalRating, DateTime, DateTime)
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveParameterLoader.html#ECBFinanceAPI_Loaders_YieldCurves_Loaders_YieldCurveParameterLoader_GetYieldCurveNelsonSiegelSvenssonParametersAsync_ECBFinanceAPI_Loaders_YieldCurves_Enums_GovernmentBondNominalRating_System_DateTime_System_DateTime_
+  commentId: M:ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveParameterLoader.GetYieldCurveNelsonSiegelSvenssonParametersAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating,System.DateTime,System.DateTime)
+  name.vb: GetYieldCurveNelsonSiegelSvenssonParametersAsync(GovernmentBondNominalRating, Date, Date)
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveParameterLoader.GetYieldCurveNelsonSiegelSvenssonParametersAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating, System.DateTime, System.DateTime)
+  fullName.vb: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveParameterLoader.GetYieldCurveNelsonSiegelSvenssonParametersAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating, Date, Date)
+  nameWithType: YieldCurveParameterLoader.GetYieldCurveNelsonSiegelSvenssonParametersAsync(GovernmentBondNominalRating, DateTime, DateTime)
+  nameWithType.vb: YieldCurveParameterLoader.GetYieldCurveNelsonSiegelSvenssonParametersAsync(GovernmentBondNominalRating, Date, Date)
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveParameterLoader.GetYieldCurveNelsonSiegelSvenssonParametersAsync*
+  name: GetYieldCurveNelsonSiegelSvenssonParametersAsync
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveParameterLoader.html#ECBFinanceAPI_Loaders_YieldCurves_Loaders_YieldCurveParameterLoader_GetYieldCurveNelsonSiegelSvenssonParametersAsync_
+  commentId: Overload:ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveParameterLoader.GetYieldCurveNelsonSiegelSvenssonParametersAsync
+  isSpec: "True"
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveParameterLoader.GetYieldCurveNelsonSiegelSvenssonParametersAsync
+  nameWithType: YieldCurveParameterLoader.GetYieldCurveNelsonSiegelSvenssonParametersAsync
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveQuoteLoader
+  name: YieldCurveQuoteLoader
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveQuoteLoader.html
+  commentId: T:ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveQuoteLoader
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveQuoteLoader
+  nameWithType: YieldCurveQuoteLoader
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveQuoteLoader.#ctor
+  name: YieldCurveQuoteLoader()
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveQuoteLoader.html#ECBFinanceAPI_Loaders_YieldCurves_Loaders_YieldCurveQuoteLoader__ctor
+  commentId: M:ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveQuoteLoader.#ctor
+  name.vb: New()
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveQuoteLoader.YieldCurveQuoteLoader()
+  fullName.vb: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveQuoteLoader.New()
+  nameWithType: YieldCurveQuoteLoader.YieldCurveQuoteLoader()
+  nameWithType.vb: YieldCurveQuoteLoader.New()
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveQuoteLoader.#ctor(System.Net.Http.HttpClient)
+  name: YieldCurveQuoteLoader(HttpClient)
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveQuoteLoader.html#ECBFinanceAPI_Loaders_YieldCurves_Loaders_YieldCurveQuoteLoader__ctor_System_Net_Http_HttpClient_
+  commentId: M:ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveQuoteLoader.#ctor(System.Net.Http.HttpClient)
+  name.vb: New(HttpClient)
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveQuoteLoader.YieldCurveQuoteLoader(System.Net.Http.HttpClient)
+  fullName.vb: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveQuoteLoader.New(System.Net.Http.HttpClient)
+  nameWithType: YieldCurveQuoteLoader.YieldCurveQuoteLoader(HttpClient)
+  nameWithType.vb: YieldCurveQuoteLoader.New(HttpClient)
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveQuoteLoader.#ctor*
+  name: YieldCurveQuoteLoader
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveQuoteLoader.html#ECBFinanceAPI_Loaders_YieldCurves_Loaders_YieldCurveQuoteLoader__ctor_
+  commentId: Overload:ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveQuoteLoader.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveQuoteLoader.YieldCurveQuoteLoader
+  fullName.vb: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveQuoteLoader.New
+  nameWithType: YieldCurveQuoteLoader.YieldCurveQuoteLoader
+  nameWithType.vb: YieldCurveQuoteLoader.New
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveQuoteLoader.GetYieldCurveQuotesAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating,ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType,ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity)
+  name: GetYieldCurveQuotesAsync(GovernmentBondNominalRating, QuoteType, Maturity)
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveQuoteLoader.html#ECBFinanceAPI_Loaders_YieldCurves_Loaders_YieldCurveQuoteLoader_GetYieldCurveQuotesAsync_ECBFinanceAPI_Loaders_YieldCurves_Enums_GovernmentBondNominalRating_ECBFinanceAPI_Loaders_YieldCurves_Enums_QuoteType_ECBFinanceAPI_Loaders_YieldCurves_Models_Maturity_
+  commentId: M:ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveQuoteLoader.GetYieldCurveQuotesAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating,ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType,ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity)
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveQuoteLoader.GetYieldCurveQuotesAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating, ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType, ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity)
+  nameWithType: YieldCurveQuoteLoader.GetYieldCurveQuotesAsync(GovernmentBondNominalRating, QuoteType, Maturity)
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveQuoteLoader.GetYieldCurveQuotesAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating,ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType,ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity,System.DateTime,System.DateTime)
+  name: GetYieldCurveQuotesAsync(GovernmentBondNominalRating, QuoteType, Maturity, DateTime, DateTime)
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveQuoteLoader.html#ECBFinanceAPI_Loaders_YieldCurves_Loaders_YieldCurveQuoteLoader_GetYieldCurveQuotesAsync_ECBFinanceAPI_Loaders_YieldCurves_Enums_GovernmentBondNominalRating_ECBFinanceAPI_Loaders_YieldCurves_Enums_QuoteType_ECBFinanceAPI_Loaders_YieldCurves_Models_Maturity_System_DateTime_System_DateTime_
+  commentId: M:ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveQuoteLoader.GetYieldCurveQuotesAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating,ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType,ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity,System.DateTime,System.DateTime)
+  name.vb: GetYieldCurveQuotesAsync(GovernmentBondNominalRating, QuoteType, Maturity, Date, Date)
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveQuoteLoader.GetYieldCurveQuotesAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating, ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType, ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity, System.DateTime, System.DateTime)
+  fullName.vb: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveQuoteLoader.GetYieldCurveQuotesAsync(ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating, ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType, ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity, Date, Date)
+  nameWithType: YieldCurveQuoteLoader.GetYieldCurveQuotesAsync(GovernmentBondNominalRating, QuoteType, Maturity, DateTime, DateTime)
+  nameWithType.vb: YieldCurveQuoteLoader.GetYieldCurveQuotesAsync(GovernmentBondNominalRating, QuoteType, Maturity, Date, Date)
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveQuoteLoader.GetYieldCurveQuotesAsync*
+  name: GetYieldCurveQuotesAsync
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveQuoteLoader.html#ECBFinanceAPI_Loaders_YieldCurves_Loaders_YieldCurveQuoteLoader_GetYieldCurveQuotesAsync_
+  commentId: Overload:ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveQuoteLoader.GetYieldCurveQuotesAsync
+  isSpec: "True"
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveQuoteLoader.GetYieldCurveQuotesAsync
+  nameWithType: YieldCurveQuoteLoader.GetYieldCurveQuotesAsync
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models
+  name: ECBFinanceAPI.Loaders.YieldCurves.Models
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Models.html
+  commentId: N:ECBFinanceAPI.Loaders.YieldCurves.Models
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models
+  nameWithType: ECBFinanceAPI.Loaders.YieldCurves.Models
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity
+  name: Maturity
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.html
+  commentId: T:ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity
+  nameWithType: Maturity
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.#ctor(System.Int32)
+  name: Maturity(int)
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.html#ECBFinanceAPI_Loaders_YieldCurves_Models_Maturity__ctor_System_Int32_
+  commentId: M:ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.#ctor(System.Int32)
+  name.vb: New(Integer)
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.Maturity(int)
+  fullName.vb: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.New(Integer)
+  nameWithType: Maturity.Maturity(int)
+  nameWithType.vb: Maturity.New(Integer)
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.#ctor(System.Int32,System.Int32)
+  name: Maturity(int, int)
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.html#ECBFinanceAPI_Loaders_YieldCurves_Models_Maturity__ctor_System_Int32_System_Int32_
+  commentId: M:ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.#ctor(System.Int32,System.Int32)
+  name.vb: New(Integer, Integer)
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.Maturity(int, int)
+  fullName.vb: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.New(Integer, Integer)
+  nameWithType: Maturity.Maturity(int, int)
+  nameWithType.vb: Maturity.New(Integer, Integer)
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.#ctor*
+  name: Maturity
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.html#ECBFinanceAPI_Loaders_YieldCurves_Models_Maturity__ctor_
+  commentId: Overload:ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.Maturity
+  fullName.vb: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.New
+  nameWithType: Maturity.Maturity
+  nameWithType.vb: Maturity.New
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.CompareTo(ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity)
+  name: CompareTo(Maturity?)
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.html#ECBFinanceAPI_Loaders_YieldCurves_Models_Maturity_CompareTo_ECBFinanceAPI_Loaders_YieldCurves_Models_Maturity_
+  commentId: M:ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.CompareTo(ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity)
+  name.vb: CompareTo(Maturity)
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.CompareTo(ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity?)
+  fullName.vb: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.CompareTo(ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity)
+  nameWithType: Maturity.CompareTo(Maturity?)
+  nameWithType.vb: Maturity.CompareTo(Maturity)
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.CompareTo*
+  name: CompareTo
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.html#ECBFinanceAPI_Loaders_YieldCurves_Models_Maturity_CompareTo_
+  commentId: Overload:ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.CompareTo
+  isSpec: "True"
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.CompareTo
+  nameWithType: Maturity.CompareTo
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.Months
+  name: Months
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.html#ECBFinanceAPI_Loaders_YieldCurves_Models_Maturity_Months
+  commentId: P:ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.Months
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.Months
+  nameWithType: Maturity.Months
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.Months*
+  name: Months
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.html#ECBFinanceAPI_Loaders_YieldCurves_Models_Maturity_Months_
+  commentId: Overload:ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.Months
+  isSpec: "True"
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.Months
+  nameWithType: Maturity.Months
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.ToString
+  name: ToString()
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.html#ECBFinanceAPI_Loaders_YieldCurves_Models_Maturity_ToString
+  commentId: M:ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.ToString
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.ToString()
+  nameWithType: Maturity.ToString()
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.ToString*
+  name: ToString
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.html#ECBFinanceAPI_Loaders_YieldCurves_Models_Maturity_ToString_
+  commentId: Overload:ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.ToString
+  isSpec: "True"
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.ToString
+  nameWithType: Maturity.ToString
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.Years
+  name: Years
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.html#ECBFinanceAPI_Loaders_YieldCurves_Models_Maturity_Years
+  commentId: P:ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.Years
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.Years
+  nameWithType: Maturity.Years
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.Years*
+  name: Years
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.html#ECBFinanceAPI_Loaders_YieldCurves_Models_Maturity_Years_
+  commentId: Overload:ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.Years
+  isSpec: "True"
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity.Years
+  nameWithType: Maturity.Years
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters
+  name: NelsonSiegelSvenssonParameters
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.html
+  commentId: T:ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters
+  nameWithType: NelsonSiegelSvenssonParameters
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.#ctor(System.DateTime,ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)
+  name: NelsonSiegelSvenssonParameters(DateTime, GovernmentBondNominalRating, double, double, double, double, double, double)
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.html#ECBFinanceAPI_Loaders_YieldCurves_Models_NelsonSiegelSvenssonParameters__ctor_System_DateTime_ECBFinanceAPI_Loaders_YieldCurves_Enums_GovernmentBondNominalRating_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_
+  commentId: M:ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.#ctor(System.DateTime,ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)
+  name.vb: New(Date, GovernmentBondNominalRating, Double, Double, Double, Double, Double, Double)
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.NelsonSiegelSvenssonParameters(System.DateTime, ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating, double, double, double, double, double, double)
+  fullName.vb: ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.New(Date, ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating, Double, Double, Double, Double, Double, Double)
+  nameWithType: NelsonSiegelSvenssonParameters.NelsonSiegelSvenssonParameters(DateTime, GovernmentBondNominalRating, double, double, double, double, double, double)
+  nameWithType.vb: NelsonSiegelSvenssonParameters.New(Date, GovernmentBondNominalRating, Double, Double, Double, Double, Double, Double)
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.#ctor*
+  name: NelsonSiegelSvenssonParameters
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.html#ECBFinanceAPI_Loaders_YieldCurves_Models_NelsonSiegelSvenssonParameters__ctor_
+  commentId: Overload:ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.NelsonSiegelSvenssonParameters
+  fullName.vb: ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.New
+  nameWithType: NelsonSiegelSvenssonParameters.NelsonSiegelSvenssonParameters
+  nameWithType.vb: NelsonSiegelSvenssonParameters.New
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.Beta0
+  name: Beta0
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.html#ECBFinanceAPI_Loaders_YieldCurves_Models_NelsonSiegelSvenssonParameters_Beta0
+  commentId: P:ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.Beta0
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.Beta0
+  nameWithType: NelsonSiegelSvenssonParameters.Beta0
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.Beta0*
+  name: Beta0
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.html#ECBFinanceAPI_Loaders_YieldCurves_Models_NelsonSiegelSvenssonParameters_Beta0_
+  commentId: Overload:ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.Beta0
+  isSpec: "True"
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.Beta0
+  nameWithType: NelsonSiegelSvenssonParameters.Beta0
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.Beta1
+  name: Beta1
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.html#ECBFinanceAPI_Loaders_YieldCurves_Models_NelsonSiegelSvenssonParameters_Beta1
+  commentId: P:ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.Beta1
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.Beta1
+  nameWithType: NelsonSiegelSvenssonParameters.Beta1
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.Beta1*
+  name: Beta1
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.html#ECBFinanceAPI_Loaders_YieldCurves_Models_NelsonSiegelSvenssonParameters_Beta1_
+  commentId: Overload:ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.Beta1
+  isSpec: "True"
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.Beta1
+  nameWithType: NelsonSiegelSvenssonParameters.Beta1
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.Beta2
+  name: Beta2
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.html#ECBFinanceAPI_Loaders_YieldCurves_Models_NelsonSiegelSvenssonParameters_Beta2
+  commentId: P:ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.Beta2
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.Beta2
+  nameWithType: NelsonSiegelSvenssonParameters.Beta2
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.Beta2*
+  name: Beta2
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.html#ECBFinanceAPI_Loaders_YieldCurves_Models_NelsonSiegelSvenssonParameters_Beta2_
+  commentId: Overload:ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.Beta2
+  isSpec: "True"
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.Beta2
+  nameWithType: NelsonSiegelSvenssonParameters.Beta2
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.Beta3
+  name: Beta3
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.html#ECBFinanceAPI_Loaders_YieldCurves_Models_NelsonSiegelSvenssonParameters_Beta3
+  commentId: P:ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.Beta3
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.Beta3
+  nameWithType: NelsonSiegelSvenssonParameters.Beta3
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.Beta3*
+  name: Beta3
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.html#ECBFinanceAPI_Loaders_YieldCurves_Models_NelsonSiegelSvenssonParameters_Beta3_
+  commentId: Overload:ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.Beta3
+  isSpec: "True"
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.Beta3
+  nameWithType: NelsonSiegelSvenssonParameters.Beta3
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.Date
+  name: Date
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.html#ECBFinanceAPI_Loaders_YieldCurves_Models_NelsonSiegelSvenssonParameters_Date
+  commentId: P:ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.Date
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.Date
+  nameWithType: NelsonSiegelSvenssonParameters.Date
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.Date*
+  name: Date
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.html#ECBFinanceAPI_Loaders_YieldCurves_Models_NelsonSiegelSvenssonParameters_Date_
+  commentId: Overload:ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.Date
+  isSpec: "True"
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.Date
+  nameWithType: NelsonSiegelSvenssonParameters.Date
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.GovernmentBondNominalRating
+  name: GovernmentBondNominalRating
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.html#ECBFinanceAPI_Loaders_YieldCurves_Models_NelsonSiegelSvenssonParameters_GovernmentBondNominalRating
+  commentId: P:ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.GovernmentBondNominalRating
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.GovernmentBondNominalRating
+  nameWithType: NelsonSiegelSvenssonParameters.GovernmentBondNominalRating
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.GovernmentBondNominalRating*
+  name: GovernmentBondNominalRating
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.html#ECBFinanceAPI_Loaders_YieldCurves_Models_NelsonSiegelSvenssonParameters_GovernmentBondNominalRating_
+  commentId: Overload:ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.GovernmentBondNominalRating
+  isSpec: "True"
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.GovernmentBondNominalRating
+  nameWithType: NelsonSiegelSvenssonParameters.GovernmentBondNominalRating
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.Tau1
+  name: Tau1
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.html#ECBFinanceAPI_Loaders_YieldCurves_Models_NelsonSiegelSvenssonParameters_Tau1
+  commentId: P:ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.Tau1
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.Tau1
+  nameWithType: NelsonSiegelSvenssonParameters.Tau1
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.Tau1*
+  name: Tau1
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.html#ECBFinanceAPI_Loaders_YieldCurves_Models_NelsonSiegelSvenssonParameters_Tau1_
+  commentId: Overload:ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.Tau1
+  isSpec: "True"
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.Tau1
+  nameWithType: NelsonSiegelSvenssonParameters.Tau1
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.Tau2
+  name: Tau2
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.html#ECBFinanceAPI_Loaders_YieldCurves_Models_NelsonSiegelSvenssonParameters_Tau2
+  commentId: P:ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.Tau2
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.Tau2
+  nameWithType: NelsonSiegelSvenssonParameters.Tau2
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.Tau2*
+  name: Tau2
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.html#ECBFinanceAPI_Loaders_YieldCurves_Models_NelsonSiegelSvenssonParameters_Tau2_
+  commentId: Overload:ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.Tau2
+  isSpec: "True"
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters.Tau2
+  nameWithType: NelsonSiegelSvenssonParameters.Tau2
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve
+  name: YieldCurve
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.html
+  commentId: T:ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve
+  nameWithType: YieldCurve
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.#ctor(System.Collections.Generic.IEnumerable{ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurveQuote},ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters,ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating,ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType,System.DateTime)
+  name: YieldCurve(IEnumerable<YieldCurveQuote>, NelsonSiegelSvenssonParameters?, GovernmentBondNominalRating, QuoteType, DateTime)
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.html#ECBFinanceAPI_Loaders_YieldCurves_Models_YieldCurve__ctor_System_Collections_Generic_IEnumerable_ECBFinanceAPI_Loaders_YieldCurves_Models_YieldCurveQuote__ECBFinanceAPI_Loaders_YieldCurves_Models_NelsonSiegelSvenssonParameters_ECBFinanceAPI_Loaders_YieldCurves_Enums_GovernmentBondNominalRating_ECBFinanceAPI_Loaders_YieldCurves_Enums_QuoteType_System_DateTime_
+  commentId: M:ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.#ctor(System.Collections.Generic.IEnumerable{ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurveQuote},ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters,ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating,ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType,System.DateTime)
+  name.vb: New(IEnumerable(Of YieldCurveQuote), NelsonSiegelSvenssonParameters, GovernmentBondNominalRating, QuoteType, Date)
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.YieldCurve(System.Collections.Generic.IEnumerable<ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurveQuote>, ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters?, ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating, ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType, System.DateTime)
+  fullName.vb: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.New(System.Collections.Generic.IEnumerable(Of ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurveQuote), ECBFinanceAPI.Loaders.YieldCurves.Models.NelsonSiegelSvenssonParameters, ECBFinanceAPI.Loaders.YieldCurves.Enums.GovernmentBondNominalRating, ECBFinanceAPI.Loaders.YieldCurves.Enums.QuoteType, Date)
+  nameWithType: YieldCurve.YieldCurve(IEnumerable<YieldCurveQuote>, NelsonSiegelSvenssonParameters?, GovernmentBondNominalRating, QuoteType, DateTime)
+  nameWithType.vb: YieldCurve.New(IEnumerable(Of YieldCurveQuote), NelsonSiegelSvenssonParameters, GovernmentBondNominalRating, QuoteType, Date)
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.#ctor*
+  name: YieldCurve
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.html#ECBFinanceAPI_Loaders_YieldCurves_Models_YieldCurve__ctor_
+  commentId: Overload:ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.YieldCurve
+  fullName.vb: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.New
+  nameWithType: YieldCurve.YieldCurve
+  nameWithType.vb: YieldCurve.New
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.Date
+  name: Date
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.html#ECBFinanceAPI_Loaders_YieldCurves_Models_YieldCurve_Date
+  commentId: P:ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.Date
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.Date
+  nameWithType: YieldCurve.Date
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.Date*
+  name: Date
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.html#ECBFinanceAPI_Loaders_YieldCurves_Models_YieldCurve_Date_
+  commentId: Overload:ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.Date
+  isSpec: "True"
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.Date
+  nameWithType: YieldCurve.Date
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.GetEnumerator
+  name: GetEnumerator()
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.html#ECBFinanceAPI_Loaders_YieldCurves_Models_YieldCurve_GetEnumerator
+  commentId: M:ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.GetEnumerator
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.GetEnumerator()
+  nameWithType: YieldCurve.GetEnumerator()
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.GetEnumerator*
+  name: GetEnumerator
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.html#ECBFinanceAPI_Loaders_YieldCurves_Models_YieldCurve_GetEnumerator_
+  commentId: Overload:ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.GetEnumerator
+  isSpec: "True"
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.GetEnumerator
+  nameWithType: YieldCurve.GetEnumerator
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.GovernmentBondNominalRating
+  name: GovernmentBondNominalRating
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.html#ECBFinanceAPI_Loaders_YieldCurves_Models_YieldCurve_GovernmentBondNominalRating
+  commentId: P:ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.GovernmentBondNominalRating
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.GovernmentBondNominalRating
+  nameWithType: YieldCurve.GovernmentBondNominalRating
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.GovernmentBondNominalRating*
+  name: GovernmentBondNominalRating
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.html#ECBFinanceAPI_Loaders_YieldCurves_Models_YieldCurve_GovernmentBondNominalRating_
+  commentId: Overload:ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.GovernmentBondNominalRating
+  isSpec: "True"
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.GovernmentBondNominalRating
+  nameWithType: YieldCurve.GovernmentBondNominalRating
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.Item(ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity)
+  name: this[Maturity]
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.html#ECBFinanceAPI_Loaders_YieldCurves_Models_YieldCurve_Item_ECBFinanceAPI_Loaders_YieldCurves_Models_Maturity_
+  commentId: P:ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.Item(ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity)
+  name.vb: this[](Maturity)
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.this[ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity]
+  fullName.vb: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.this[](ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity)
+  nameWithType: YieldCurve.this[Maturity]
+  nameWithType.vb: YieldCurve.this[](Maturity)
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.Item*
+  name: this
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.html#ECBFinanceAPI_Loaders_YieldCurves_Models_YieldCurve_Item_
+  commentId: Overload:ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.Item
+  isSpec: "True"
+  name.vb: this[]
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.this
+  fullName.vb: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.this[]
+  nameWithType: YieldCurve.this
+  nameWithType.vb: YieldCurve.this[]
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.Maturities
+  name: Maturities
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.html#ECBFinanceAPI_Loaders_YieldCurves_Models_YieldCurve_Maturities
+  commentId: P:ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.Maturities
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.Maturities
+  nameWithType: YieldCurve.Maturities
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.Maturities*
+  name: Maturities
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.html#ECBFinanceAPI_Loaders_YieldCurves_Models_YieldCurve_Maturities_
+  commentId: Overload:ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.Maturities
+  isSpec: "True"
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.Maturities
+  nameWithType: YieldCurve.Maturities
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.NelsonSiegelSvenssonParameters
+  name: NelsonSiegelSvenssonParameters
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.html#ECBFinanceAPI_Loaders_YieldCurves_Models_YieldCurve_NelsonSiegelSvenssonParameters
+  commentId: P:ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.NelsonSiegelSvenssonParameters
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.NelsonSiegelSvenssonParameters
+  nameWithType: YieldCurve.NelsonSiegelSvenssonParameters
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.NelsonSiegelSvenssonParameters*
+  name: NelsonSiegelSvenssonParameters
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.html#ECBFinanceAPI_Loaders_YieldCurves_Models_YieldCurve_NelsonSiegelSvenssonParameters_
+  commentId: Overload:ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.NelsonSiegelSvenssonParameters
+  isSpec: "True"
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.NelsonSiegelSvenssonParameters
+  nameWithType: YieldCurve.NelsonSiegelSvenssonParameters
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.QuoteType
+  name: QuoteType
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.html#ECBFinanceAPI_Loaders_YieldCurves_Models_YieldCurve_QuoteType
+  commentId: P:ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.QuoteType
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.QuoteType
+  nameWithType: YieldCurve.QuoteType
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.QuoteType*
+  name: QuoteType
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.html#ECBFinanceAPI_Loaders_YieldCurves_Models_YieldCurve_QuoteType_
+  commentId: Overload:ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.QuoteType
+  isSpec: "True"
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.QuoteType
+  nameWithType: YieldCurve.QuoteType
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.Quotes
+  name: Quotes
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.html#ECBFinanceAPI_Loaders_YieldCurves_Models_YieldCurve_Quotes
+  commentId: P:ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.Quotes
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.Quotes
+  nameWithType: YieldCurve.Quotes
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.Quotes*
+  name: Quotes
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.html#ECBFinanceAPI_Loaders_YieldCurves_Models_YieldCurve_Quotes_
+  commentId: Overload:ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.Quotes
+  isSpec: "True"
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.Quotes
+  nameWithType: YieldCurve.Quotes
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.Yields
+  name: Yields
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.html#ECBFinanceAPI_Loaders_YieldCurves_Models_YieldCurve_Yields
+  commentId: P:ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.Yields
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.Yields
+  nameWithType: YieldCurve.Yields
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.Yields*
+  name: Yields
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.html#ECBFinanceAPI_Loaders_YieldCurves_Models_YieldCurve_Yields_
+  commentId: Overload:ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.Yields
+  isSpec: "True"
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurve.Yields
+  nameWithType: YieldCurve.Yields
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurveQuote
+  name: YieldCurveQuote
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurveQuote.html
+  commentId: T:ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurveQuote
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurveQuote
+  nameWithType: YieldCurveQuote
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurveQuote.#ctor(System.DateTime,ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity,System.Double)
+  name: YieldCurveQuote(DateTime, Maturity, double)
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurveQuote.html#ECBFinanceAPI_Loaders_YieldCurves_Models_YieldCurveQuote__ctor_System_DateTime_ECBFinanceAPI_Loaders_YieldCurves_Models_Maturity_System_Double_
+  commentId: M:ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurveQuote.#ctor(System.DateTime,ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity,System.Double)
+  name.vb: New(Date, Maturity, Double)
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurveQuote.YieldCurveQuote(System.DateTime, ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity, double)
+  fullName.vb: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurveQuote.New(Date, ECBFinanceAPI.Loaders.YieldCurves.Models.Maturity, Double)
+  nameWithType: YieldCurveQuote.YieldCurveQuote(DateTime, Maturity, double)
+  nameWithType.vb: YieldCurveQuote.New(Date, Maturity, Double)
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurveQuote.#ctor*
+  name: YieldCurveQuote
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurveQuote.html#ECBFinanceAPI_Loaders_YieldCurves_Models_YieldCurveQuote__ctor_
+  commentId: Overload:ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurveQuote.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurveQuote.YieldCurveQuote
+  fullName.vb: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurveQuote.New
+  nameWithType: YieldCurveQuote.YieldCurveQuote
+  nameWithType.vb: YieldCurveQuote.New
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurveQuote.Date
+  name: Date
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurveQuote.html#ECBFinanceAPI_Loaders_YieldCurves_Models_YieldCurveQuote_Date
+  commentId: P:ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurveQuote.Date
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurveQuote.Date
+  nameWithType: YieldCurveQuote.Date
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurveQuote.Date*
+  name: Date
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurveQuote.html#ECBFinanceAPI_Loaders_YieldCurves_Models_YieldCurveQuote_Date_
+  commentId: Overload:ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurveQuote.Date
+  isSpec: "True"
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurveQuote.Date
+  nameWithType: YieldCurveQuote.Date
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurveQuote.Maturity
+  name: Maturity
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurveQuote.html#ECBFinanceAPI_Loaders_YieldCurves_Models_YieldCurveQuote_Maturity
+  commentId: P:ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurveQuote.Maturity
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurveQuote.Maturity
+  nameWithType: YieldCurveQuote.Maturity
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurveQuote.Maturity*
+  name: Maturity
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurveQuote.html#ECBFinanceAPI_Loaders_YieldCurves_Models_YieldCurveQuote_Maturity_
+  commentId: Overload:ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurveQuote.Maturity
+  isSpec: "True"
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurveQuote.Maturity
+  nameWithType: YieldCurveQuote.Maturity
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurveQuote.Yield
+  name: Yield
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurveQuote.html#ECBFinanceAPI_Loaders_YieldCurves_Models_YieldCurveQuote_Yield
+  commentId: P:ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurveQuote.Yield
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurveQuote.Yield
+  nameWithType: YieldCurveQuote.Yield
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurveQuote.Yield*
+  name: Yield
+  href: api/ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurveQuote.html#ECBFinanceAPI_Loaders_YieldCurves_Models_YieldCurveQuote_Yield_
+  commentId: Overload:ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurveQuote.Yield
+  isSpec: "True"
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Models.YieldCurveQuote.Yield
+  nameWithType: YieldCurveQuote.Yield

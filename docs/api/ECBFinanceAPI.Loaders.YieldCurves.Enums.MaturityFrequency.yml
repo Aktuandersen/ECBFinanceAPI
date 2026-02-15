@@ -1,0 +1,134 @@
+### YamlMime:ManagedReference
+items:
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency
+  commentId: T:ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency
+  id: MaturityFrequency
+  parent: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  children:
+  - ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency.Monthly
+  - ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency.Yearly
+  langs:
+  - csharp
+  - vb
+  name: MaturityFrequency
+  nameWithType: MaturityFrequency
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency
+  type: Enum
+  source:
+    remote:
+      path: src/ECBFinanceAPI/Loaders/YieldCurves/Enums/MaturityFrequency.cs
+      branch: main
+      repo: https://github.com/Aktuandersen/ECBFinanceAPI.git
+    id: MaturityFrequency
+    path: ../src/ECBFinanceAPI/Loaders/YieldCurves/Enums/MaturityFrequency.cs
+    startLine: 5
+  assemblies:
+  - ECBFinanceAPI
+  namespace: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  summary: Specifies how maturities are selected when constructing or retrieving yield curves.
+  example: []
+  syntax:
+    content: public enum MaturityFrequency
+    content.vb: Public Enum MaturityFrequency
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency.Yearly
+  commentId: F:ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency.Yearly
+  id: Yearly
+  parent: ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency
+  langs:
+  - csharp
+  - vb
+  name: Yearly
+  nameWithType: MaturityFrequency.Yearly
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency.Yearly
+  type: Field
+  source:
+    remote:
+      path: src/ECBFinanceAPI/Loaders/YieldCurves/Enums/MaturityFrequency.cs
+      branch: main
+      repo: https://github.com/Aktuandersen/ECBFinanceAPI.git
+    id: Yearly
+    path: ../src/ECBFinanceAPI/Loaders/YieldCurves/Enums/MaturityFrequency.cs
+    startLine: 10
+  assemblies:
+  - ECBFinanceAPI
+  namespace: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  summary: Use yearly maturities only (e.g. 1 year, 2 years, ...).
+  example: []
+  syntax:
+    content: Yearly = 0
+    return:
+      type: ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency.Monthly
+  commentId: F:ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency.Monthly
+  id: Monthly
+  parent: ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency
+  langs:
+  - csharp
+  - vb
+  name: Monthly
+  nameWithType: MaturityFrequency.Monthly
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency.Monthly
+  type: Field
+  source:
+    remote:
+      path: src/ECBFinanceAPI/Loaders/YieldCurves/Enums/MaturityFrequency.cs
+      branch: main
+      repo: https://github.com/Aktuandersen/ECBFinanceAPI.git
+    id: Monthly
+    path: ../src/ECBFinanceAPI/Loaders/YieldCurves/Enums/MaturityFrequency.cs
+    startLine: 15
+  assemblies:
+  - ECBFinanceAPI
+  namespace: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  summary: Use monthly maturities (includes shorter-term monthly points, e.g. 3 months, 6 months, and monthly up to the maximum term).
+  example: []
+  syntax:
+    content: Monthly = 1
+    return:
+      type: ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency
+references:
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  commentId: N:ECBFinanceAPI.Loaders.YieldCurves.Enums
+  href: ECBFinanceAPI.html
+  name: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  nameWithType: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  spec.csharp:
+  - uid: ECBFinanceAPI
+    name: ECBFinanceAPI
+    href: ECBFinanceAPI.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders
+    name: Loaders
+    href: ECBFinanceAPI.Loaders.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders.YieldCurves
+    name: YieldCurves
+    href: ECBFinanceAPI.Loaders.YieldCurves.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders.YieldCurves.Enums
+    name: Enums
+    href: ECBFinanceAPI.Loaders.YieldCurves.Enums.html
+  spec.vb:
+  - uid: ECBFinanceAPI
+    name: ECBFinanceAPI
+    href: ECBFinanceAPI.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders
+    name: Loaders
+    href: ECBFinanceAPI.Loaders.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders.YieldCurves
+    name: YieldCurves
+    href: ECBFinanceAPI.Loaders.YieldCurves.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders.YieldCurves.Enums
+    name: Enums
+    href: ECBFinanceAPI.Loaders.YieldCurves.Enums.html
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency
+  commentId: T:ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency
+  parent: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  href: ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency.html
+  name: MaturityFrequency
+  nameWithType: MaturityFrequency
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Enums.MaturityFrequency

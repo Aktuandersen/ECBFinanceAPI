@@ -1,0 +1,236 @@
+### YamlMime:ManagedReference
+items:
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter
+  commentId: T:ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter
+  id: NelsonSiegelSvenssonParameter
+  parent: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  children:
+  - ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter.Beta0
+  - ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter.Beta1
+  - ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter.Beta2
+  - ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter.Beta3
+  - ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter.Tau1
+  - ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter.Tau2
+  langs:
+  - csharp
+  - vb
+  name: NelsonSiegelSvenssonParameter
+  nameWithType: NelsonSiegelSvenssonParameter
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter
+  type: Enum
+  source:
+    remote:
+      path: src/ECBFinanceAPI/Loaders/YieldCurves/Enums/NelsonSiegelSvenssonParameter.cs
+      branch: main
+      repo: https://github.com/Aktuandersen/ECBFinanceAPI.git
+    id: NelsonSiegelSvenssonParameter
+    path: ../src/ECBFinanceAPI/Loaders/YieldCurves/Enums/NelsonSiegelSvenssonParameter.cs
+    startLine: 4
+  assemblies:
+  - ECBFinanceAPI
+  namespace: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  syntax:
+    content: public enum NelsonSiegelSvenssonParameter
+    content.vb: Public Enum NelsonSiegelSvenssonParameter
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter.Beta0
+  commentId: F:ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter.Beta0
+  id: Beta0
+  parent: ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter
+  langs:
+  - csharp
+  - vb
+  name: Beta0
+  nameWithType: NelsonSiegelSvenssonParameter.Beta0
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter.Beta0
+  type: Field
+  source:
+    remote:
+      path: src/ECBFinanceAPI/Loaders/YieldCurves/Enums/NelsonSiegelSvenssonParameter.cs
+      branch: main
+      repo: https://github.com/Aktuandersen/ECBFinanceAPI.git
+    id: Beta0
+    path: ../src/ECBFinanceAPI/Loaders/YieldCurves/Enums/NelsonSiegelSvenssonParameter.cs
+    startLine: 6
+  assemblies:
+  - ECBFinanceAPI
+  namespace: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  syntax:
+    content: Beta0 = 0
+    return:
+      type: ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter.Beta1
+  commentId: F:ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter.Beta1
+  id: Beta1
+  parent: ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter
+  langs:
+  - csharp
+  - vb
+  name: Beta1
+  nameWithType: NelsonSiegelSvenssonParameter.Beta1
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter.Beta1
+  type: Field
+  source:
+    remote:
+      path: src/ECBFinanceAPI/Loaders/YieldCurves/Enums/NelsonSiegelSvenssonParameter.cs
+      branch: main
+      repo: https://github.com/Aktuandersen/ECBFinanceAPI.git
+    id: Beta1
+    path: ../src/ECBFinanceAPI/Loaders/YieldCurves/Enums/NelsonSiegelSvenssonParameter.cs
+    startLine: 7
+  assemblies:
+  - ECBFinanceAPI
+  namespace: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  syntax:
+    content: Beta1 = 1
+    return:
+      type: ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter.Beta2
+  commentId: F:ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter.Beta2
+  id: Beta2
+  parent: ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter
+  langs:
+  - csharp
+  - vb
+  name: Beta2
+  nameWithType: NelsonSiegelSvenssonParameter.Beta2
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter.Beta2
+  type: Field
+  source:
+    remote:
+      path: src/ECBFinanceAPI/Loaders/YieldCurves/Enums/NelsonSiegelSvenssonParameter.cs
+      branch: main
+      repo: https://github.com/Aktuandersen/ECBFinanceAPI.git
+    id: Beta2
+    path: ../src/ECBFinanceAPI/Loaders/YieldCurves/Enums/NelsonSiegelSvenssonParameter.cs
+    startLine: 8
+  assemblies:
+  - ECBFinanceAPI
+  namespace: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  syntax:
+    content: Beta2 = 2
+    return:
+      type: ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter.Beta3
+  commentId: F:ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter.Beta3
+  id: Beta3
+  parent: ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter
+  langs:
+  - csharp
+  - vb
+  name: Beta3
+  nameWithType: NelsonSiegelSvenssonParameter.Beta3
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter.Beta3
+  type: Field
+  source:
+    remote:
+      path: src/ECBFinanceAPI/Loaders/YieldCurves/Enums/NelsonSiegelSvenssonParameter.cs
+      branch: main
+      repo: https://github.com/Aktuandersen/ECBFinanceAPI.git
+    id: Beta3
+    path: ../src/ECBFinanceAPI/Loaders/YieldCurves/Enums/NelsonSiegelSvenssonParameter.cs
+    startLine: 9
+  assemblies:
+  - ECBFinanceAPI
+  namespace: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  syntax:
+    content: Beta3 = 3
+    return:
+      type: ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter.Tau1
+  commentId: F:ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter.Tau1
+  id: Tau1
+  parent: ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter
+  langs:
+  - csharp
+  - vb
+  name: Tau1
+  nameWithType: NelsonSiegelSvenssonParameter.Tau1
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter.Tau1
+  type: Field
+  source:
+    remote:
+      path: src/ECBFinanceAPI/Loaders/YieldCurves/Enums/NelsonSiegelSvenssonParameter.cs
+      branch: main
+      repo: https://github.com/Aktuandersen/ECBFinanceAPI.git
+    id: Tau1
+    path: ../src/ECBFinanceAPI/Loaders/YieldCurves/Enums/NelsonSiegelSvenssonParameter.cs
+    startLine: 10
+  assemblies:
+  - ECBFinanceAPI
+  namespace: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  syntax:
+    content: Tau1 = 4
+    return:
+      type: ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter.Tau2
+  commentId: F:ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter.Tau2
+  id: Tau2
+  parent: ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter
+  langs:
+  - csharp
+  - vb
+  name: Tau2
+  nameWithType: NelsonSiegelSvenssonParameter.Tau2
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter.Tau2
+  type: Field
+  source:
+    remote:
+      path: src/ECBFinanceAPI/Loaders/YieldCurves/Enums/NelsonSiegelSvenssonParameter.cs
+      branch: main
+      repo: https://github.com/Aktuandersen/ECBFinanceAPI.git
+    id: Tau2
+    path: ../src/ECBFinanceAPI/Loaders/YieldCurves/Enums/NelsonSiegelSvenssonParameter.cs
+    startLine: 11
+  assemblies:
+  - ECBFinanceAPI
+  namespace: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  syntax:
+    content: Tau2 = 5
+    return:
+      type: ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter
+references:
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  commentId: N:ECBFinanceAPI.Loaders.YieldCurves.Enums
+  href: ECBFinanceAPI.html
+  name: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  nameWithType: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  spec.csharp:
+  - uid: ECBFinanceAPI
+    name: ECBFinanceAPI
+    href: ECBFinanceAPI.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders
+    name: Loaders
+    href: ECBFinanceAPI.Loaders.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders.YieldCurves
+    name: YieldCurves
+    href: ECBFinanceAPI.Loaders.YieldCurves.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders.YieldCurves.Enums
+    name: Enums
+    href: ECBFinanceAPI.Loaders.YieldCurves.Enums.html
+  spec.vb:
+  - uid: ECBFinanceAPI
+    name: ECBFinanceAPI
+    href: ECBFinanceAPI.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders
+    name: Loaders
+    href: ECBFinanceAPI.Loaders.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders.YieldCurves
+    name: YieldCurves
+    href: ECBFinanceAPI.Loaders.YieldCurves.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders.YieldCurves.Enums
+    name: Enums
+    href: ECBFinanceAPI.Loaders.YieldCurves.Enums.html
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter
+  commentId: T:ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter
+  parent: ECBFinanceAPI.Loaders.YieldCurves.Enums
+  href: ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter.html
+  name: NelsonSiegelSvenssonParameter
+  nameWithType: NelsonSiegelSvenssonParameter
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Enums.NelsonSiegelSvenssonParameter

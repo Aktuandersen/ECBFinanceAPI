@@ -1,0 +1,99 @@
+### YamlMime:ManagedReference
+items:
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders
+  commentId: N:ECBFinanceAPI.Loaders.YieldCurves.Loaders
+  id: ECBFinanceAPI.Loaders.YieldCurves.Loaders
+  children:
+  - ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveLoader
+  - ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveParameterLoader
+  - ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveQuoteLoader
+  - ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveLoader
+  - ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveParameterLoader
+  - ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveQuoteLoader
+  langs:
+  - csharp
+  - vb
+  name: ECBFinanceAPI.Loaders.YieldCurves.Loaders
+  nameWithType: ECBFinanceAPI.Loaders.YieldCurves.Loaders
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Loaders
+  type: Namespace
+  assemblies:
+  - ECBFinanceAPI
+references:
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveLoader
+  commentId: T:ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveLoader
+  parent: ECBFinanceAPI.Loaders.YieldCurves.Loaders
+  href: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveLoader.html
+  name: IYieldCurveLoader
+  nameWithType: IYieldCurveLoader
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveLoader
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveParameterLoader
+  commentId: T:ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveParameterLoader
+  parent: ECBFinanceAPI.Loaders.YieldCurves.Loaders
+  href: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveParameterLoader.html
+  name: IYieldCurveParameterLoader
+  nameWithType: IYieldCurveParameterLoader
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveParameterLoader
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveQuoteLoader
+  commentId: T:ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveQuoteLoader
+  parent: ECBFinanceAPI.Loaders.YieldCurves.Loaders
+  href: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveQuoteLoader.html
+  name: IYieldCurveQuoteLoader
+  nameWithType: IYieldCurveQuoteLoader
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Loaders.IYieldCurveQuoteLoader
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveLoader
+  commentId: T:ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveLoader
+  href: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveLoader.html
+  name: YieldCurveLoader
+  nameWithType: YieldCurveLoader
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveLoader
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveParameterLoader
+  commentId: T:ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveParameterLoader
+  href: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveParameterLoader.html
+  name: YieldCurveParameterLoader
+  nameWithType: YieldCurveParameterLoader
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveParameterLoader
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveQuoteLoader
+  commentId: T:ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveQuoteLoader
+  href: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveQuoteLoader.html
+  name: YieldCurveQuoteLoader
+  nameWithType: YieldCurveQuoteLoader
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Loaders.YieldCurveQuoteLoader
+- uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders
+  commentId: N:ECBFinanceAPI.Loaders.YieldCurves.Loaders
+  href: ECBFinanceAPI.html
+  name: ECBFinanceAPI.Loaders.YieldCurves.Loaders
+  nameWithType: ECBFinanceAPI.Loaders.YieldCurves.Loaders
+  fullName: ECBFinanceAPI.Loaders.YieldCurves.Loaders
+  spec.csharp:
+  - uid: ECBFinanceAPI
+    name: ECBFinanceAPI
+    href: ECBFinanceAPI.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders
+    name: Loaders
+    href: ECBFinanceAPI.Loaders.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders.YieldCurves
+    name: YieldCurves
+    href: ECBFinanceAPI.Loaders.YieldCurves.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders
+    name: Loaders
+    href: ECBFinanceAPI.Loaders.YieldCurves.Loaders.html
+  spec.vb:
+  - uid: ECBFinanceAPI
+    name: ECBFinanceAPI
+    href: ECBFinanceAPI.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders
+    name: Loaders
+    href: ECBFinanceAPI.Loaders.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders.YieldCurves
+    name: YieldCurves
+    href: ECBFinanceAPI.Loaders.YieldCurves.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders.YieldCurves.Loaders
+    name: Loaders
+    href: ECBFinanceAPI.Loaders.YieldCurves.Loaders.html

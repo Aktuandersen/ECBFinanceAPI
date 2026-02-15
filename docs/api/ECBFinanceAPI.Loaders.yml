@@ -1,0 +1,46 @@
+### YamlMime:ManagedReference
+items:
+- uid: ECBFinanceAPI.Loaders
+  commentId: N:ECBFinanceAPI.Loaders
+  id: ECBFinanceAPI.Loaders
+  children:
+  - ECBFinanceAPI.Loaders.Loader
+  langs:
+  - csharp
+  - vb
+  name: ECBFinanceAPI.Loaders
+  nameWithType: ECBFinanceAPI.Loaders
+  fullName: ECBFinanceAPI.Loaders
+  type: Namespace
+  assemblies:
+  - ECBFinanceAPI
+references:
+- uid: ECBFinanceAPI.Loaders.Loader
+  commentId: T:ECBFinanceAPI.Loaders.Loader
+  parent: ECBFinanceAPI.Loaders
+  href: ECBFinanceAPI.Loaders.Loader.html
+  name: Loader
+  nameWithType: Loader
+  fullName: ECBFinanceAPI.Loaders.Loader
+- uid: ECBFinanceAPI.Loaders
+  commentId: N:ECBFinanceAPI.Loaders
+  href: ECBFinanceAPI.html
+  name: ECBFinanceAPI.Loaders
+  nameWithType: ECBFinanceAPI.Loaders
+  fullName: ECBFinanceAPI.Loaders
+  spec.csharp:
+  - uid: ECBFinanceAPI
+    name: ECBFinanceAPI
+    href: ECBFinanceAPI.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders
+    name: Loaders
+    href: ECBFinanceAPI.Loaders.html
+  spec.vb:
+  - uid: ECBFinanceAPI
+    name: ECBFinanceAPI
+    href: ECBFinanceAPI.html
+  - name: .
+  - uid: ECBFinanceAPI.Loaders
+    name: Loaders
+    href: ECBFinanceAPI.Loaders.html
