@@ -1,5 +1,5 @@
-- name: Docs
-  href: docs/
+- name: Getting started
+  href: getting_started/
 - name: API
   href: api/
 - name: Release Notes

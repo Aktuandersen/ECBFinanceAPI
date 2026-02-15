@@ -291,33 +291,23 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/getting-started.md",
+      "source_relative_path": "getting_started/getting-started.md",
       "output": {
         ".html": {
-          "relative_path": "docs/getting-started.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "docs/introduction.md",
-      "output": {
-        ".html": {
-          "relative_path": "docs/introduction.html"
+          "relative_path": "getting_started/getting-started.html"
         }
       },
       "version": ""
     },
     {
       "type": "Toc",
-      "source_relative_path": "docs/toc.yml",
+      "source_relative_path": "getting_started/toc.yml",
       "output": {
         ".html": {
-          "relative_path": "docs/toc.html"
+          "relative_path": "getting_started/toc.html"
         },
         ".json": {
-          "relative_path": "docs/toc.json"
+          "relative_path": "getting_started/toc.json"
         }
       },
       "version": ""
@@ -334,10 +324,23 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "release-notes.md",
+      "source_relative_path": "release_notes/release-notes.md",
       "output": {
         ".html": {
-          "relative_path": "release-notes.html"
+          "relative_path": "release_notes/release-notes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "release_notes/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "release_notes/toc.html"
+        },
+        ".json": {
+          "relative_path": "release_notes/toc.json"
         }
       },
       "version": ""

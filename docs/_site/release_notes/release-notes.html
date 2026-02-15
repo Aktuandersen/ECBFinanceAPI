@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Getting started | ECBFinanceAPI </title>
+      <title>Release Notes | ECBFinanceAPI </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Getting started | ECBFinanceAPI ">
+      <meta name="title" content="Release Notes | ECBFinanceAPI ">
       
       
       <link rel="icon" href="../favicon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/Aktuandersen/ECBFinanceAPI/blob/main/docs/docs/getting-started.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/Aktuandersen/ECBFinanceAPI/blob/main/docs/release_notes/release-notes.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -85,40 +85,20 @@
         </div>
 
         <article data-uid="">
-<h1 id="getting-started">Getting started</h1>
+<h1 id="release-notes">Release Notes</h1>
 
-<p>The library is based around <em>loaders</em>, that loads collections of <em>models</em> given the <em>data specifications</em>.</p>
-<p>Whenever you want to access some data, you instantiate a loader and call it with your data specifications, and that will return a collection of the model associated with that call.</p>
-<p>Let's say we want to load all the available 10-year spot rates for AAA rated governmet bonds in the euro area.</p>
-<pre><code class="lang-cs">var quoteLoader = new YieldCurveQuoteLoader();
-
-var rating = GovernmentBondNominalRating.AAA;
-var quoteType = QuoteType.SpotRate;
-var maturity = new Maturity(Years: 10);
-
-IEnumerable&lt;YieldCurveQuote&gt; tenYearAAASpotRates = await quoteLoader.GetYieldCurveQuotesAsync(rating, quoteType, maturity);
-</code></pre>
-<hr>
-<p>We can also specify the time inverval:</p>
-<pre><code class="lang-cs">var startDate = new DateTime(2025, 01, 01);
-var endDate = new DateTime(2025, 12, 31);
-
-IEnumerable&lt;YieldCurveQuote&gt; tenYearAAASpotRatesOf2025 = await quoteLoader.GetYieldCurveQuotesAsync(rating, quoteType, maturity, startDate, endDate);
-</code></pre>
-<hr>
-<p>The <code>YieldCurveQuote</code> model is a simple data container, but some loaders will return more sophisticated models:</p>
-<pre><code class="lang-cs">var yieldCurveLoader = new YieldCurveLoader();
-
-var date = new DateTime(2025, 01, 31);
-var maturityFrequency = MaturityFrequency.Yearly;
-
-YieldCurve curve = await yieldCurveLoader.GetYieldCurveAsync(rating, quoteType, date, maturityFrequency);
-</code></pre>
+<h2 id="version-100">Version 1.0.0</h2>
+<h3 id="features">Features</h3>
+<ul>
+<li>Added a feature to load yield curve quotes through <code>YieldCurveQuoteLoader</code>.</li>
+<li>Added a feature to load Nelson-Siegel-Svensson parameters through <code>YieldCurveParameterLoader</code>.</li>
+<li>Added a feature to load yield curves through <code>YieldCurveLoader</code>.</li>
+</ul>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/Aktuandersen/ECBFinanceAPI/blob/main/docs/docs/getting-started.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/Aktuandersen/ECBFinanceAPI/blob/main/docs/release_notes/release-notes.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

@@ -94,23 +94,18 @@
     "title": "Namespace ECBFinanceAPI.Loaders | ECBFinanceAPI",
     "summary": "Namespace ECBFinanceAPI.Loaders Classes Loader"
   },
-  "docs/getting-started.html": {
-    "href": "docs/getting-started.html",
-    "title": "Getting Started | ECBFinanceAPI",
-    "summary": "Getting Started"
-  },
-  "docs/introduction.html": {
-    "href": "docs/introduction.html",
-    "title": "Introduction | ECBFinanceAPI",
-    "summary": "Introduction"
+  "getting_started/getting-started.html": {
+    "href": "getting_started/getting-started.html",
+    "title": "Getting started | ECBFinanceAPI",
+    "summary": "Getting started The library is based around loaders, that loads collections of models given the data specifications. Whenever you want to access some data, you instantiate a loader and call it with your data specifications, and that will return a collection of the model associated with that call. Let's say we want to load all the available 10-year spot rates for AAA rated governmet bonds in the euro area. var quoteLoader = new YieldCurveQuoteLoader(); var rating = GovernmentBondNominalRating.AAA; var quoteType = QuoteType.SpotRate; var maturity = new Maturity(Years: 10); IEnumerable<YieldCurveQuote> tenYearAAASpotRates = await quoteLoader.GetYieldCurveQuotesAsync(rating, quoteType, maturity); We can also specify the time inverval: var startDate = new DateTime(2025, 01, 01); var endDate = new DateTime(2025, 12, 31); IEnumerable<YieldCurveQuote> tenYearAAASpotRatesOf2025 = await quoteLoader.GetYieldCurveQuotesAsync(rating, quoteType, maturity, startDate, endDate); The YieldCurveQuote model is a simple data container, but some loaders will return more sophisticated models: var yieldCurveLoader = new YieldCurveLoader(); var date = new DateTime(2025, 01, 31); var maturityFrequency = MaturityFrequency.Yearly; YieldCurve curve = await yieldCurveLoader.GetYieldCurveAsync(rating, quoteType, date, maturityFrequency);"
   },
   "index.html": {
     "href": "index.html",
     "title": "This is the HOMEPAGE. | ECBFinanceAPI",
     "summary": "This is the HOMEPAGE. Refer to Markdown for how to write markdown files. Quick Start Notes: Add images to the images folder if the file is referencing an image."
   },
-  "release-notes.html": {
-    "href": "release-notes.html",
+  "release_notes/release-notes.html": {
+    "href": "release_notes/release-notes.html",
     "title": "Release Notes | ECBFinanceAPI",
     "summary": "Release Notes Version 1.0.0 Features Added a feature to load yield curve quotes through YieldCurveQuoteLoader. Added a feature to load Nelson-Siegel-Svensson parameters through YieldCurveParameterLoader. Added a feature to load yield curves through YieldCurveLoader."
   }
