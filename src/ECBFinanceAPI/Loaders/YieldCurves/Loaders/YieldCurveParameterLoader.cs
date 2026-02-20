@@ -30,17 +30,22 @@ public class YieldCurveParameterLoader : Loader, IYieldCurveParameterLoader
     public async Task<IEnumerable<NelsonSiegelSvenssonParameters>> GetYieldCurveNelsonSiegelSvenssonParametersAsync(GovernmentBondNominalRating governmentBondNominalRating, DateTime startDate, DateTime endDate) =>
         await DownloadYieldCurveNelsonSiegelSvenssonParametersAsync(governmentBondNominalRating, startDate, endDate);
 
+    /// <inheritdoc/>
+    public async Task<IEnumerable<YieldCurveParameter>> GetNelsonSiegelSvenssonParameterAsync(GovernmentBondNominalRating governmentBondNominalRating, NelsonSiegelSvenssonParameter nelsonSiegelSvenssonParameter) =>
+        await DownloadYieldCurveParameterAsync(governmentBondNominalRating, nelsonSiegelSvenssonParameter, null, null);
+
+    /// <inheritdoc/>
+    public async Task<IEnumerable<YieldCurveParameter>> GetNelsonSiegelSvenssonParameterAsync(GovernmentBondNominalRating governmentBondNominalRating, NelsonSiegelSvenssonParameter nelsonSiegelSvenssonParameter, DateTime startDate, DateTime endDate) =>
+        await DownloadYieldCurveParameterAsync(governmentBondNominalRating, nelsonSiegelSvenssonParameter, startDate, endDate);
+
     private async Task<IEnumerable<NelsonSiegelSvenssonParameters>> DownloadYieldCurveNelsonSiegelSvenssonParametersAsync(GovernmentBondNominalRating governmentBondNominalRating, DateTime? startDate, DateTime? endDate)
     {
-        if (!_supportedRatings.Contains(governmentBondNominalRating))
-            throw new ArgumentException($"Nelson-Siegel-Svensson parameters are only supported by ECB for government bond nominal ratings [{string.Join(", ", _supportedRatings)}]", nameof(governmentBondNominalRating));
-
-        Task<IEnumerable<ECBData>> beta0Task = DownloadAsync(new YieldCurveEndpoint(governmentBondNominalRating, NelsonSiegelSvenssonParameter.Beta0, startDate, endDate));
-        Task<IEnumerable<ECBData>> beta1Task = DownloadAsync(new YieldCurveEndpoint(governmentBondNominalRating, NelsonSiegelSvenssonParameter.Beta1, startDate, endDate));
-        Task<IEnumerable<ECBData>> beta2Task = DownloadAsync(new YieldCurveEndpoint(governmentBondNominalRating, NelsonSiegelSvenssonParameter.Beta2, startDate, endDate));
-        Task<IEnumerable<ECBData>> beta3Task = DownloadAsync(new YieldCurveEndpoint(governmentBondNominalRating, NelsonSiegelSvenssonParameter.Beta3, startDate, endDate));
-        Task<IEnumerable<ECBData>> tau1Task = DownloadAsync(new YieldCurveEndpoint(governmentBondNominalRating, NelsonSiegelSvenssonParameter.Tau1, startDate, endDate));
-        Task<IEnumerable<ECBData>> tau2Task = DownloadAsync(new YieldCurveEndpoint(governmentBondNominalRating, NelsonSiegelSvenssonParameter.Tau2, startDate, endDate));
+        Task<IEnumerable<YieldCurveParameter>> beta0Task = DownloadYieldCurveParameterAsync(governmentBondNominalRating, NelsonSiegelSvenssonParameter.Beta0, startDate, endDate);
+        Task<IEnumerable<YieldCurveParameter>> beta1Task = DownloadYieldCurveParameterAsync(governmentBondNominalRating, NelsonSiegelSvenssonParameter.Beta1, startDate, endDate);
+        Task<IEnumerable<YieldCurveParameter>> beta2Task = DownloadYieldCurveParameterAsync(governmentBondNominalRating, NelsonSiegelSvenssonParameter.Beta2, startDate, endDate);
+        Task<IEnumerable<YieldCurveParameter>> beta3Task = DownloadYieldCurveParameterAsync(governmentBondNominalRating, NelsonSiegelSvenssonParameter.Beta3, startDate, endDate);
+        Task<IEnumerable<YieldCurveParameter>> tau1Task = DownloadYieldCurveParameterAsync(governmentBondNominalRating, NelsonSiegelSvenssonParameter.Tau1, startDate, endDate);
+        Task<IEnumerable<YieldCurveParameter>> tau2Task = DownloadYieldCurveParameterAsync(governmentBondNominalRating, NelsonSiegelSvenssonParameter.Tau2, startDate, endDate);
 
         await Task.WhenAll([
             beta0Task,
@@ -67,5 +72,16 @@ public class YieldCurveParameterLoader : Loader, IYieldCurveParameterLoader
                        tau1.Value,
                        tau2.Value
                        );
+    }
+
+    private async Task<IEnumerable<YieldCurveParameter>> DownloadYieldCurveParameterAsync(GovernmentBondNominalRating governmentBondNominalRating, NelsonSiegelSvenssonParameter nelsonSiegelSvenssonParameter, DateTime? startDate, DateTime? endDate)
+    {
+        if (!_supportedRatings.Contains(governmentBondNominalRating))
+            throw new ArgumentException($"Nelson-Siegel-Svensson parameters are only supported by ECB for government bond nominal ratings [{string.Join(", ", _supportedRatings)}]", nameof(governmentBondNominalRating));
+
+        YieldCurveEndpoint endpoint = new(governmentBondNominalRating, nelsonSiegelSvenssonParameter, startDate, endDate);
+
+        return (await DownloadAsync(new YieldCurveEndpoint(governmentBondNominalRating, nelsonSiegelSvenssonParameter, startDate, endDate)))
+            .Select(p => new YieldCurveParameter(p.Date, governmentBondNominalRating, nelsonSiegelSvenssonParameter, p.Value));
     }
 }
