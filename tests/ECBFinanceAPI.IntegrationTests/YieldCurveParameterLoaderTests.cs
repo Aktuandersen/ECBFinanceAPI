@@ -56,7 +56,7 @@ public class YieldCurveParameterLoaderTests
             new YieldCurveParameter(new DateTime(2025, 7, 25), governmentBondNominalRating, NelsonSiegelSvenssonParameter.Beta0, 1.1441523197),
         ];
 
-        YieldCurveParameterLoader sut = new();
+        YieldCurveParameterLoader sut = new(_client);
 
         // Act
         IEnumerable<YieldCurveParameter> result = await sut.GetNelsonSiegelSvenssonParameterAsync(governmentBondNominalRating, NelsonSiegelSvenssonParameter.Beta0, startDate, endDate);
@@ -84,7 +84,7 @@ public class YieldCurveParameterLoaderTests
     [Fact]
     public async Task GetNelsonSiegelSvenssonParameterAsync_AAAtoAA_ThrowsNotSupportedException()
     {
-        YieldCurveParameterLoader sut = new();
+        YieldCurveParameterLoader sut = new(_client);
 
         await Assert.ThrowsAsync<ArgumentException>(() => sut.GetNelsonSiegelSvenssonParameterAsync(GovernmentBondNominalRating.AAAtoAA, It.IsAny<NelsonSiegelSvenssonParameter>()));
     }
@@ -92,7 +92,7 @@ public class YieldCurveParameterLoaderTests
     [Fact]
     public async Task GetNelsonSiegelSvenssonParameterAsync_AAAtoAAWithinDates_ThrowsNotSupportedException()
     {
-        YieldCurveParameterLoader sut = new();
+        YieldCurveParameterLoader sut = new(_client);
 
         await Assert.ThrowsAsync<ArgumentException>(() => sut.GetNelsonSiegelSvenssonParameterAsync(GovernmentBondNominalRating.AAAtoAA, It.IsAny<NelsonSiegelSvenssonParameter>(), It.IsAny<DateTime>(), It.IsAny<DateTime>()));
     }
