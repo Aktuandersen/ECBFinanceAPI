@@ -6,8 +6,16 @@ using System.Globalization;
 
 namespace ECBFinanceAPI.IntegrationTests;
 
+[Collection("IntegrationTests")]
 public class YieldCurveLoaderTests
 {
+    private readonly HttpClient _client;
+
+    public YieldCurveLoaderTests(HttpClientFixture fixture)
+    {
+        _client = fixture.Client;
+    }
+
     [Theory]
     [InlineData(GovernmentBondNominalRating.AAA, QuoteType.ParRate, MaturityFrequency.Yearly)]
     [InlineData(GovernmentBondNominalRating.AllRatings, QuoteType.InstantaneousForwardRate, MaturityFrequency.Yearly)]
@@ -18,7 +26,7 @@ public class YieldCurveLoaderTests
         // Arrange
         IEnumerable<YieldCurveQuote> targetQuotes = LoadTargetYieldCurveQuotes(rating, quoteType, maturityFrequency);
 
-        YieldCurveLoader sut = new(new HttpClient());
+        YieldCurveLoader sut = new(_client);
 
         // Act
         YieldCurve result = await sut.GetYieldCurveAsync(rating, quoteType, new DateTime(2025, 7, 24), maturityFrequency);

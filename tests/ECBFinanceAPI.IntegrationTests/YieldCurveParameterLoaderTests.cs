@@ -5,8 +5,16 @@ using Moq;
 
 namespace ECBFinanceAPI.IntegrationTests;
 
+[Collection("IntegrationTests")]
 public class YieldCurveParameterLoaderTests
 {
+    private readonly HttpClient _client;
+
+    public YieldCurveParameterLoaderTests(HttpClientFixture fixture)
+    {
+        _client = fixture.Client;
+    }
+
     [Fact]
     public async Task GetYieldCurveParametersAsync_WithinDays_ReturnsCorrectParameters()
     {
@@ -23,7 +31,7 @@ public class YieldCurveParameterLoaderTests
             new NelsonSiegelSvenssonParameters(new DateTime(2025, 7, 25), governmentBondNominalRating, 1.1441523197, 0.7563860093, -1.187131076, 7.1627403875, 2.6487263413, 12.1914444074),
         ];
 
-        YieldCurveParameterLoader sut = new();
+        YieldCurveParameterLoader sut = new(_client);
 
         // Act
         IEnumerable<NelsonSiegelSvenssonParameters> result = await sut.GetYieldCurveNelsonSiegelSvenssonParametersAsync(governmentBondNominalRating, startDate, endDate);
@@ -35,7 +43,7 @@ public class YieldCurveParameterLoaderTests
     [Fact]
     public async Task GetYieldCurveParametersAsync_AAAtoAA_ThrowsNotSupportedException()
     {
-        YieldCurveParameterLoader sut = new();
+        YieldCurveParameterLoader sut = new(_client);
 
         await Assert.ThrowsAsync<ArgumentException>(() => sut.GetYieldCurveNelsonSiegelSvenssonParametersAsync(GovernmentBondNominalRating.AAAtoAA));
     }
@@ -43,7 +51,7 @@ public class YieldCurveParameterLoaderTests
     [Fact]
     public async Task GetYieldCurveParametersAsync_AAAtoAAWithinDates_ThrowsNotSupportedException()
     {
-        YieldCurveParameterLoader sut = new();
+        YieldCurveParameterLoader sut = new(_client);
 
         await Assert.ThrowsAsync<ArgumentException>(() => sut.GetYieldCurveNelsonSiegelSvenssonParametersAsync(GovernmentBondNominalRating.AAAtoAA, It.IsAny<DateTime>(), It.IsAny<DateTime>()));
     }

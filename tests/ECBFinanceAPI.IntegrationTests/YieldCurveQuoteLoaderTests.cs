@@ -4,8 +4,16 @@ using ECBFinanceAPI.Loaders.YieldCurves.Models;
 
 namespace ECBFinanceAPI.IntegrationTests;
 
+[Collection("IntegrationTests")]
 public class YieldCurveQuoteLoaderTests
 {
+    private readonly HttpClient _client;
+
+    public YieldCurveQuoteLoaderTests(HttpClientFixture fixture)
+    {
+        _client = fixture.Client;
+    }
+
     [Fact]
     public async Task GetYieldCurveQuotesAsync_WithinDays_ReturnsCorrectQuotes()
     {
@@ -24,7 +32,7 @@ public class YieldCurveQuoteLoaderTests
             new YieldCurveQuote(new DateTime(2025, 07, 25), maturity, 0.032731336557),
         ];
 
-        YieldCurveQuoteLoader sut = new();
+        YieldCurveQuoteLoader sut = new(_client);
 
         // Act
         IEnumerable<YieldCurveQuote> result = await sut.GetYieldCurveQuotesAsync(governmentBondNominalRating, yieldCurveQuoteType, maturity, startDate, endDate);
