@@ -5,6 +5,7 @@ using System.Net;
 
 namespace ECBFinanceAPI.Loaders;
 
+#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
 public abstract class Loader
 {
     private static readonly int _thirtySeconds = 30_000;

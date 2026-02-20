@@ -18,13 +18,13 @@ public record Maturity : IComparable<Maturity>
     /// <summary>
     /// Initializes a new instance of the <see cref="Maturity"/> record with the specified number of years and months.
     /// </summary>
-    /// <param name="years">The number of years. Must be zero or greater.</param>
-    /// <param name="months">The number of months. Must be between 0 and 11 inclusive.</param>
+    /// <param name="Years">The number of years. Must be zero or greater.</param>
+    /// <param name="Months">The number of months. Must be between 0 and 11 inclusive.</param>
     /// <exception cref="ArgumentOutOfRangeException">
-    /// Thrown when <paramref name="years"/> is negative, or <paramref name="months"/> is not between 0 and 11.
+    /// Thrown when <paramref name="Years"/> is negative, or <paramref name="Months"/> is not between 0 and 11.
     /// </exception>
     /// <exception cref="ArgumentException">
-    /// Thrown when both <paramref name="years"/> and <paramref name="months"/> are zero,
+    /// Thrown when both <paramref name="Years"/> and <paramref name="Months"/> are zero,
     /// as a maturity of zero is not valid in a yield curve context.
     /// </exception>
     public Maturity(int Years, int Months)
@@ -42,7 +42,7 @@ public record Maturity : IComparable<Maturity>
     /// <summary>
     /// Initializes a new instance of the <see cref="Maturity"/> record with only a year component. The months component is set to zero.
     /// </summary>
-    /// <param name="years">The number of years. Must be greater than zero.</param>
+    /// <param name="Years">The number of years. Must be greater than zero.</param>
     public Maturity(int Years) : this(Years, 0) { }
 
     /// <summary>
@@ -52,7 +52,9 @@ public record Maturity : IComparable<Maturity>
     /// <returns>A string describing the maturity in years and months.</returns>
     public override string ToString() => $"{(Years == 0 ? string.Empty : $"{Years}Y")}{(Months == 0 ? string.Empty : $"{Months}M")}";
 
+#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
     public int CompareTo(Maturity? other) => other is null ? 1 : ToMonths().CompareTo(other.ToMonths());
+#pragma warning restore CS1591 // Missing XML comment for publicly visible type or member
 
     private int ToMonths() => Years * 12 + Months;
 }
