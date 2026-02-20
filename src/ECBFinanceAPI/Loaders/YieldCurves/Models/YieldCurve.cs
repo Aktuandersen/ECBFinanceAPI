@@ -75,7 +75,9 @@ public class YieldCurve : IEnumerable<YieldCurveQuote>
         Date = date;
     }
 
+#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
     public IEnumerator<YieldCurveQuote> GetEnumerator() => Quotes.GetEnumerator();
+#pragma warning restore CS1591 // Missing XML comment for publicly visible type or member
 
     IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
 }
